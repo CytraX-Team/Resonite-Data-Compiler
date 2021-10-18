@@ -1,0 +1,26 @@
+name: Compile Lists
+
+on:
+  # Allows you to run this workflow manually from the Actions tab. Do not remove.
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  compile_lists:
+    name: "Compile Component Lists"
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkouts our repo so our workflow can access it.
+    - name: Checkout
+      uses: actions/checkout@v2.3.5
+
+      # Lets get SteamCMD downloaded.
+    - name: Install SteamCMD
+      uses: CyberAndrii/setup-steamcmd@v1
+
+      # And now to download NeosVR.
+    - name: Install NeosVR
+      run: steamcmd +login ${{ secrets.PASSCODE }} +app_update 740250 validate +force_install_dir ../neos +quit
