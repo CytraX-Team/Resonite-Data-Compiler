@@ -76,5 +76,5 @@ File.WriteAllTextAsync("ComponentList.txt", componentsString.ToString());
 StringBuilder logixString = new();
 ProcessNode(WorkerInitializer.ComponentLibrary.GetSubcategory("LogiX"), logixString, 0);
 // Writes our logix list to a file.
-File.WriteAllTextAsync("LogixList.txt", componentsString.ToString());
+File.WriteAllTextAsync("LogixList.txt", logixString.ToString());
 #endif
