@@ -11,7 +11,7 @@ jobs:
   generate-component-list:
     name: "Generate Lists"
     # The type of runner that the job will run on.
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v3.0.2
