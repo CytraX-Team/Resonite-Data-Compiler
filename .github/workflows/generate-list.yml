@@ -11,17 +11,10 @@ jobs:
   generate-component-list:
     name: "Generate Lists"
     # The type of runner that the job will run on.
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3.0.2
-
-    - name: Add MSBuild to PATH
-      uses: microsoft/setup-msbuild@v1.0.2
-
-    # - name: Restore Nuget
-    #   working-directory: ${{env.GITHUB_WORKSPACE}}
-    #   run: nuget restore
 
     - name: Download Neos
       shell: pwsh
@@ -35,11 +28,18 @@ jobs:
         .\7zr.exe x -y "$env:TEMP\neosupdate.7z" *
         Remove-Item "$env:TEMP\neosupdate.7z"
 
-    - name: Build
-      working-directory: ${{env.GITHUB_WORKSPACE}}
-      # Add additional options to the MSBuild command line here (like platform or verbosity level).
-      # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
-      run: msbuild NeosTypeParser.csproj -restore
+      # Sets up .NET Core 6.0.x
+      - name: Setup .NET Core SDK 6.0.x
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: '6.0.x'
+
+      # Runs our custom cs file to generate the list.
+      - name: Build Script
+        id: generate-list
+        run: |
+          dotnet build
+          dotnet run
 
     # Commits the changes to the repo.
     - name: Commit
