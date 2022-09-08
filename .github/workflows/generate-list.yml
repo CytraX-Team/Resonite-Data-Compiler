@@ -14,42 +14,42 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-        uses: actions/checkout@v3.0.2
+    - uses: actions/checkout@v3.0.2
 
-      - name: Add MSBuild to PATH
-        uses: microsoft/setup-msbuild@v1.0.2
+    - name: Add MSBuild to PATH
+      uses: microsoft/setup-msbuild@v1.0.2
 
-      - name: Download Neos
-        shell: pwsh
-        run: |
-          New-Item -Type Directory NeosVR
-          cd NeosVR
-          $web = [System.Net.WebClient]::new()
-          $web.DownloadFile("https://www.7-zip.org/a/7zr.exe","$PWD\7zr.exe")
-          $cvstring = $web.DownloadString('https://cloudxstorage.blob.core.windows.net/install/Pro/Public')
-          $web.DownloadFile("https://assets.neos.com/install/Pro/Data/$cvstring.7z","$env:TEMP\neosupdate.7z")
-          .\7zr.exe x -y "$env:TEMP\neosupdate.7z" *
-          Remove-Item "$env:TEMP\neosupdate.7z"
+    - name: Download Neos
+      shell: pwsh
+      run: |
+        New-Item -Type Directory NeosVR
+        cd NeosVR
+        $web = [System.Net.WebClient]::new()
+        $web.DownloadFile("https://www.7-zip.org/a/7zr.exe","$PWD\7zr.exe")
+        $cvstring = $web.DownloadString('https://cloudxstorage.blob.core.windows.net/install/Pro/Public')
+        $web.DownloadFile("https://assets.neos.com/install/Pro/Data/$cvstring.7z","$env:TEMP\neosupdate.7z")
+        .\7zr.exe x -y "$env:TEMP\neosupdate.7z" *
+        Remove-Item "$env:TEMP\neosupdate.7z"
 
-      - name: Build
-        working-directory: ${{env.GITHUB_WORKSPACE}}
-        # Add additional options to the MSBuild command line here (like platform or verbosity level).
-        # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
-        run: msbuild
+    - name: Build
+      working-directory: ${{env.GITHUB_WORKSPACE}}
+      # Add additional options to the MSBuild command line here (like platform or verbosity level).
+      # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
+      run: msbuild
 
-      # Commits the changes to the repo.
-      - name: Commit
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "Component List"
-          git pull origin main
-          git add lists/ComponentList.txt
-          git add lists/LogixList.txt
-          git commit -m "Automatic component list compile" || true
+    # Commits the changes to the repo.
+    - name: Commit
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "Component List"
+        git pull origin main
+        git add lists/ComponentList.txt
+        git add lists/LogixList.txt
+        git commit -m "Automatic component list compile" || true
 
-      # Pushes the changes to the repo.
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+    # Pushes the changes to the repo.
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
