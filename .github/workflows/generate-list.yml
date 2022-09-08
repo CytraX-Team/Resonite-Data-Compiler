@@ -19,9 +19,9 @@ jobs:
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1.0.2
 
-    - name: Restore Nuget
-      working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: nuget restore
+    # - name: Restore Nuget
+    #   working-directory: ${{env.GITHUB_WORKSPACE}}
+    #   run: nuget restore
 
     - name: Download Neos
       shell: pwsh
