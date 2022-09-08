@@ -70,6 +70,8 @@ foreach (var node in WorkerInitializer.ComponentLibrary.Subcategories)
 }
 // Writes our components list to a file.
 File.WriteAllTextAsync("ComponentList.txt", componentsString.ToString());
+File.Move(@"ComponentList.txt", @"..\lists\ComponentList.txt", true);
+
 #endif
 
 #if LOGIX
@@ -77,4 +79,5 @@ StringBuilder logixString = new();
 ProcessNode(WorkerInitializer.ComponentLibrary.GetSubcategory("LogiX"), logixString, 0);
 // Writes our logix list to a file.
 File.WriteAllTextAsync("LogixList.txt", logixString.ToString());
+File.Move(@"LogixList.txt", @"..\lists\LogixList.txt", true);
 #endif

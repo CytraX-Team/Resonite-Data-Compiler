@@ -1,6 +1,8 @@
 name: Compile Component & Logix Lists
 
 on:
+  push:
+    branches: [ "main", "dev" ]
   # Allows you to run this workflow manually from the Actions tab. DO NOT REMOVE.
   workflow_dispatch:
 
@@ -11,63 +13,42 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-        # Lets get SteamCMD downloaded.
-      - name: Install SteamCMD
-        # Check for a NeosVR cache
-        if: steps.NeosVRCache.outputs.cache-hit != 'true'
-        uses: CyberAndrii/setup-steamcmd@v1.1.1
+      uses: actions/checkout@v3.0.2
 
-        # And now to download NeosVR.
-      - name: Install NeosVR
-        # Check for a NeosVR cache
-        if: steps.NeosVRCache.outputs.cache-hit != 'true'
-        id: install-neosvr
-        run: steamcmd +force_install_dir $HOME/Steam/steamapps/common/NeosVR +login ${{ secrets.PASSCODE }} +app_update 740250 validate +quit
+    - name: Add MSBuild to PATH
+      uses: microsoft/setup-msbuild@v1.0.2
 
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it.
-      - name: Checkout
-        uses: actions/checkout@v3.0.2
+    - name: Download Neos
+      shell: pwsh
+      run: |
+        New-Item -Type Directory NeosVR
+        cd NeosVR
+        $web = [System.Net.WebClient]::new()
+        $web.DownloadFile("https://www.7-zip.org/a/7zr.exe","$PWD\7zr.exe")
+        $cvstring = $web.DownloadString('https://cloudxstorage.blob.core.windows.net/install/Pro/Public')
+        $web.DownloadFile("https://assets.neos.com/install/Pro/Data/$cvstring.7z","$env:TEMP\neosupdate.7z")
+        .\7zr.exe x -y "$env:TEMP\neosupdate.7z" *
+        Remove-Item "$env:TEMP\neosupdate.7z"
 
-      # Moves our custom cs file into the correct location.
-      - name: Move Scripts
-        run: |
-          mv $GITHUB_WORKSPACE/script/NeosTypeParser.cs $HOME/Steam/steamapps/common/NeosVR/Neos_Data/Managed/
-          mv $GITHUB_WORKSPACE/script/NeosTypeParser.csproj $HOME/Steam/steamapps/common/NeosVR/Neos_Data/Managed/
+    - name: Build
+      working-directory: ${{env.GITHUB_WORKSPACE}}
+      # Add additional options to the MSBuild command line here (like platform or verbosity level).
+      # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
+      run: msbuild
 
-      # Sets up .NET Core 6.0.x
-      - name: Setup .NET Core SDK 6.0.x
-        uses: actions/setup-dotnet@v2
-        with:
-          dotnet-version: '6.0.x'
+    # Commits the changes to the repo.
+    - name: Commit
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "Component List"
+        git pull origin main
+        git add lists/ComponentList.txt
+        git add lists/LogixList.txt
+        git commit -m "Automatic component list compile" || true
 
-      # Runs our custom cs file to generate the list.
-      - name: Build Script
-        id: generate-list
-        run: |
-          cd $HOME/Steam/steamapps/common/NeosVR/Neos_Data/Managed/
-          dotnet build
-          dotnet run
-
-      # Moves our generated list into root of our repo.
-      - name: Move Output File
-        run: |
-          mv $HOME/Steam/steamapps/common/NeosVR/Neos_Data/Managed/ComponentList.txt $GITHUB_WORKSPACE
-          mv $HOME/Steam/steamapps/common/NeosVR/Neos_Data/Managed/LogixList.txt $GITHUB_WORKSPACE
-          cd $GITHUB_WORKSPACE
-
-      # Commits the changes to the repo.
-      - name: Commit
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "Component List"
-          git pull origin main
-          git add ComponentList.txt
-          git add LogixList.txt
-          git commit -m "Automatic component list compile" || true
-
-      # Pushes the changes to the repo.
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+    # Pushes the changes to the repo.
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
