@@ -28,18 +28,18 @@ jobs:
         .\7zr.exe x -y "$env:TEMP\neosupdate.7z" *
         Remove-Item "$env:TEMP\neosupdate.7z"
 
-      # Sets up .NET Core 6.0.x
-      - name: Setup .NET Core SDK 6.0.x
-        uses: actions/setup-dotnet@v2
-        with:
-          dotnet-version: '6.0.x'
+    # Sets up .NET Core 6.0.x
+    - name: Setup .NET Core SDK 6.0.x
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '6.0.x'
 
-      # Runs our custom cs file to generate the list.
-      - name: Build Script
-        id: generate-list
-        run: |
-          dotnet build
-          dotnet run
+    # Runs our custom cs file to generate the list.
+    - name: Build Script
+      id: generate-list
+      run: |
+        dotnet build
+        dotnet run
 
     # Commits the changes to the repo.
     - name: Commit
