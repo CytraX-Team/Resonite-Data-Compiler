@@ -28,7 +28,7 @@ jobs:
     - name: action-zip
       uses: montudor/action-zip@v1.0.0
       with:
-        args: unzip -qq .\neosupdate.7z
+        args: unzip -qq neosupdate.7z
 
     # Sets up .NET Core 6.0.x
     - name: Setup .NET Core SDK 6.0.x
