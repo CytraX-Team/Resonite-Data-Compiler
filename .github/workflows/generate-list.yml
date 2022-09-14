@@ -22,11 +22,18 @@ jobs:
         New-Item -Type Directory NeosVR
         cd NeosVR
         $web = [System.Net.WebClient]::new()
-        $web.DownloadFile("https://www.7-zip.org/a/7zr.exe","$PWD\7zr.exe")
+        # $web.DownloadFile("https://www.7-zip.org/a/7zr.exe","$PWD\7zr.exe")
         $cvstring = $web.DownloadString('https://cloudxstorage.blob.core.windows.net/install/Pro/Public')
         $web.DownloadFile("https://assets.neos.com/install/Pro/Data/$cvstring.7z","$env:TEMP\neosupdate.7z")
-        $PWD\7zr.exe x -y "$env:TEMP\neosupdate.7z" *
-        Remove-Item "$env:TEMP\neosupdate.7z"
+        # $PWD\7zr.exe x -y "$env:TEMP\neosupdate.7z" *
+        # Remove-Item "$env:TEMP\neosupdate.7z"
+
+    - name: action-zip
+      uses: montudor/action-zip@v1.0.0
+      with:
+        args: unzip -qq "$env:TEMP\neosupdate.7z" -d *
+        files: NeosVR
+        dest: NeosVR.zip
 
     # Sets up .NET Core 6.0.x
     - name: Setup .NET Core SDK 6.0.x
