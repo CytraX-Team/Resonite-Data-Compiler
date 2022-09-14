@@ -31,7 +31,7 @@ jobs:
     - name: action-zip
       uses: montudor/action-zip@v1.0.0
       with:
-        args: unzip -qq "$env:TEMP\neosupdate.7z" -d *
+        args: unzip -qq "$env:TEMP\neosupdate.7z" -d $GITHUB_WORKSPACE\NeosVR
         files: NeosVR
         dest: NeosVR.zip
 
