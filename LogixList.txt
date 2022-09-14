@@ -1,985 +1,972 @@
- LogiX
-: Actions
-:: DecrementFloatNode:FrooxEngine.LogiX.Actions.DecrementFloatNode
-:: DrivePlaybackNode:FrooxEngine.LogiX.Actions.DrivePlaybackNode
-:: DriveValueNode<T>:FrooxEngine.LogiX.Actions.DriveValueNode`1
-:: IncrementFloatNode:FrooxEngine.LogiX.Actions.IncrementFloatNode
-:: TweenValueNode<T>:FrooxEngine.LogiX.Animation.Tweening.TweenValueNode`1
-:: WriteLatch<T>:FrooxEngine.LogiX.WriteLatch`1
-:: WriteReferenceNode<T>:FrooxEngine.LogiX.Actions.WriteReferenceNode`1
-:: WriteRefLatch<T>:FrooxEngine.LogiX.Actions.WriteRefLatch`1
-:: WriteValueNode<T>:FrooxEngine.LogiX.Actions.WriteValueNode`1
-: Assets
-:: AttachAudioClip:FrooxEngine.LogiX.Assets.AttachAudioClip
-:: AttachMesh:FrooxEngine.LogiX.Assets.AttachMesh
-:: AttachSprite:FrooxEngine.LogiX.Assets.AttachSprite
-:: AttachTexture2D:FrooxEngine.LogiX.Assets.AttachTexture2D
-:: BakeMeshes:FrooxEngine.LogiX.Assets.BakeMeshes
-:: FindAnimationTrackIndex:FrooxEngine.LogiX.Assets.FindAnimationTrackIndex
-:: FormatLocaleString:FrooxEngine.LogiX.Assets.FormatLocaleString
-:: GetAsset<A>:FrooxEngine.LogiX.Assets.GetAsset`1
-:: GetTexture2D_Pixel:FrooxEngine.LogiX.Assets.GetTexture2D_Pixel
-:: GetTexture3D_Pixel:FrooxEngine.LogiX.Assets.GetTexture3D_Pixel
-:: LocaleMessageCount:FrooxEngine.LogiX.Assets.LocaleMessageCount
-:: SampleAnimationTrack<T>:FrooxEngine.LogiX.Assets.SampleAnimationTrack`1
-:: SampleTexture2D_UV:FrooxEngine.LogiX.Assets.SampleTexture2D_UV
-:: SampleTexture3D_UVW:FrooxEngine.LogiX.Assets.SampleTexture3D_UVW
-:: Texture2D_Format:FrooxEngine.LogiX.Assets.Texture2D_Format
-:: Texture3D_Format:FrooxEngine.LogiX.Assets.Texture3D_Format
-: Audio
-:: AudioClipInput:FrooxEngine.LogiX.Audio.AudioClipInput
-:: PlayOneShot:FrooxEngine.LogiX.Audio.PlayOneShot
-:: PlayOneShotAndWait:FrooxEngine.LogiX.Audio.PlayOneShotAndWait
-: Avatar
-:: Anchors
-::: AnchoredUser:FrooxEngine.LogiX.Avatar.AnchoredUser
-::: AnchorEvents:FrooxEngine.LogiX.Avatar.AnchorEvents
-::: AnchorLocomotionData:FrooxEngine.LogiX.Avatar.AnchorLocomotionData
-::: AnchorUser:FrooxEngine.LogiX.Avatar.AnchorUser
-::: GetUserAnchor:FrooxEngine.LogiX.Avatar.GetUserAnchor
-::: IsUserAnchored:FrooxEngine.LogiX.Avatar.IsUserAnchored
-::: ReleaseUser:FrooxEngine.LogiX.Avatar.ReleaseUser
-:: BodyNode
-::: BodyNodeChirality:FrooxEngine.LogiX.Utility.BodyNodeChirality
-::: ComposeFinger:FrooxEngine.LogiX.Utility.ComposeFinger
-::: FingerNodeIndex:FrooxEngine.LogiX.Utility.FingerNodeIndex
-::: GetBodyNodeOtherSide:FrooxEngine.LogiX.Utility.GetBodyNodeOtherSide
-::: GetBodyNodeSide:FrooxEngine.LogiX.Utility.GetBodyNodeSide
-::: GetFingerSegmentType:FrooxEngine.LogiX.Utility.GetFingerSegmentType
-::: GetFingerType:FrooxEngine.LogiX.Utility.GetFingerType
-::: IsBodyNodeEye:FrooxEngine.LogiX.Utility.IsBodyNodeEye
-::: RelativeBodyNode:FrooxEngine.LogiX.Utility.RelativeBodyNode
-:: BodyNodeSlot:FrooxEngine.LogiX.Avatar.BodyNodeSlot
-:: DefaultUserScale:FrooxEngine.LogiX.Avatar.DefaultUserScale
-:: EquipAvatar:FrooxEngine.LogiX.Avatar.EquipAvatar
-:: FingerPose:FrooxEngine.LogiX.Avatar.FingerPose
-:: NearestUserHand:FrooxEngine.LogiX.Avatar.NearestUserHand
-:: NearestUserHead:FrooxEngine.LogiX.Avatar.NearestUserHead
-:: UserFingerPoseSource:FrooxEngine.LogiX.Avatar.UserFingerPoseSource
-: Color
-:: Blending
-::: ColorAdditiveBlend:FrooxEngine.LogiX.Color.ColorAdditiveBlend
-::: ColorAlphaBlend:FrooxEngine.LogiX.Color.ColorAlphaBlend
-::: ColorMultiplicativeBlend:FrooxEngine.LogiX.Color.ColorMultiplicativeBlend
-::: ColorSoftAdditiveBlend:FrooxEngine.LogiX.Color.ColorSoftAdditiveBlend
-:: Channels
-::: ColorAddAlpha:FrooxEngine.LogiX.Color.ColorAddAlpha
-::: ColorAddBlue:FrooxEngine.LogiX.Color.ColorAddBlue
-::: ColorAddBlueHDR:FrooxEngine.LogiX.Color.ColorAddBlueHDR
-::: ColorAddGreen:FrooxEngine.LogiX.Color.ColorAddGreen
-::: ColorAddGreenHDR:FrooxEngine.LogiX.Color.ColorAddGreenHDR
-::: ColorAddHue:FrooxEngine.LogiX.Color.ColorAddHue
-::: ColorAddRed:FrooxEngine.LogiX.Color.ColorAddRed
-::: ColorAddRedHDR:FrooxEngine.LogiX.Color.ColorAddRedHDR
-::: ColorAddSaturation:FrooxEngine.LogiX.Color.ColorAddSaturation
-::: ColorAddValue:FrooxEngine.LogiX.Color.ColorAddValue
-::: ColorAddValueHDR:FrooxEngine.LogiX.Color.ColorAddValueHDR
-::: ColorMulAlpha:FrooxEngine.LogiX.Color.ColorMulAlpha
-::: ColorMulBlue:FrooxEngine.LogiX.Color.ColorMulBlue
-::: ColorMulGreen:FrooxEngine.LogiX.Color.ColorMulGreen
-::: ColorMulHue:FrooxEngine.LogiX.Color.ColorMulHue
-::: ColorMulRed:FrooxEngine.LogiX.Color.ColorMulRed
-::: ColorMulRGB:FrooxEngine.LogiX.Color.ColorMulRGB
-::: ColorMulSaturation:FrooxEngine.LogiX.Color.ColorMulSaturation
-::: ColorMulValue:FrooxEngine.LogiX.Color.ColorMulValue
-::: ColorSetAlpha:FrooxEngine.LogiX.Color.ColorSetAlpha
-::: ColorSetBlue:FrooxEngine.LogiX.Color.ColorSetBlue
-::: ColorSetGreen:FrooxEngine.LogiX.Color.ColorSetGreen
-::: ColorSetHue:FrooxEngine.LogiX.Color.ColorSetHue
-::: ColorSetRed:FrooxEngine.LogiX.Color.ColorSetRed
-::: ColorSetSaturation:FrooxEngine.LogiX.Color.ColorSetSaturation
-::: ColorSetValue:FrooxEngine.LogiX.Color.ColorSetValue
-:: BlackBodyColor:FrooxEngine.LogiX.Color.BlackBodyColor
-:: ColorFromHexCode:FrooxEngine.LogiX.Color.ColorFromHexCode
-:: ColorHue:FrooxEngine.LogiX.Color.ColorHue
-:: ColorLuminance:FrooxEngine.LogiX.Color.ColorLuminance
-:: ColorTextInput:FrooxEngine.LogiX.Input.ColorTextInput
-:: ColorToHexCode:FrooxEngine.LogiX.Color.ColorToHexCode
-:: ColorToHSL:FrooxEngine.LogiX.Color.ColorToHSL
-:: ColorToHSV:FrooxEngine.LogiX.Color.ColorToHSV
-:: HSL_ToColor:FrooxEngine.LogiX.Color.HSL_ToColor
-:: HSV_ToColor:FrooxEngine.LogiX.Color.HSV_ToColor
-:: InvertColor:FrooxEngine.LogiX.Color.InvertColor
-: Components
-:: GetComponentEnabled:FrooxEngine.LogiX.Components.GetComponentEnabled
-:: SetComponentEnabled:FrooxEngine.LogiX.Components.SetComponentEnabled
-: Debug
-:: DebugAxes:FrooxEngine.LogiX.Debug.DebugAxes
-:: DebugBox:FrooxEngine.LogiX.Debug.DebugBox
-:: DebugLine:FrooxEngine.LogiX.Debug.DebugLine
-:: DebugSphere:FrooxEngine.LogiX.Debug.DebugSphere
-:: DebugText:FrooxEngine.LogiX.Debug.DebugText
-:: DebugTriangle:FrooxEngine.LogiX.Debug.DebugTriangle
-:: DebugVector:FrooxEngine.LogiX.Debug.DebugVector
-:: EstimatedMasterClockError:FrooxEngine.LogiX.Debug.EstimatedMasterClockError
-: Experimental
-:: ReactivateDash:FrooxEngine.LogiX.Experimental.ReactivateDash
-:: WriteTextToFile:FrooxEngine.LogiX.Experimental.WriteTextToFile
-: Flow
-:: Events
-::: OnActivatedNode:FrooxEngine.LogiX.ProgramFlow.OnActivatedNode
-::: OnDeactivatedNode:FrooxEngine.LogiX.ProgramFlow.OnDeactivatedNode
-::: OnDestroyingNode:FrooxEngine.LogiX.ProgramFlow.OnDestroyingNode
-::: OnDestroyNode:FrooxEngine.LogiX.ProgramFlow.OnDestroyNode
-::: OnDuplicateNode:FrooxEngine.LogiX.ProgramFlow.OnDuplicateNode
-::: OnLoadedNode:FrooxEngine.LogiX.ProgramFlow.OnLoadedNode
-::: OnPasteNode:FrooxEngine.LogiX.ProgramFlow.OnPasteNode
-::: OnSavingNode:FrooxEngine.LogiX.ProgramFlow.OnSavingNode
-::: OnStartNode:FrooxEngine.LogiX.ProgramFlow.OnStartNode
-:: BooleanToggle:FrooxEngine.LogiX.ProgramFlow.BooleanToggle
-:: DelayNode:FrooxEngine.LogiX.ProgramFlow.DelayNode
-:: DelayWithValueNode<T>:FrooxEngine.LogiX.ProgramFlow.DelayWithValueNode`1
-:: DynamicImpulseReceiver:FrooxEngine.LogiX.ProgramFlow.DynamicImpulseReceiver
-:: DynamicImpulseReceiverWithValue<T>:FrooxEngine.LogiX.ProgramFlow.DynamicImpulseReceiverWithValue`1
-:: DynamicImpulseTrigger:FrooxEngine.LogiX.ProgramFlow.DynamicImpulseTrigger
-:: DynamicImpulseTriggerWithValue<T>:FrooxEngine.LogiX.ProgramFlow.DynamicImpulseTriggerWithValue`1
-:: FireOnChange<T>:FrooxEngine.LogiX.ProgramFlow.FireOnChange`1
-:: FireOnChangeRef<T>:FrooxEngine.LogiX.ProgramFlow.FireOnChangeRef`1
-:: FireOnChangeType:FrooxEngine.LogiX.ProgramFlow.FireOnChangeType
-:: FireOnFalse:FrooxEngine.LogiX.ProgramFlow.FireOnFalse
-:: FireOnTrue:FrooxEngine.LogiX.ProgramFlow.FireOnTrue
-:: FireWhileTrue:FrooxEngine.LogiX.ProgramFlow.FireWhileTrue
-:: ForNode:FrooxEngine.LogiX.ProgramFlow.ForNode
-:: IfNode:FrooxEngine.LogiX.ProgramFlow.IfNode
-:: ImpulseDemultiplexer:FrooxEngine.LogiX.ProgramFlow.ImpulseDemultiplexer
-:: ImpulseMultiplexer:FrooxEngine.LogiX.ProgramFlow.ImpulseMultiplexer
-:: LocalFireOnChange<T>:FrooxEngine.LogiX.ProgramFlow.LocalFireOnChange`1
-:: LocalFireOnFalse:FrooxEngine.LogiX.ProgramFlow.LocalFireOnFalse
-:: LocalFireOnTrue:FrooxEngine.LogiX.ProgramFlow.LocalFireOnTrue
-:: LocalImpulseTimeout:FrooxEngine.LogiX.ProgramFlow.LocalImpulseTimeout
-:: LocalLeakyImpulseBucket:FrooxEngine.LogiX.ProgramFlow.LocalLeakyImpulseBucket
-:: OnePerFrame:FrooxEngine.LogiX.ProgramFlow.OnePerFrame
-:: PulseRandom:FrooxEngine.LogiX.ProgramFlow.PulseRandom
-:: SequenceImpulse:FrooxEngine.LogiX.ProgramFlow.SequenceImpulse
-:: TimerNode:FrooxEngine.LogiX.ProgramFlow.TimerNode
-:: UpdateNode:FrooxEngine.LogiX.ProgramFlow.UpdateNode
-:: UpdatesDelayNode:FrooxEngine.LogiX.ProgramFlow.UpdatesDelayNode
-:: UpdatesDelayWithValueNode<T>:FrooxEngine.LogiX.ProgramFlow.UpdatesDelayWithValueNode`1
-:: WhileNode:FrooxEngine.LogiX.ProgramFlow.WhileNode
-: Formatting
-:: CurrentCulture:FrooxEngine.LogiX.CurrentCulture
-:: InvariantCulture:FrooxEngine.LogiX.InvariantCulture
-: Input
-:: Uncommon
-::: ByteInput:FrooxEngine.LogiX.Input.ByteInput
-::: DecimalInput:FrooxEngine.LogiX.Input.DecimalInput
-::: Double2Input:FrooxEngine.LogiX.Input.Double2Input
-::: Double3Input:FrooxEngine.LogiX.Input.Double3Input
-::: Double4Input:FrooxEngine.LogiX.Input.Double4Input
-::: DoubleInput:FrooxEngine.LogiX.Input.DoubleInput
-::: Long2Input:FrooxEngine.LogiX.Input.Long2Input
-::: Long3Input:FrooxEngine.LogiX.Input.Long3Input
-::: Long4Input:FrooxEngine.LogiX.Input.Long4Input
-::: LongInput:FrooxEngine.LogiX.Input.LongInput
-::: SbyteInput:FrooxEngine.LogiX.Input.SbyteInput
-::: ShortInput:FrooxEngine.LogiX.Input.ShortInput
-::: TimeSpanInput:FrooxEngine.LogiX.Input.TimeSpanInput
-::: Ulong2Input:FrooxEngine.LogiX.Input.Ulong2Input
-::: Ulong3Input:FrooxEngine.LogiX.Input.Ulong3Input
-::: Ulong4Input:FrooxEngine.LogiX.Input.Ulong4Input
-::: UlongInput:FrooxEngine.LogiX.Input.UlongInput
-::: UshortInput:FrooxEngine.LogiX.Input.UshortInput
-:: Bool2Input:FrooxEngine.LogiX.Input.Bool2Input
-:: Bool3Input:FrooxEngine.LogiX.Input.Bool3Input
-:: Bool4Input:FrooxEngine.LogiX.Input.Bool4Input
-:: BoolInput:FrooxEngine.LogiX.Input.BoolInput
-:: CharInput:FrooxEngine.LogiX.Input.CharInput
-:: ColorTextInput:FrooxEngine.LogiX.Input.ColorTextInput
-:: DeltaTimeNode:FrooxEngine.LogiX.Input.DeltaTimeNode
-:: ElapsedTimeNode:FrooxEngine.LogiX.Input.ElapsedTimeNode
-:: EnumInput<E>:FrooxEngine.LogiX.Input.EnumInput`1
-:: EulerAnglesInput:FrooxEngine.LogiX.Input.EulerAnglesInput
-:: Float2Input:FrooxEngine.LogiX.Input.Float2Input
-:: Float3Input:FrooxEngine.LogiX.Input.Float3Input
-:: Float4Input:FrooxEngine.LogiX.Input.Float4Input
-:: FloatInput:FrooxEngine.LogiX.Input.FloatInput
-:: ImpulseInput:FrooxEngine.LogiX.Input.ImpulseInput
-:: Int2Input:FrooxEngine.LogiX.Input.Int2Input
-:: Int3Input:FrooxEngine.LogiX.Input.Int3Input
-:: Int4Input:FrooxEngine.LogiX.Input.Int4Input
-:: IntInput:FrooxEngine.LogiX.Input.IntInput
-:: RectTextInput:FrooxEngine.LogiX.Input.RectTextInput
-:: StopwatchNode:FrooxEngine.LogiX.Input.StopwatchNode
-:: StringInput:FrooxEngine.LogiX.Input.StringInput
-:: Time10Node:FrooxEngine.LogiX.Input.Time10Node
-:: TimeHalfNode:FrooxEngine.LogiX.Input.TimeHalfNode
-:: TimeNode:FrooxEngine.LogiX.Input.TimeNode
-:: TimeTenthNode:FrooxEngine.LogiX.Input.TimeTenthNode
-:: TypeInput:FrooxEngine.LogiX.Input.TypeInput
-:: Uint2Input:FrooxEngine.LogiX.Input.Uint2Input
-:: Uint3Input:FrooxEngine.LogiX.Input.Uint3Input
-:: Uint4Input:FrooxEngine.LogiX.Input.Uint4Input
-:: UintInput:FrooxEngine.LogiX.Input.UintInput
-:: UriInput:FrooxEngine.LogiX.Input.UriInput
-:: UtcNowNode:FrooxEngine.LogiX.Input.UtcNowNode
-: Input Devices
-:: Controllers
-::: CosmosController:FrooxEngine.LogiX.Input.CosmosController
-::: HPReverbController:FrooxEngine.LogiX.Input.HPReverbController
-::: IndexController:FrooxEngine.LogiX.Input.IndexController
-::: StandardController:FrooxEngine.LogiX.Input.StandardController
-::: TouchController:FrooxEngine.LogiX.Input.TouchController
-::: ViveController:FrooxEngine.LogiX.Input.ViveController
-::: WindowsMR_Controller:FrooxEngine.LogiX.Input.WindowsMR_Controller
-:: Haptics
-::: TriggerHapticsInHierarchy:FrooxEngine.LogiX.Input.TriggerHapticsInHierarchy
-::: TriggerHapticsOnController:FrooxEngine.LogiX.Input.TriggerHapticsOnController
-:: Keyboard
-::: KeyHeld:FrooxEngine.LogiX.Input.KeyHeld
-::: KeyPressed:FrooxEngine.LogiX.Input.KeyPressed
-::: KeyReleased:FrooxEngine.LogiX.Input.KeyReleased
-::: TypeDelta:FrooxEngine.LogiX.Input.TypeDelta
-:: Mouse
-::: DesktopMousePosition:FrooxEngine.LogiX.Input.DesktopMousePosition
-::: LeftMouseButtonHeld:FrooxEngine.LogiX.Input.LeftMouseButtonHeld
-::: LeftMouseButtonReleased:FrooxEngine.LogiX.Input.LeftMouseButtonReleased
-::: LeftMousePressed:FrooxEngine.LogiX.Input.LeftMousePressed
-::: MiddleMouseButtonHeld:FrooxEngine.LogiX.Input.MiddleMouseButtonHeld
-::: MiddleMouseButtonReleased:FrooxEngine.LogiX.Input.MiddleMouseButtonReleased
-::: MiddleMousePressed:FrooxEngine.LogiX.Input.MiddleMousePressed
-::: MouseMovementDelta:FrooxEngine.LogiX.Input.MouseMovementDelta
-::: MousePosition:FrooxEngine.LogiX.Input.MousePosition
-::: MouseScrollWheelDelta:FrooxEngine.LogiX.Input.MouseScrollWheelDelta
-::: RightMouseButtonHeld:FrooxEngine.LogiX.Input.RightMouseButtonHeld
-::: RightMouseButtonReleased:FrooxEngine.LogiX.Input.RightMouseButtonReleased
-::: RightMousePressed:FrooxEngine.LogiX.Input.RightMousePressed
-:: GeneralHeadset:FrooxEngine.LogiX.Input.GeneralHeadset
-: Interaction
-:: Grabbable
-::: GrabbableGrabber:FrooxEngine.LogiX.Interaction.GrabbableGrabber
-::: GrabberBodyNode:FrooxEngine.LogiX.Interaction.GrabberBodyNode
-::: IsGrabbableGrabbed:FrooxEngine.LogiX.Interaction.IsGrabbableGrabbed
-::: IsGrabbableScalable:FrooxEngine.LogiX.Interaction.IsGrabbableScalable
-::: OnGrabbableGrabbed:FrooxEngine.LogiX.Interaction.OnGrabbableGrabbed
-::: OnGrabbableReceiverSurfaceReceived:FrooxEngine.LogiX.Interaction.OnGrabbableReceiverSurfaceReceived
-::: OnGrabbableReleased:FrooxEngine.LogiX.Interaction.OnGrabbableReleased
-::: ReleaseAllGrabbed:FrooxEngine.LogiX.Interaction.ReleaseAllGrabbed
-:: Touchable
-::: TouchableEvents:FrooxEngine.LogiX.Interaction.TouchableEvents
-:: ButtonEvents:FrooxEngine.LogiX.Interaction.ButtonEvents
-:: CloseContextMenu:FrooxEngine.LogiX.Interaction.CloseContextMenu
-:: IsContextMenuOpen:FrooxEngine.LogiX.Interaction.IsContextMenuOpen
-:: NotifyModified:FrooxEngine.LogiX.Interaction.NotifyModified
-:: TextEditorEvents:FrooxEngine.LogiX.Interaction.TextEditorEvents
-:: TipJarEvents:FrooxEngine.LogiX.Interaction.TipJarEvents
-: Locomotion
-:: GetActiveLocomotionModule:FrooxEngine.LogiX.Locomotion.GetActiveLocomotionModule
-:: InstallLocomotionModules:FrooxEngine.LogiX.Locomotion.InstallLocomotionModules
-:: OnGripEnd:FrooxEngine.LogiX.Physics.OnGripEnd
-:: OnGripStart:FrooxEngine.LogiX.Physics.OnGripStart
-:: OnGripStay:FrooxEngine.LogiX.Physics.OnGripStay
-:: OnLocomotionGripBegin:FrooxEngine.LogiX.Physics.OnLocomotionGripBegin
-:: OnLocomotionGripEnd:FrooxEngine.LogiX.Physics.OnLocomotionGripEnd
-:: SwitchLocomotionModule:FrooxEngine.LogiX.Locomotion.SwitchLocomotionModule
-: Math
-:: Binary
-::: AdderNode:FrooxEngine.LogiX.Math.Binary.AdderNode
-::: BooleanCounter:FrooxEngine.LogiX.Math.Binary.BooleanCounter
-::: ComposeBits_byte:FrooxEngine.LogiX.Math.Binary.ComposeBits_byte
-::: ComposeBits_int:FrooxEngine.LogiX.Math.Binary.ComposeBits_int
-::: ComposeBits_long:FrooxEngine.LogiX.Math.Binary.ComposeBits_long
-::: ComposeBits_sbyte:FrooxEngine.LogiX.Math.Binary.ComposeBits_sbyte
-::: ComposeBits_short:FrooxEngine.LogiX.Math.Binary.ComposeBits_short
-::: ComposeBits_uint:FrooxEngine.LogiX.Math.Binary.ComposeBits_uint
-::: ComposeBits_ulong:FrooxEngine.LogiX.Math.Binary.ComposeBits_ulong
-::: ComposeBits_ushort:FrooxEngine.LogiX.Math.Binary.ComposeBits_ushort
-::: DoubleAsULong:FrooxEngine.LogiX.Math.Binary.DoubleAsULong
-::: ExtractBits_byte:FrooxEngine.LogiX.Math.Binary.ExtractBits_byte
-::: ExtractBits_int:FrooxEngine.LogiX.Math.Binary.ExtractBits_int
-::: ExtractBits_long:FrooxEngine.LogiX.Math.Binary.ExtractBits_long
-::: ExtractBits_sbyte:FrooxEngine.LogiX.Math.Binary.ExtractBits_sbyte
-::: ExtractBits_short:FrooxEngine.LogiX.Math.Binary.ExtractBits_short
-::: ExtractBits_uint:FrooxEngine.LogiX.Math.Binary.ExtractBits_uint
-::: ExtractBits_ulong:FrooxEngine.LogiX.Math.Binary.ExtractBits_ulong
-::: ExtractBits_ushort:FrooxEngine.LogiX.Math.Binary.ExtractBits_ushort
-::: FloatAsUInt:FrooxEngine.LogiX.Math.Binary.FloatAsUInt
-::: HalfAdderNode:FrooxEngine.LogiX.Math.Binary.HalfAdderNode
-::: HalfAsUShort:FrooxEngine.LogiX.Math.Binary.HalfAsUShort
-::: UIntAsFloat:FrooxEngine.LogiX.Math.Binary.UIntAsFloat
-::: ULongAsDouble:FrooxEngine.LogiX.Math.Binary.ULongAsDouble
-::: UShortAsHalf:FrooxEngine.LogiX.Math.Binary.UShortAsHalf
-:: Constants
-::: Bobool3ol:FrooxEngine.LogiX.Input.Bobool3ol
-::: DegToRadConstant:FrooxEngine.LogiX.Input.DegToRadConstant
-::: e_Node:FrooxEngine.LogiX.Input.e_Node
-::: HalfPiNode:FrooxEngine.LogiX.Input.HalfPiNode
-::: OwO:FrooxEngine.LogiX.Input.OwO
-::: Phi_Node:FrooxEngine.LogiX.Input.Phi_Node
-::: PiNode:FrooxEngine.LogiX.Input.PiNode
-::: RadToDegConstant:FrooxEngine.LogiX.Input.RadToDegConstant
-::: TauNode:FrooxEngine.LogiX.Input.TauNode
-:: DateTime
-::: ConstructDateTime:FrooxEngine.LogiX.Math.Time.ConstructDateTime
-::: DatetimeDayNode:FrooxEngine.LogiX.Math.Time.DatetimeDayNode
-::: DatetimeDayOfWeekNode:FrooxEngine.LogiX.Math.Time.DatetimeDayOfWeekNode
-::: DatetimeDayOfYearNode:FrooxEngine.LogiX.Math.Time.DatetimeDayOfYearNode
-::: DatetimeHourNode:FrooxEngine.LogiX.Math.Time.DatetimeHourNode
-::: DatetimeKindNode:FrooxEngine.LogiX.Math.Time.DatetimeKindNode
-::: DatetimeMillisecondNode:FrooxEngine.LogiX.Math.Time.DatetimeMillisecondNode
-::: DatetimeMinuteNode:FrooxEngine.LogiX.Math.Time.DatetimeMinuteNode
-::: DatetimeMonthNode:FrooxEngine.LogiX.Math.Time.DatetimeMonthNode
-::: DatetimeSecondNode:FrooxEngine.LogiX.Math.Time.DatetimeSecondNode
-::: DatetimeTicksNode:FrooxEngine.LogiX.Math.Time.DatetimeTicksNode
-::: DatetimeYearNode:FrooxEngine.LogiX.Math.Time.DatetimeYearNode
-::: FromUnixMilliseconds:FrooxEngine.LogiX.Math.Time.FromUnixMilliseconds
-::: FromUnixSeconds:FrooxEngine.LogiX.Math.Time.FromUnixSeconds
-::: LocalTimeOffset:FrooxEngine.LogiX.Math.Time.LocalTimeOffset
-::: SetDatetimeKindNode:FrooxEngine.LogiX.Math.Time.SetDatetimeKindNode
-::: ToLocalTime:FrooxEngine.LogiX.Math.Time.ToLocalTime
-::: ToUniversalTime:FrooxEngine.LogiX.Math.Time.ToUniversalTime
-::: ToUnixMilliseconds:FrooxEngine.LogiX.Math.Time.ToUnixMilliseconds
-::: ToUnixSeconds:FrooxEngine.LogiX.Math.Time.ToUnixSeconds
-::: UserTime:FrooxEngine.LogiX.Math.Time.UserTime
-::: UserTimeOffset:FrooxEngine.LogiX.Math.Time.UserTimeOffset
-::: UtcNowNode:FrooxEngine.LogiX.Input.UtcNowNode
-:: Enums
-::: EnumToInt<E>:FrooxEngine.LogiX.Operators.EnumToInt`1
-::: IntToEnum<E>:FrooxEngine.LogiX.Operators.IntToEnum`1
-:: Matrix
-::: Compose_Rotation_Float3x3:FrooxEngine.LogiX.Operators.Compose_Rotation_Float3x3
-::: Compose_ScaleFloat3x3:FrooxEngine.LogiX.Operators.Compose_ScaleFloat3x3
-::: Compose_ScaleRotation_Float3x3:FrooxEngine.LogiX.Operators.Compose_ScaleRotation_Float3x3
-::: ComposeTRS_Float4x4:FrooxEngine.LogiX.Operators.ComposeTRS_Float4x4
-::: Decomposed_Position_Float4x4:FrooxEngine.LogiX.Operators.Decomposed_Position_Float4x4
-::: Decomposed_Rotation_Float3x3:FrooxEngine.LogiX.Operators.Decomposed_Rotation_Float3x3
-::: Decomposed_Scale_Float3x3:FrooxEngine.LogiX.Operators.Decomposed_Scale_Float3x3
-:: Physics
-::: TorqueEstimateNode:FrooxEngine.LogiX.Math.TorqueEstimateNode
-::: TrajectoryNode:FrooxEngine.LogiX.Math.TrajectoryNode
-:: Quantity
-::: BaseValue<U>:FrooxEngine.LogiX.Quantity.BaseValue`1
-::: FormatQuantity<U>:FrooxEngine.LogiX.Quantity.FormatQuantity`1
-::: FromBaseValue<U>:FrooxEngine.LogiX.Quantity.FromBaseValue`1
-::: ParseQuantity<U>:FrooxEngine.LogiX.Quantity.ParseQuantity`1
-:: Random
-::: RandomBool:FrooxEngine.LogiX.Math.RandomBool
-::: RandomFloat:FrooxEngine.LogiX.Math.RandomFloat
-::: RandomFloat2:FrooxEngine.LogiX.Math.RandomFloat2
-::: RandomFloat3:FrooxEngine.LogiX.Math.RandomFloat3
-::: RandomGrayscale:FrooxEngine.LogiX.Math.RandomGrayscale
-::: RandomHue:FrooxEngine.LogiX.Math.RandomHue
-::: RandomInt:FrooxEngine.LogiX.Math.RandomInt
-::: RandomPointInCircle:FrooxEngine.LogiX.Math.RandomPointInCircle
-::: RandomPointInCube:FrooxEngine.LogiX.Math.RandomPointInCube
-::: RandomPointInSphere:FrooxEngine.LogiX.Math.RandomPointInSphere
-::: RandomPointInSquare:FrooxEngine.LogiX.Math.RandomPointInSquare
-::: RandomPointOnCircle:FrooxEngine.LogiX.Math.RandomPointOnCircle
-::: RandomPointOnCube:FrooxEngine.LogiX.Math.RandomPointOnCube
-::: RandomPointOnSphere:FrooxEngine.LogiX.Math.RandomPointOnSphere
-::: RandomPointOnSquare:FrooxEngine.LogiX.Math.RandomPointOnSquare
-::: RandomRGB:FrooxEngine.LogiX.Math.RandomRGB
-::: RandomRGBA:FrooxEngine.LogiX.Math.RandomRGBA
-::: RandomRotation:FrooxEngine.LogiX.Math.RandomRotation
-:: Rect
-::: ClipRect:FrooxEngine.LogiX.Math.Rects.ClipRect
-::: EncapsulateRect:FrooxEngine.LogiX.Math.Rects.EncapsulateRect
-::: RectFromMinMax:FrooxEngine.LogiX.Math.Rects.RectFromMinMax
-::: RectFromPositionSize:FrooxEngine.LogiX.Math.Rects.RectFromPositionSize
-::: RectFromXYWH:FrooxEngine.LogiX.Math.Rects.RectFromXYWH
-::: RectToMinMax:FrooxEngine.LogiX.Math.Rects.RectToMinMax
-::: RectToPositionSize:FrooxEngine.LogiX.Math.Rects.RectToPositionSize
-::: RectToXYWH:FrooxEngine.LogiX.Math.Rects.RectToXYWH
-::: TranslateRect:FrooxEngine.LogiX.Math.Rects.TranslateRect
-:: Rotation
-::: AxisAngle_floatQ:FrooxEngine.LogiX.Math.Quaternions.AxisAngle_floatQ
-::: EulerAngles_floatQ:FrooxEngine.LogiX.Math.Quaternions.EulerAngles_floatQ
-::: FromEuler_floatQ:FrooxEngine.LogiX.Math.Quaternions.FromEuler_floatQ
-::: FromToRotation_floatQ:FrooxEngine.LogiX.Math.Quaternions.FromToRotation_floatQ
-::: InverseRotation_floatQ:FrooxEngine.LogiX.Math.Quaternions.InverseRotation_floatQ
-::: LookRotation_floatQ:FrooxEngine.LogiX.Math.Quaternions.LookRotation_floatQ
-::: ToAxisAngle_floatQ:FrooxEngine.LogiX.Math.Quaternions.ToAxisAngle_floatQ
-:: Shaping
-::: SinShape_Float:FrooxEngine.LogiX.Operators.SinShape_Float
-::: SmootherStep_Float:FrooxEngine.LogiX.Operators.SmootherStep_Float
-::: SmoothStep_Float:FrooxEngine.LogiX.Operators.SmoothStep_Float
-::: SymmetricPowShape_Float:FrooxEngine.LogiX.Operators.SymmetricPowShape_Float
-:: TimeSpan
-::: TimespanDaysNode:FrooxEngine.LogiX.Math.Time.TimespanDaysNode
-::: TimeSpanFromDays:FrooxEngine.LogiX.Math.Time.TimeSpanFromDays
-::: TimeSpanFromHours:FrooxEngine.LogiX.Math.Time.TimeSpanFromHours
-::: TimeSpanFromMilliseconds:FrooxEngine.LogiX.Math.Time.TimeSpanFromMilliseconds
-::: TimeSpanFromMinutes:FrooxEngine.LogiX.Math.Time.TimeSpanFromMinutes
-::: TimeSpanFromSeconds:FrooxEngine.LogiX.Math.Time.TimeSpanFromSeconds
-::: TimeSpanFromTicks:FrooxEngine.LogiX.Math.Time.TimeSpanFromTicks
-::: TimespanHoursNode:FrooxEngine.LogiX.Math.Time.TimespanHoursNode
-::: TimespanMillisecondsNode:FrooxEngine.LogiX.Math.Time.TimespanMillisecondsNode
-::: TimespanMinutesNode:FrooxEngine.LogiX.Math.Time.TimespanMinutesNode
-::: TimespanSecondsNode:FrooxEngine.LogiX.Math.Time.TimespanSecondsNode
-::: TimespanTicksNode:FrooxEngine.LogiX.Math.Time.TimespanTicksNode
-::: TimespanTotalDaysNode:FrooxEngine.LogiX.Math.Time.TimespanTotalDaysNode
-::: TimespanTotalHoursNode:FrooxEngine.LogiX.Math.Time.TimespanTotalHoursNode
-::: TimespanTotalMillisecondsNode:FrooxEngine.LogiX.Math.Time.TimespanTotalMillisecondsNode
-::: TimespanTotalMinutesNode:FrooxEngine.LogiX.Math.Time.TimespanTotalMinutesNode
-::: TimespanTotalSecondsNode:FrooxEngine.LogiX.Math.Time.TimespanTotalSecondsNode
-:: Abs_Float:FrooxEngine.LogiX.Math.Abs_Float
-:: Acos_Float:FrooxEngine.LogiX.Math.Acos_Float
-:: Asin_Float:FrooxEngine.LogiX.Math.Asin_Float
-:: Atan_Float:FrooxEngine.LogiX.Math.Atan_Float
-:: Atan2_Float:FrooxEngine.LogiX.Math.Atan2_Float
-:: Avg_Float:FrooxEngine.LogiX.Math.Avg_Float
-:: AvgMulti_Float:FrooxEngine.LogiX.Math.AvgMulti_Float
-:: Ceil_Float:FrooxEngine.LogiX.Math.Ceil_Float
-:: CeilToInt_Float:FrooxEngine.LogiX.Math.CeilToInt_Float
-:: Clamp_Float:FrooxEngine.LogiX.Math.Clamp_Float
-:: Clamp01_Float:FrooxEngine.LogiX.Math.Clamp01_Float
-:: ConstantLerp_Float:FrooxEngine.LogiX.Math.ConstantLerp_Float
-:: ConstantSlerp_floatQ:FrooxEngine.LogiX.Math.Quaternions.ConstantSlerp_floatQ
-:: Cos_Float:FrooxEngine.LogiX.Math.Cos_Float
-:: CosineLerp_Float:FrooxEngine.LogiX.Math.CosineLerp_Float
-:: CubicLerp_Float:FrooxEngine.LogiX.Math.CubicLerp_Float
-:: Delta_Float:FrooxEngine.LogiX.Math.Delta_Float
-:: Exp_Float:FrooxEngine.LogiX.Math.Exp_Float
-:: Floor_Float:FrooxEngine.LogiX.Math.Floor_Float
-:: FloorToInt_Float:FrooxEngine.LogiX.Math.FloorToInt_Float
-:: GreatestCommonDivisor_Int:FrooxEngine.LogiX.Math.GreatestCommonDivisor_Int
-:: InverseLerp_Float:FrooxEngine.LogiX.Math.InverseLerp_Float
-:: IsBetween_Float:FrooxEngine.LogiX.Math.IsBetween_Float
-:: LeastCommonMultiple_Int:FrooxEngine.LogiX.Math.LeastCommonMultiple_Int
-:: Lerp_Float:FrooxEngine.LogiX.Math.Lerp_Float
-:: Log_Float:FrooxEngine.LogiX.Math.Log_Float
-:: Log10_Float:FrooxEngine.LogiX.Math.Log10_Float
-:: LogN_Float:FrooxEngine.LogiX.Math.LogN_Float
-:: Max_Float:FrooxEngine.LogiX.Math.Max_Float
-:: MaxMulti_Float:FrooxEngine.LogiX.Math.MaxMulti_Float
-:: Min_Float:FrooxEngine.LogiX.Math.Min_Float
-:: MinMulti_Float:FrooxEngine.LogiX.Math.MinMulti_Float
-:: MultiCosineLerp_Float:FrooxEngine.LogiX.Math.MultiCosineLerp_Float
-:: MultiCubicLerp_Float:FrooxEngine.LogiX.Math.MultiCubicLerp_Float
-:: MultiLerp_Float:FrooxEngine.LogiX.Math.MultiLerp_Float
-:: MultiSlerp_Float3:FrooxEngine.LogiX.Math.MultiSlerp_Float3
-:: NthRoot_Float:FrooxEngine.LogiX.Math.NthRoot_Float
-:: PingPong_Float:FrooxEngine.LogiX.Math.PingPong_Float
-:: Pow_Float:FrooxEngine.LogiX.Math.Pow_Float
-:: Remap_Float:FrooxEngine.LogiX.Math.Remap_Float
-:: Remap11_01_Float:FrooxEngine.LogiX.Math.Remap11_01_Float
-:: Repeat_Float:FrooxEngine.LogiX.Math.Repeat_Float
-:: Repeat01_Float:FrooxEngine.LogiX.Math.Repeat01_Float
-:: Round_Float:FrooxEngine.LogiX.Math.Round_Float
-:: RoundToInt_Float:FrooxEngine.LogiX.Math.RoundToInt_Float
-:: SigmoidNode:FrooxEngine.LogiX.Math.SigmoidNode
-:: Sign_Float:FrooxEngine.LogiX.Math.Sign_Float
-:: SimplexNoise_1D:FrooxEngine.LogiX.Math.SimplexNoise_1D
-:: Sin_Float:FrooxEngine.LogiX.Math.Sin_Float
-:: Slerp_Float3:FrooxEngine.LogiX.Math.Slerp_Float3
-:: SmoothLerp_Float:FrooxEngine.LogiX.Math.SmoothLerp_Float
-:: Sqrt_Float:FrooxEngine.LogiX.Math.Sqrt_Float
-:: Tan_Float:FrooxEngine.LogiX.Math.Tan_Float
-: Meta
-:: RemoveAllLogixVisuals:FrooxEngine.LogiX.Meta.RemoveAllLogixVisuals
-:: RevealAllLogixVisuals:FrooxEngine.LogiX.Meta.RevealAllLogixVisuals
-: Network
-:: Twitch
-::: TwitchChatMessageEvent:FrooxEngine.LogiX.Twitch.TwitchChatMessageEvent
-::: TwitchFollowEvent:FrooxEngine.LogiX.Twitch.TwitchFollowEvent
-::: TwitchRaidEvent:FrooxEngine.LogiX.Twitch.TwitchRaidEvent
-::: TwitchRewardRedeemEvent:FrooxEngine.LogiX.Twitch.TwitchRewardRedeemEvent
-::: TwitchSubscriptionEvent:FrooxEngine.LogiX.Twitch.TwitchSubscriptionEvent
-:: Websocket
-::: WebsocketConnect:FrooxEngine.LogiX.Network.WebsocketConnect
-::: WebsocketConnectionEvents:FrooxEngine.LogiX.Network.WebsocketConnectionEvents
-::: WebsocketTextMessageReceiver:FrooxEngine.LogiX.Network.WebsocketTextMessageReceiver
-::: WebsocketTextMessageSender:FrooxEngine.LogiX.Network.WebsocketTextMessageSender
-:: EscapeUriDataString:FrooxEngine.LogiX.Network.EscapeUriDataString
-:: GET_String:FrooxEngine.LogiX.Network.GET_String
-:: IsHostAccessAllowedUrl:FrooxEngine.LogiX.Network.IsHostAccessAllowedUrl
-:: POST_String:FrooxEngine.LogiX.Network.POST_String
-:: RequestHostAccessUrl:FrooxEngine.LogiX.Network.RequestHostAccessUrl
-:: UnescapeUriDataString:FrooxEngine.LogiX.Network.UnescapeUriDataString
-: Operators
-:: Bool Vectors
-::: All_Bool2:FrooxEngine.LogiX.Operators.All_Bool2
-::: Any_Bool2:FrooxEngine.LogiX.Operators.Any_Bool2
-::: None_Bool2:FrooxEngine.LogiX.Operators.None_Bool2
-:: Nullable
-::: PackNullable<T>:FrooxEngine.LogiX.Operators.PackNullable`1
-::: UnpackNullable<T>:FrooxEngine.LogiX.Operators.UnpackNullable`1
-:: Parsing
-::: Parse_Bool:FrooxEngine.LogiX.Operators.Parse_Bool
-::: Parse_Bool2:FrooxEngine.LogiX.Operators.Parse_Bool2
-::: Parse_Bool3:FrooxEngine.LogiX.Operators.Parse_Bool3
-::: Parse_Bool4:FrooxEngine.LogiX.Operators.Parse_Bool4
-::: Parse_Byte:FrooxEngine.LogiX.Operators.Parse_Byte
-::: Parse_Char:FrooxEngine.LogiX.Operators.Parse_Char
-::: Parse_Color:FrooxEngine.LogiX.Operators.Parse_Color
-::: Parse_ColorX:FrooxEngine.LogiX.Operators.Parse_ColorX
-::: Parse_DateTime:FrooxEngine.LogiX.Operators.Parse_DateTime
-::: Parse_Decimal:FrooxEngine.LogiX.Operators.Parse_Decimal
-::: Parse_Double:FrooxEngine.LogiX.Operators.Parse_Double
-::: Parse_Double2:FrooxEngine.LogiX.Operators.Parse_Double2
-::: Parse_Double3:FrooxEngine.LogiX.Operators.Parse_Double3
-::: Parse_Double4:FrooxEngine.LogiX.Operators.Parse_Double4
-::: Parse_DoubleQ:FrooxEngine.LogiX.Operators.Parse_DoubleQ
-::: Parse_Float:FrooxEngine.LogiX.Operators.Parse_Float
-::: Parse_Float2:FrooxEngine.LogiX.Operators.Parse_Float2
-::: Parse_Float3:FrooxEngine.LogiX.Operators.Parse_Float3
-::: Parse_Float4:FrooxEngine.LogiX.Operators.Parse_Float4
-::: Parse_FloatQ:FrooxEngine.LogiX.Operators.Parse_FloatQ
-::: Parse_Int:FrooxEngine.LogiX.Operators.Parse_Int
-::: Parse_Int2:FrooxEngine.LogiX.Operators.Parse_Int2
-::: Parse_Int3:FrooxEngine.LogiX.Operators.Parse_Int3
-::: Parse_Int4:FrooxEngine.LogiX.Operators.Parse_Int4
-::: Parse_Long:FrooxEngine.LogiX.Operators.Parse_Long
-::: Parse_Long2:FrooxEngine.LogiX.Operators.Parse_Long2
-::: Parse_Long3:FrooxEngine.LogiX.Operators.Parse_Long3
-::: Parse_Long4:FrooxEngine.LogiX.Operators.Parse_Long4
-::: Parse_Sbyte:FrooxEngine.LogiX.Operators.Parse_Sbyte
-::: Parse_Short:FrooxEngine.LogiX.Operators.Parse_Short
-::: Parse_TimeSpan:FrooxEngine.LogiX.Operators.Parse_TimeSpan
-::: Parse_Uint:FrooxEngine.LogiX.Operators.Parse_Uint
-::: Parse_Uint2:FrooxEngine.LogiX.Operators.Parse_Uint2
-::: Parse_Uint3:FrooxEngine.LogiX.Operators.Parse_Uint3
-::: Parse_Uint4:FrooxEngine.LogiX.Operators.Parse_Uint4
-::: Parse_Ulong:FrooxEngine.LogiX.Operators.Parse_Ulong
-::: Parse_Ulong2:FrooxEngine.LogiX.Operators.Parse_Ulong2
-::: Parse_Ulong3:FrooxEngine.LogiX.Operators.Parse_Ulong3
-::: Parse_Ulong4:FrooxEngine.LogiX.Operators.Parse_Ulong4
-::: Parse_Ushort:FrooxEngine.LogiX.Operators.Parse_Ushort
-:: Add_Float:FrooxEngine.LogiX.Operators.Add_Float
-:: AddMulti_Float:FrooxEngine.LogiX.Operators.AddMulti_Float
-:: AND_Int:FrooxEngine.LogiX.Operators.AND_Int
-:: AND_Multi_Int:FrooxEngine.LogiX.Operators.AND_Multi_Int
-:: Angle_Float2:FrooxEngine.LogiX.Operators.Angle_Float2
-:: Approximately_Float:FrooxEngine.LogiX.Operators.Approximately_Float
-:: Conditional_Float:FrooxEngine.LogiX.Operators.Conditional_Float
-:: Construct_Float2:FrooxEngine.LogiX.Operators.Construct_Float2
-:: Construct_Float3:FrooxEngine.LogiX.Operators.Construct_Float3
-:: Construct_Float4:FrooxEngine.LogiX.Operators.Construct_Float4
-:: Construct_Color:FrooxEngine.LogiX.Operators.Construct_Color
-:: Cross_Float3:FrooxEngine.LogiX.Operators.Cross_Float3
-:: Cube_Float:FrooxEngine.LogiX.Operators.Cube_Float
-:: Dec_Float:FrooxEngine.LogiX.Operators.Dec_Float
-:: Deconstruct_Float2:FrooxEngine.LogiX.Operators.Deconstruct_Float2
-:: Deconstruct_Float3:FrooxEngine.LogiX.Operators.Deconstruct_Float3
-:: Deconstruct_Float4:FrooxEngine.LogiX.Operators.Deconstruct_Float4
-:: Determinant_Float2x2:FrooxEngine.LogiX.Operators.Determinant_Float2x2
-:: Distance_Float:FrooxEngine.LogiX.Operators.Distance_Float
-:: Div_Float:FrooxEngine.LogiX.Operators.Div_Float
-:: DivDeltaTime_Float:FrooxEngine.LogiX.Operators.DivDeltaTime_Float
-:: Dot_Float2:FrooxEngine.LogiX.Operators.Dot_Float2
-:: Equals_Float:FrooxEngine.LogiX.Operators.Equals_Float
-:: FilterInvalid_Float:FrooxEngine.LogiX.Operators.FilterInvalid_Float
-:: GetType:FrooxEngine.LogiX.Operators.GetType
-:: GreaterOrEqual_Float:FrooxEngine.LogiX.Operators.GreaterOrEqual_Float
-:: GreaterThan_Float:FrooxEngine.LogiX.Operators.GreaterThan_Float
-:: Inc_Float:FrooxEngine.LogiX.Operators.Inc_Float
-:: Inverse_Float2x2:FrooxEngine.LogiX.Operators.Inverse_Float2x2
-:: IsInfinity_Float:FrooxEngine.LogiX.Operators.IsInfinity_Float
-:: IsNaN_Float:FrooxEngine.LogiX.Operators.IsNaN_Float
-:: IsNullNode<T>:FrooxEngine.LogiX.Operators.IsNullNode`1
-:: LessThan_Float:FrooxEngine.LogiX.Operators.LessThan_Float
-:: Magnitude_Float2:FrooxEngine.LogiX.Operators.Magnitude_Float2
-:: Mask_Float2:FrooxEngine.LogiX.Operators.Mask_Float2
-:: MatrixElement_Float2x2:FrooxEngine.LogiX.Operators.MatrixElement_Float2x2
-:: Mod_Float:FrooxEngine.LogiX.Operators.Mod_Float
-:: Mul_Float:FrooxEngine.LogiX.Operators.Mul_Float
-:: MulDeltaTime_Float:FrooxEngine.LogiX.Operators.MulDeltaTime_Float
-:: MulMulti_Float:FrooxEngine.LogiX.Operators.MulMulti_Float
-:: MultiNullCoalesce<T>:FrooxEngine.LogiX.Operators.MultiNullCoalesce`1
-:: NAND_Int:FrooxEngine.LogiX.Operators.NAND_Int
-:: NAND_Multi_Int:FrooxEngine.LogiX.Operators.NAND_Multi_Int
-:: Negate_Float:FrooxEngine.LogiX.Operators.Negate_Float
-:: NOR_Int:FrooxEngine.LogiX.Operators.NOR_Int
-:: NOR_Multi_Int:FrooxEngine.LogiX.Operators.NOR_Multi_Int
-:: Normalized_Float2:FrooxEngine.LogiX.Operators.Normalized_Float2
-:: NOT_Int:FrooxEngine.LogiX.Operators.NOT_Int
-:: NotEquals_Float:FrooxEngine.LogiX.Operators.NotEquals_Float
-:: NotNullNode<T>:FrooxEngine.LogiX.Operators.NotNullNode`1
-:: NullCoalesce<T>:FrooxEngine.LogiX.Operators.NullCoalesce`1
-:: OneMinus_Float:FrooxEngine.LogiX.Operators.OneMinus_Float
-:: OR_Int:FrooxEngine.LogiX.Operators.OR_Int
-:: OR_Multi_Int:FrooxEngine.LogiX.Operators.OR_Multi_Int
-:: PackColumns_Float2x2:FrooxEngine.LogiX.Operators.PackColumns_Float2x2
-:: PackRows_Float2x2:FrooxEngine.LogiX.Operators.PackRows_Float2x2
-:: PlusMinus_Float:FrooxEngine.LogiX.Operators.PlusMinus_Float
-:: Project_Float2:FrooxEngine.LogiX.Operators.Project_Float2
-:: Reciprocal_Float:FrooxEngine.LogiX.Operators.Reciprocal_Float
-:: Reflect_Float3:FrooxEngine.LogiX.Operators.Reflect_Float3
-:: RotateLeft_Int:FrooxEngine.LogiX.Operators.RotateLeft_Int
-:: RotateRight_Int:FrooxEngine.LogiX.Operators.RotateRight_Int
-:: ShiftLeft_Int:FrooxEngine.LogiX.Operators.ShiftLeft_Int
-:: ShiftRight_Int:FrooxEngine.LogiX.Operators.ShiftRight_Int
-:: SmallerOrEqual_Float:FrooxEngine.LogiX.Operators.SmallerOrEqual_Float
-:: SqrMagnitude_Float2:FrooxEngine.LogiX.Operators.SqrMagnitude_Float2
-:: Square_Float:FrooxEngine.LogiX.Operators.Square_Float
-:: Sub_Float:FrooxEngine.LogiX.Operators.Sub_Float
-:: SubMulti_Float:FrooxEngine.LogiX.Operators.SubMulti_Float
-:: ToString_Float:FrooxEngine.LogiX.Operators.ToString_Float
-:: Transpose_Float2x2:FrooxEngine.LogiX.Operators.Transpose_Float2x2
-:: UnpackColumns_Float2x2:FrooxEngine.LogiX.Operators.UnpackColumns_Float2x2
-:: UnpackRows_Float2x2:FrooxEngine.LogiX.Operators.UnpackRows_Float2x2
-:: XNOR_Int:FrooxEngine.LogiX.Operators.XNOR_Int
-:: XNOR_Multi_Int:FrooxEngine.LogiX.Operators.XNOR_Multi_Int
-:: XOR_Int:FrooxEngine.LogiX.Operators.XOR_Int
-:: XOR_Multi_Int:FrooxEngine.LogiX.Operators.XOR_Multi_Int
-:: ZeroOne:FrooxEngine.LogiX.Math.ZeroOne
-: Physics
-:: ApplyCharacterForce:FrooxEngine.LogiX.Physics.ApplyCharacterForce
-:: ApplyCharacterImpulse:FrooxEngine.LogiX.Physics.ApplyCharacterImpulse
-:: AsCharacterController:FrooxEngine.LogiX.Physics.AsCharacterController
-:: CharacterControllerUser:FrooxEngine.LogiX.Physics.CharacterControllerUser
-:: CharacterGravity:FrooxEngine.LogiX.Physics.CharacterGravity
-:: CharacterGroundCollider:FrooxEngine.LogiX.Physics.CharacterGroundCollider
-:: CharacterLinearVelocity:FrooxEngine.LogiX.Physics.CharacterLinearVelocity
-:: FindCharacterControllerFromSlot:FrooxEngine.LogiX.Physics.FindCharacterControllerFromSlot
-:: HitUVCoordinate:FrooxEngine.LogiX.Physics.HitUVCoordinate
-:: IsCharacterController:FrooxEngine.LogiX.Physics.IsCharacterController
-:: IsCharacterOnGround:FrooxEngine.LogiX.Physics.IsCharacterOnGround
-:: OnCollisionEnd:FrooxEngine.LogiX.Physics.OnCollisionEnd
-:: OnCollisionStart:FrooxEngine.LogiX.Physics.OnCollisionStart
-:: OnCollisionStay:FrooxEngine.LogiX.Physics.OnCollisionStay
-:: Raycaster:FrooxEngine.LogiX.Physics.Raycaster
-:: RaycastOne:FrooxEngine.LogiX.Physics.RaycastOne
-:: SetCharacterGravity:FrooxEngine.LogiX.Physics.SetCharacterGravity
-:: SetCharacterVelocity:FrooxEngine.LogiX.Physics.SetCharacterVelocity
-: Playback
-:: DrivePlaybackNode:FrooxEngine.LogiX.Actions.DrivePlaybackNode
-:: PlaybackClipLength:FrooxEngine.LogiX.Playback.PlaybackClipLength
-:: PlaybackIsLooped:FrooxEngine.LogiX.Playback.PlaybackIsLooped
-:: PlaybackIsPlaying:FrooxEngine.LogiX.Playback.PlaybackIsPlaying
-:: PlaybackNormalizedPosition:FrooxEngine.LogiX.Playback.PlaybackNormalizedPosition
-:: PlaybackPause:FrooxEngine.LogiX.Playback.PlaybackPause
-:: PlaybackPauseResume:FrooxEngine.LogiX.Playback.PlaybackPauseResume
-:: PlaybackPlay:FrooxEngine.LogiX.Playback.PlaybackPlay
-:: PlaybackPlayAndWait:FrooxEngine.LogiX.Playback.PlaybackPlayAndWait
-:: PlaybackPosition:FrooxEngine.LogiX.Playback.PlaybackPosition
-:: PlaybackReadState:FrooxEngine.LogiX.Playback.PlaybackReadState
-:: PlaybackResume:FrooxEngine.LogiX.Playback.PlaybackResume
-:: PlaybackSetLoop:FrooxEngine.LogiX.Playback.PlaybackSetLoop
-:: PlaybackSetNormalizedPosition:FrooxEngine.LogiX.Playback.PlaybackSetNormalizedPosition
-:: PlaybackSetPosition:FrooxEngine.LogiX.Playback.PlaybackSetPosition
-:: PlaybackSetSpeed:FrooxEngine.LogiX.Playback.PlaybackSetSpeed
-:: PlaybackShiftPosition:FrooxEngine.LogiX.Playback.PlaybackShiftPosition
-:: PlaybackSpeed:FrooxEngine.LogiX.Playback.PlaybackSpeed
-:: PlaybackStop:FrooxEngine.LogiX.Playback.PlaybackStop
-:: PlaybackWait:FrooxEngine.LogiX.Playback.PlaybackWait
-: References
-:: AllocatingUser:FrooxEngine.LogiX.References.AllocatingUser
-:: ReferenceID:FrooxEngine.LogiX.References.ReferenceID
-:: ReferenceTarget<T>:FrooxEngine.LogiX.References.ReferenceTarget`1
-:: WriteReferenceNode<T>:FrooxEngine.LogiX.Actions.WriteReferenceNode`1
-: Rendering
-:: BakeReflectionProbe:FrooxEngine.LogiX.Rendering.BakeReflectionProbe
-:: BakeReflectionProbes:FrooxEngine.LogiX.Rendering.BakeReflectionProbes
-:: RenderToTextureAsset:FrooxEngine.LogiX.Rendering.RenderToTextureAsset
-:: SampleColor:FrooxEngine.LogiX.Rendering.SampleColor
-: Slots
-:: ChildrenCount:FrooxEngine.LogiX.WorldModel.ChildrenCount
-:: DestroySlot:FrooxEngine.LogiX.WorldModel.DestroySlot
-:: DestroySlotChildren:FrooxEngine.LogiX.WorldModel.DestroySlotChildren
-:: DuplicateSlot:FrooxEngine.LogiX.WorldModel.DuplicateSlot
-:: FindChildByName:FrooxEngine.LogiX.WorldModel.FindChildByName
-:: FindChildByTag:FrooxEngine.LogiX.WorldModel.FindChildByTag
-:: FindParentByName:FrooxEngine.LogiX.WorldModel.FindParentByName
-:: FindParentByTag:FrooxEngine.LogiX.WorldModel.FindParentByTag
-:: GetActiveUser:FrooxEngine.LogiX.WorldModel.GetActiveUser
-:: GetActiveUserRoot:FrooxEngine.LogiX.WorldModel.GetActiveUserRoot
-:: GetActiveUserSelf:FrooxEngine.LogiX.WorldModel.GetActiveUserSelf
-:: GetChild:FrooxEngine.LogiX.WorldModel.GetChild
-:: GetObjectRoot:FrooxEngine.LogiX.WorldModel.GetObjectRoot
-:: GetParentSlot:FrooxEngine.LogiX.WorldModel.GetParentSlot
-:: GetSlot:FrooxEngine.LogiX.WorldModel.GetSlot
-:: GetSlotActive:FrooxEngine.LogiX.WorldModel.GetSlotActive
-:: GetSlotActiveSelf:FrooxEngine.LogiX.WorldModel.GetSlotActiveSelf
-:: GetSlotName:FrooxEngine.LogiX.WorldModel.GetSlotName
-:: GetSlotOrderOffset:FrooxEngine.LogiX.WorldModel.GetSlotOrderOffset
-:: GetSlotPersistent:FrooxEngine.LogiX.WorldModel.GetSlotPersistent
-:: GetSlotPersistentSelf:FrooxEngine.LogiX.WorldModel.GetSlotPersistentSelf
-:: GetTag:FrooxEngine.LogiX.WorldModel.GetTag
-:: HasTag:FrooxEngine.LogiX.WorldModel.HasTag
-:: IndexOfChild:FrooxEngine.LogiX.WorldModel.IndexOfChild
-:: IsChildOf:FrooxEngine.LogiX.WorldModel.IsChildOf
-:: RootSlot:FrooxEngine.LogiX.WorldModel.RootSlot
-:: SetChildIndex:FrooxEngine.LogiX.WorldModel.SetChildIndex
-:: SetParent:FrooxEngine.LogiX.WorldModel.SetParent
-:: SetSlotActiveSelf:FrooxEngine.LogiX.WorldModel.SetSlotActiveSelf
-:: SetSlotName:FrooxEngine.LogiX.WorldModel.SetSlotName
-:: SetSlotOrderOffset:FrooxEngine.LogiX.WorldModel.SetSlotOrderOffset
-:: SetSlotPersistentSelf:FrooxEngine.LogiX.WorldModel.SetSlotPersistentSelf
-:: SetTag:FrooxEngine.LogiX.WorldModel.SetTag
-:: SlotChildrenEvents:FrooxEngine.LogiX.WorldModel.SlotChildrenEvents
-: String
-:: Characters
-::: FromUTF16:FrooxEngine.LogiX.String.Characters.FromUTF16
-::: FromUTF32:FrooxEngine.LogiX.String.Characters.FromUTF32
-::: GetCharacter:FrooxEngine.LogiX.String.Characters.GetCharacter
-::: IsControl:FrooxEngine.LogiX.String.Characters.IsControl
-::: IsDigit:FrooxEngine.LogiX.String.Characters.IsDigit
-::: IsLetter:FrooxEngine.LogiX.String.Characters.IsLetter
-::: IsLetterOrDigit:FrooxEngine.LogiX.String.Characters.IsLetterOrDigit
-::: IsLower:FrooxEngine.LogiX.String.Characters.IsLower
-::: IsNumber:FrooxEngine.LogiX.String.Characters.IsNumber
-::: IsPunctuation:FrooxEngine.LogiX.String.Characters.IsPunctuation
-::: IsSeparator:FrooxEngine.LogiX.String.Characters.IsSeparator
-::: IsSurrogate:FrooxEngine.LogiX.String.Characters.IsSurrogate
-::: IsSymbol:FrooxEngine.LogiX.String.Characters.IsSymbol
-::: IsUpper:FrooxEngine.LogiX.String.Characters.IsUpper
-::: IsWhiteSpace:FrooxEngine.LogiX.String.Characters.IsWhiteSpace
-::: StringToUTF32:FrooxEngine.LogiX.String.Characters.StringToUTF32
-::: SurrogatePairToUTF32:FrooxEngine.LogiX.String.Characters.SurrogatePairToUTF32
-::: ToLower:FrooxEngine.LogiX.String.Characters.ToLower
-::: ToUpper:FrooxEngine.LogiX.String.Characters.ToUpper
-::: ToUTF16:FrooxEngine.LogiX.String.Characters.ToUTF16
-:: Quick Format
-::: FormatAsTime:FrooxEngine.LogiX.String.FormatAsTime
-::: FormatDateTimeAsDate:FrooxEngine.LogiX.String.FormatDateTimeAsDate
-::: FormatDateTimeAsTime:FrooxEngine.LogiX.String.FormatDateTimeAsTime
-::: FormatTimespan:FrooxEngine.LogiX.String.FormatTimespan
-:: Special Characters
-::: Backspace:FrooxEngine.LogiX.String.Characters.Backspace
-::: Bell:FrooxEngine.LogiX.String.Characters.Bell
-::: CarriageReturn:FrooxEngine.LogiX.String.Characters.CarriageReturn
-::: FormFeed:FrooxEngine.LogiX.String.Characters.FormFeed
-::: NewLine:FrooxEngine.LogiX.String.Characters.NewLine
-::: Space:FrooxEngine.LogiX.String.Characters.Space
-::: Tab:FrooxEngine.LogiX.String.Characters.Tab
-::: VerticalTab:FrooxEngine.LogiX.String.Characters.VerticalTab
-:: Capitalize:FrooxEngine.LogiX.String.Capitalize
-:: CompareStrings:FrooxEngine.LogiX.String.CompareStrings
-:: Contains:FrooxEngine.LogiX.String.Contains
-:: EmptyString:FrooxEngine.LogiX.String.EmptyString
-:: EndsWith:FrooxEngine.LogiX.String.EndsWith
-:: EscapeString:FrooxEngine.LogiX.String.EscapeString
-:: FormatString:FrooxEngine.LogiX.String.FormatString
-:: GetType:FrooxEngine.LogiX.Operators.GetType
-:: IndexOfString:FrooxEngine.LogiX.String.IndexOfString
-:: IsStringEmpty:FrooxEngine.LogiX.String.IsStringEmpty
-:: NewLine:FrooxEngine.LogiX.String.NewLine
-:: NullString:FrooxEngine.LogiX.String.NullString
-:: ReplaceFirstSubstring:FrooxEngine.LogiX.String.ReplaceFirstSubstring
-:: ReplaceSubstring:FrooxEngine.LogiX.String.ReplaceSubstring
-:: ReverseString:FrooxEngine.LogiX.String.ReverseString
-:: StartsWith:FrooxEngine.LogiX.String.StartsWith
-:: StringInsert:FrooxEngine.LogiX.String.StringInsert
-:: StringJoin:FrooxEngine.LogiX.String.StringJoin
-:: StringLength:FrooxEngine.LogiX.String.StringLength
-:: StringRemove:FrooxEngine.LogiX.String.StringRemove
-:: StripRTF_Tags:FrooxEngine.LogiX.String.StripRTF_Tags
-:: Substring:FrooxEngine.LogiX.String.Substring
-:: ToLower:FrooxEngine.LogiX.String.ToLower
-:: ToUpper:FrooxEngine.LogiX.String.ToUpper
-:: TrimString:FrooxEngine.LogiX.String.TrimString
-:: UnescapeString:FrooxEngine.LogiX.String.UnescapeString
-: Tools
-:: DequipTooltip:FrooxEngine.LogiX.Tools.DequipTooltip
-:: EquipTooltip:FrooxEngine.LogiX.Tools.EquipTooltip
-:: GetRawDataTooltipHit:FrooxEngine.LogiX.Tools.GetRawDataTooltipHit
-:: GetTooltip:FrooxEngine.LogiX.Tools.GetTooltip
-:: HasTooltip:FrooxEngine.LogiX.Tools.HasTooltip
-:: IsTooltipEquipped:FrooxEngine.LogiX.Tools.IsTooltipEquipped
-:: IsTooltipInUse:FrooxEngine.LogiX.Tools.IsTooltipInUse
-:: RawDataTooltipEvents:FrooxEngine.LogiX.Tools.RawDataTooltipEvents
-:: TooltipEquippingSide:FrooxEngine.LogiX.Tools.TooltipEquippingSide
-:: TooltipEquippingSlot:FrooxEngine.LogiX.Tools.TooltipEquippingSlot
-:: TooltipEvents:FrooxEngine.LogiX.Tools.TooltipEvents
-: Transactions
-:: CurrencyConversion:FrooxEngine.LogiX.Transactions.CurrencyConversion
-:: TokensEnabled:FrooxEngine.LogiX.Transactions.TokensEnabled
-: Transform
-:: Bounds
-::: BoundingBoxFromCenterSize:FrooxEngine.LogiX.Transform.BoundingBoxFromCenterSize
-::: BoundingBoxProperties:FrooxEngine.LogiX.Transform.BoundingBoxProperties
-::: ComputeBoundingBox:FrooxEngine.LogiX.Transform.ComputeBoundingBox
-::: EmptyBoundingBox:FrooxEngine.LogiX.Transform.EmptyBoundingBox
-::: EncapsulateBounds:FrooxEngine.LogiX.Transform.EncapsulateBounds
-::: EncapsulatePoint:FrooxEngine.LogiX.Transform.EncapsulatePoint
-::: TransformBounds:FrooxEngine.LogiX.Transform.TransformBounds
-:: GetBackward:FrooxEngine.LogiX.WorldModel.GetBackward
-:: GetDown:FrooxEngine.LogiX.WorldModel.GetDown
-:: GetForward:FrooxEngine.LogiX.WorldModel.GetForward
-:: GetLeft:FrooxEngine.LogiX.WorldModel.GetLeft
-:: GetRight:FrooxEngine.LogiX.WorldModel.GetRight
-:: GetUp:FrooxEngine.LogiX.WorldModel.GetUp
-:: GlobalDirectionToLocal:FrooxEngine.LogiX.WorldModel.GlobalDirectionToLocal
-:: GlobalPointToLocal:FrooxEngine.LogiX.WorldModel.GlobalPointToLocal
-:: GlobalRotationToLocal:FrooxEngine.LogiX.WorldModel.GlobalRotationToLocal
-:: GlobalScaleToLocal:FrooxEngine.LogiX.WorldModel.GlobalScaleToLocal
-:: GlobalTransform:FrooxEngine.LogiX.WorldModel.GlobalTransform
-:: GlobalVectorToLocal:FrooxEngine.LogiX.WorldModel.GlobalVectorToLocal
-:: LocalDirectionToGlobal:FrooxEngine.LogiX.WorldModel.LocalDirectionToGlobal
-:: LocalPointToGlobal:FrooxEngine.LogiX.WorldModel.LocalPointToGlobal
-:: LocalRotationToGlobal:FrooxEngine.LogiX.WorldModel.LocalRotationToGlobal
-:: LocalScaleToGlobal:FrooxEngine.LogiX.WorldModel.LocalScaleToGlobal
-:: LocalTransform:FrooxEngine.LogiX.WorldModel.LocalTransform
-:: LocalVectorToGlobal:FrooxEngine.LogiX.WorldModel.LocalVectorToGlobal
-:: SetBackward:FrooxEngine.LogiX.WorldModel.SetBackward
-:: SetDown:FrooxEngine.LogiX.WorldModel.SetDown
-:: SetForward:FrooxEngine.LogiX.WorldModel.SetForward
-:: SetGlobalPosition:FrooxEngine.LogiX.WorldModel.SetGlobalPosition
-:: SetGlobalPositionRotation:FrooxEngine.LogiX.WorldModel.SetGlobalPositionRotation
-:: SetGlobalRotation:FrooxEngine.LogiX.WorldModel.SetGlobalRotation
-:: SetGlobalScale:FrooxEngine.LogiX.WorldModel.SetGlobalScale
-:: SetGlobalTransform:FrooxEngine.LogiX.WorldModel.SetGlobalTransform
-:: SetGlobalTransformMatrix:FrooxEngine.LogiX.WorldModel.SetGlobalTransformMatrix
-:: SetLeft:FrooxEngine.LogiX.WorldModel.SetLeft
-:: SetLocalPosition:FrooxEngine.LogiX.WorldModel.SetLocalPosition
-:: SetLocalPositionRotation:FrooxEngine.LogiX.WorldModel.SetLocalPositionRotation
-:: SetLocalRotation:FrooxEngine.LogiX.WorldModel.SetLocalRotation
-:: SetLocalScale:FrooxEngine.LogiX.WorldModel.SetLocalScale
-:: SetLocalTransform:FrooxEngine.LogiX.WorldModel.SetLocalTransform
-:: SetRight:FrooxEngine.LogiX.WorldModel.SetRight
-:: SetTRS:FrooxEngine.LogiX.WorldModel.SetTRS
-:: SetUp:FrooxEngine.LogiX.WorldModel.SetUp
-:: TransformDirection:FrooxEngine.LogiX.WorldModel.TransformDirection
-:: TransformPoint:FrooxEngine.LogiX.WorldModel.TransformPoint
-:: TransformRotation:FrooxEngine.LogiX.WorldModel.TransformRotation
-:: TransformScale:FrooxEngine.LogiX.WorldModel.TransformScale
-:: TransformVector:FrooxEngine.LogiX.WorldModel.TransformVector
-: UI
-:: Rect
-::: ClipRect:FrooxEngine.LogiX.Math.Rects.ClipRect
-::: EncapsulateRect:FrooxEngine.LogiX.Math.Rects.EncapsulateRect
-::: RectFromMinMax:FrooxEngine.LogiX.Math.Rects.RectFromMinMax
-::: RectFromPositionSize:FrooxEngine.LogiX.Math.Rects.RectFromPositionSize
-::: RectFromXYWH:FrooxEngine.LogiX.Math.Rects.RectFromXYWH
-::: RectTextInput:FrooxEngine.LogiX.Input.RectTextInput
-::: RectToMinMax:FrooxEngine.LogiX.Math.Rects.RectToMinMax
-::: RectToPositionSize:FrooxEngine.LogiX.Math.Rects.RectToPositionSize
-::: RectToXYWH:FrooxEngine.LogiX.Math.Rects.RectToXYWH
-::: TranslateRect:FrooxEngine.LogiX.Math.Rects.TranslateRect
-:: ClearFocus:FrooxEngine.LogiX.UI.ClearFocus
-:: DefocusFocusable:FrooxEngine.LogiX.UI.DefocusFocusable
-:: FocusFocusable:FrooxEngine.LogiX.UI.FocusFocusable
-:: HasLocalFocus:FrooxEngine.LogiX.UI.HasLocalFocus
-: Undo
-:: BeginUndoBatch:FrooxEngine.LogiX.Undo.BeginUndoBatch
-:: CreateFieldUndoStep:FrooxEngine.LogiX.Undo.CreateFieldUndoStep
-:: CreateReferenceUndoStep:FrooxEngine.LogiX.Undo.CreateReferenceUndoStep
-:: CreateSpawnUndoStep:FrooxEngine.LogiX.Undo.CreateSpawnUndoStep
-:: CreateTransformUndoStep:FrooxEngine.LogiX.Undo.CreateTransformUndoStep
-:: CreateTypeFieldUndoStep:FrooxEngine.LogiX.Undo.CreateTypeFieldUndoStep
-:: CreateUndoBatch:FrooxEngine.LogiX.Undo.CreateUndoBatch
-:: EndUndoBatch:FrooxEngine.LogiX.Undo.EndUndoBatch
-:: UndoableDestroy:FrooxEngine.LogiX.Undo.UndoableDestroy
-: Users
-:: Local Output
-::: DesktopFOV:FrooxEngine.LogiX.WorldModel.DesktopFOV
-::: EarsOverriden:FrooxEngine.LogiX.WorldModel.EarsOverriden
-::: EarsPosition:FrooxEngine.LogiX.WorldModel.EarsPosition
-::: EarsRotation:FrooxEngine.LogiX.WorldModel.EarsRotation
-::: EarsScale:FrooxEngine.LogiX.WorldModel.EarsScale
-::: ViewOverriden:FrooxEngine.LogiX.WorldModel.ViewOverriden
-::: ViewPosition:FrooxEngine.LogiX.WorldModel.ViewPosition
-::: ViewRotation:FrooxEngine.LogiX.WorldModel.ViewRotation
-::: ViewScale:FrooxEngine.LogiX.WorldModel.ViewScale
-:: User Root
-::: ControllerSlot:FrooxEngine.LogiX.WorldModel.ControllerSlot
-::: FeetPosition:FrooxEngine.LogiX.WorldModel.FeetPosition
-::: FeetRotation:FrooxEngine.LogiX.WorldModel.FeetRotation
-::: HandSlot:FrooxEngine.LogiX.WorldModel.HandSlot
-::: HeadFacingDirection:FrooxEngine.LogiX.WorldModel.HeadFacingDirection
-::: HeadFacingRotation:FrooxEngine.LogiX.WorldModel.HeadFacingRotation
-::: HeadPosition:FrooxEngine.LogiX.WorldModel.HeadPosition
-::: HeadRotation:FrooxEngine.LogiX.WorldModel.HeadRotation
-::: HeadSlot:FrooxEngine.LogiX.WorldModel.HeadSlot
-::: HipsPosition:FrooxEngine.LogiX.WorldModel.HipsPosition
-::: HipsRotation:FrooxEngine.LogiX.WorldModel.HipsRotation
-::: LeftHandPosition:FrooxEngine.LogiX.WorldModel.LeftHandPosition
-::: LeftHandRotation:FrooxEngine.LogiX.WorldModel.LeftHandRotation
-::: RightHandPosition:FrooxEngine.LogiX.WorldModel.RightHandPosition
-::: RightHandRotation:FrooxEngine.LogiX.WorldModel.RightHandRotation
-::: SetFeetPosition:FrooxEngine.LogiX.WorldModel.SetFeetPosition
-::: SetFeetRotation:FrooxEngine.LogiX.WorldModel.SetFeetRotation
-::: SetHeadFacingDirection:FrooxEngine.LogiX.WorldModel.SetHeadFacingDirection
-::: SetHeadFacingRotation:FrooxEngine.LogiX.WorldModel.SetHeadFacingRotation
-::: SetHeadPosition:FrooxEngine.LogiX.WorldModel.SetHeadPosition
-::: SetHeadRotation:FrooxEngine.LogiX.WorldModel.SetHeadRotation
-::: SetHipsPosition:FrooxEngine.LogiX.WorldModel.SetHipsPosition
-::: SetHipsRotation:FrooxEngine.LogiX.WorldModel.SetHipsRotation
-::: SetUserScale:FrooxEngine.LogiX.WorldModel.SetUserScale
-::: UserRootGlobalScale:FrooxEngine.LogiX.WorldModel.UserRootGlobalScale
-:: ActiveUserRootUser:FrooxEngine.LogiX.WorldModel.ActiveUserRootUser
-:: HostUser:FrooxEngine.LogiX.WorldModel.HostUser
-:: IsLocalUser:FrooxEngine.LogiX.WorldModel.IsLocalUser
-:: IsNeosDashOpened:FrooxEngine.LogiX.WorldModel.IsNeosDashOpened
-:: IsPlatformDashOpened:FrooxEngine.LogiX.WorldModel.IsPlatformDashOpened
-:: IsUserHost:FrooxEngine.LogiX.WorldModel.IsUserHost
-:: IsUserInEditMode:FrooxEngine.LogiX.WorldModel.IsUserInEditMode
-:: IsUserInKioskMode:FrooxEngine.LogiX.WorldModel.IsUserInKioskMode
-:: IsUserPatron:FrooxEngine.LogiX.WorldModel.IsUserPatron
-:: IsUserPresent:FrooxEngine.LogiX.WorldModel.IsUserPresent
-:: IsUserPresentInHeadset:FrooxEngine.LogiX.WorldModel.IsUserPresentInHeadset
-:: IsUserPresentInWorld:FrooxEngine.LogiX.WorldModel.IsUserPresentInWorld
-:: IsUserSilenced:FrooxEngine.LogiX.WorldModel.IsUserSilenced
-:: LocalUser:FrooxEngine.LogiX.WorldModel.LocalUser
-:: LocalUserRoot:FrooxEngine.LogiX.WorldModel.LocalUserRoot
-:: LocalUserSlot:FrooxEngine.LogiX.WorldModel.LocalUserSlot
-:: LocalUserSpace:FrooxEngine.LogiX.WorldModel.LocalUserSpace
-:: UserActiveViewTargettingController:FrooxEngine.LogiX.WorldModel.UserActiveViewTargettingController
-:: UserDownloadedBytes:FrooxEngine.LogiX.WorldModel.UserDownloadedBytes
-:: UserDownloadSpeed:FrooxEngine.LogiX.WorldModel.UserDownloadSpeed
-:: UserDownloadSpeedMax:FrooxEngine.LogiX.WorldModel.UserDownloadSpeedMax
-:: UserFPS:FrooxEngine.LogiX.WorldModel.UserFPS
-:: UserFromID:FrooxEngine.LogiX.WorldModel.UserFromID
-:: UserFromUsername:FrooxEngine.LogiX.WorldModel.UserFromUsername
-:: UserHeadOutputDevice:FrooxEngine.LogiX.WorldModel.UserHeadOutputDevice
-:: UserJoined:FrooxEngine.LogiX.WorldModel.UserJoined
-:: UserLeft:FrooxEngine.LogiX.WorldModel.UserLeft
-:: UserMachineID:FrooxEngine.LogiX.WorldModel.UserMachineID
-:: UserPing:FrooxEngine.LogiX.WorldModel.UserPing
-:: UserPlatform:FrooxEngine.LogiX.WorldModel.UserPlatform
-:: UserPrimaryHand:FrooxEngine.LogiX.WorldModel.UserPrimaryHand
-:: UserQueuedMessages:FrooxEngine.LogiX.WorldModel.UserQueuedMessages
-:: UserRecordingVoiceMessage:FrooxEngine.LogiX.WorldModel.UserRecordingVoiceMessage
-:: UserRootSlot:FrooxEngine.LogiX.WorldModel.UserRootSlot
-:: UserSpawn:FrooxEngine.LogiX.WorldModel.UserSpawn
-:: UserUploadedBytes:FrooxEngine.LogiX.WorldModel.UserUploadedBytes
-:: UserUploadSpeed:FrooxEngine.LogiX.WorldModel.UserUploadSpeed
-:: UserUploadSpeedMax:FrooxEngine.LogiX.WorldModel.UserUploadSpeedMax
-:: UserUserID:FrooxEngine.LogiX.WorldModel.UserUserID
-:: UserUsername:FrooxEngine.LogiX.WorldModel.UserUsername
-:: UserUserRoot:FrooxEngine.LogiX.WorldModel.UserUserRoot
-:: UserViewReferenceActive:FrooxEngine.LogiX.WorldModel.UserViewReferenceActive
-:: UserViewVoiceActive:FrooxEngine.LogiX.WorldModel.UserViewVoiceActive
-:: UserVoiceMode:FrooxEngine.LogiX.WorldModel.UserVoiceMode
-:: UserVR_Active:FrooxEngine.LogiX.WorldModel.UserVR_Active
-: Utility
-:: EmptyGUID:FrooxEngine.LogiX.Utility.EmptyGUID
-:: IndexOfFirstMatch<T>:FrooxEngine.LogiX.Utility.IndexOfFirstMatch`1
-:: ParseGUID:FrooxEngine.LogiX.Utility.ParseGUID
-:: RandomGUID:FrooxEngine.LogiX.Utility.RandomGUID
-: Variables
-:: Storage
-::: ReferenceRegister<T>:FrooxEngine.LogiX.Data.ReferenceRegister`1
-::: SlotRegister:FrooxEngine.LogiX.Data.SlotRegister
-::: UserRegister:FrooxEngine.LogiX.Data.UserRegister
-::: ValueRegister<T>:FrooxEngine.LogiX.Data.ValueRegister`1
-:: ClearDynamicVariables:FrooxEngine.LogiX.Data.ClearDynamicVariables
-:: ClearDynamicVariablesOfType<T>:FrooxEngine.LogiX.Data.ClearDynamicVariablesOfType`1
-:: CreateDynamicVariable<T>:FrooxEngine.LogiX.Data.CreateDynamicVariable`1
-:: DeleteDynamicVariable<T>:FrooxEngine.LogiX.Data.DeleteDynamicVariable`1
-:: DynamicVariableInput<T>:FrooxEngine.LogiX.Data.DynamicVariableInput`1
-:: DynamicVariableInputWithEvents<T>:FrooxEngine.LogiX.Data.DynamicVariableInputWithEvents`1
-:: ReadCloudVariable<T>:FrooxEngine.LogiX.Data.ReadCloudVariable`1
-:: ReadDynamicVariable<T>:FrooxEngine.LogiX.Data.ReadDynamicVariable`1
-:: WriteCloudVariable<T>:FrooxEngine.LogiX.Data.WriteCloudVariable`1
-:: WriteDynamicVariable<T>:FrooxEngine.LogiX.Data.WriteDynamicVariable`1
-:: WriteOrCreateDynamicVariable<T>:FrooxEngine.LogiX.Data.WriteOrCreateDynamicVariable`1
-: Visualization
-:: FlashHighlightHierarchy:FrooxEngine.LogiX.Nodes.Visualization.FlashHighlightHierarchy
-: World
-:: FocusWorld:FrooxEngine.LogiX.WorldNodes.FocusWorld
-:: OpenWorld:FrooxEngine.LogiX.WorldNodes.OpenWorld
-:: WorldAccessLevel:FrooxEngine.LogiX.WorldNodes.WorldAccessLevel
-:: WorldAwayKickEnabled:FrooxEngine.LogiX.WorldNodes.WorldAwayKickEnabled
-:: WorldAwayKickMinutes:FrooxEngine.LogiX.WorldNodes.WorldAwayKickMinutes
-:: WorldDescription:FrooxEngine.LogiX.WorldNodes.WorldDescription
-:: WorldHideFromListing:FrooxEngine.LogiX.WorldNodes.WorldHideFromListing
-:: WorldMaxUsers:FrooxEngine.LogiX.WorldNodes.WorldMaxUsers
-:: WorldMobileFriendly:FrooxEngine.LogiX.WorldNodes.WorldMobileFriendly
-:: WorldName:FrooxEngine.LogiX.WorldNodes.WorldName
-:: WorldSaved:FrooxEngine.LogiX.WorldNodes.WorldSaved
-:: WorldSessionID:FrooxEngine.LogiX.WorldNodes.WorldSessionID
-:: WorldSessionURL:FrooxEngine.LogiX.WorldNodes.WorldSessionURL
-:: WorldSessionWebURL:FrooxEngine.LogiX.WorldNodes.WorldSessionWebURL
-:: WorldURL:FrooxEngine.LogiX.WorldNodes.WorldURL
-:: WorldUserCount:FrooxEngine.LogiX.WorldNodes.WorldUserCount
-: CacheNode<T>:FrooxEngine.LogiX.CacheNode`1
-: DelayValueNode<T>:FrooxEngine.LogiX.DelayValueNode`1
-: Demultiplexer<T>:FrooxEngine.LogiX.Operators.Demultiplexer`1
-: Display_Dummy:FrooxEngine.LogiX.Display.Display_Dummy
-: DisplayImpulse:FrooxEngine.LogiX.Display.DisplayImpulse
-: ImpulseRelay:FrooxEngine.LogiX.ImpulseRelay
-: Multiplexer<T>:FrooxEngine.LogiX.Operators.Multiplexer`1
-: PickRandom<T>:FrooxEngine.LogiX.Operators.PickRandom`1
-: RelayNode<T>:FrooxEngine.LogiX.RelayNode`1
-: UpdatingRelayNode<T>:FrooxEngine.LogiX.UpdatingRelayNode`1
+ Actions
+# --@DecrementFloatNode#FrooxEngine.LogiX.Actions.DecrementFloatNode
+# Drive Playback@DrivePlaybackNode#FrooxEngine.LogiX.Actions.DrivePlaybackNode
+# Drive@DriveValueNode<T>#FrooxEngine.LogiX.Actions.DriveValueNode`1
+# ++@IncrementFloatNode#FrooxEngine.LogiX.Actions.IncrementFloatNode
+# Tween@TweenValueNode<T>#FrooxEngine.LogiX.Animation.Tweening.TweenValueNode`1
+# Write Latch@WriteLatch<T>#FrooxEngine.LogiX.WriteLatch`1
+# Write Ref@WriteReferenceNode<T>#FrooxEngine.LogiX.Actions.WriteReferenceNode`1
+# Write Ref Latch@WriteRefLatch<T>#FrooxEngine.LogiX.Actions.WriteRefLatch`1
+# Write@WriteValueNode<T>#FrooxEngine.LogiX.Actions.WriteValueNode`1
+ Assets
+# Attach Audio Clip@AttachAudioClip#FrooxEngine.LogiX.Assets.AttachAudioClip
+# Attach Mesh@AttachMesh#FrooxEngine.LogiX.Assets.AttachMesh
+# Attach Sprite@AttachSprite#FrooxEngine.LogiX.Assets.AttachSprite
+# Attach Texture 2D@AttachTexture2D#FrooxEngine.LogiX.Assets.AttachTexture2D
+# Bake Meshes@BakeMeshes#FrooxEngine.LogiX.Assets.BakeMeshes
+# Find Animation Track Index@FindAnimationTrackIndex#FrooxEngine.LogiX.Assets.FindAnimationTrackIndex
+# Format Locale String@FormatLocaleString#FrooxEngine.LogiX.Assets.FormatLocaleString
+# Get Asset`1@GetAsset<A>#FrooxEngine.LogiX.Assets.GetAsset`1
+# Get Texture 2D Pixel@GetTexture2D_Pixel#FrooxEngine.LogiX.Assets.GetTexture2D_Pixel
+# Get Texture 3D Pixel@GetTexture3D_Pixel#FrooxEngine.LogiX.Assets.GetTexture3D_Pixel
+# Locale Message Count@LocaleMessageCount#FrooxEngine.LogiX.Assets.LocaleMessageCount
+# Sample Animation Track`1@SampleAnimationTrack<T>#FrooxEngine.LogiX.Assets.SampleAnimationTrack`1
+# Sample Texture2D UV@SampleTexture2D_UV#FrooxEngine.LogiX.Assets.SampleTexture2D_UV
+# Sample Texture3D UVW@SampleTexture3D_UVW#FrooxEngine.LogiX.Assets.SampleTexture3D_UVW
+# Texture 2D Format@Texture2D_Format#FrooxEngine.LogiX.Assets.Texture2D_Format
+# Texture 3D Format@Texture3D_Format#FrooxEngine.LogiX.Assets.Texture3D_Format
+ Audio
+# Audio Clip Input@AudioClipInput#FrooxEngine.LogiX.Audio.AudioClipInput
+# Play One Shot@PlayOneShot#FrooxEngine.LogiX.Audio.PlayOneShot
+# Play One Shot & Wait@PlayOneShotAndWait#FrooxEngine.LogiX.Audio.PlayOneShotAndWait
+ Avatar
+# Anchors
+## Anchored User@AnchoredUser#FrooxEngine.LogiX.Avatar.AnchoredUser
+## Anchor Events@AnchorEvents#FrooxEngine.LogiX.Avatar.AnchorEvents
+## Anchor Locomotion Data@AnchorLocomotionData#FrooxEngine.LogiX.Avatar.AnchorLocomotionData
+## Anchor User@AnchorUser#FrooxEngine.LogiX.Avatar.AnchorUser
+## Get User Anchor@GetUserAnchor#FrooxEngine.LogiX.Avatar.GetUserAnchor
+## Is User Anchored@IsUserAnchored#FrooxEngine.LogiX.Avatar.IsUserAnchored
+## Release User@ReleaseUser#FrooxEngine.LogiX.Avatar.ReleaseUser
+# BodyNode
+## Chirality@BodyNodeChirality#FrooxEngine.LogiX.Utility.BodyNodeChirality
+## Compose Finger@ComposeFinger#FrooxEngine.LogiX.Utility.ComposeFinger
+## Finger Node Index@FingerNodeIndex#FrooxEngine.LogiX.Utility.FingerNodeIndex
+## Other Side@GetBodyNodeOtherSide#FrooxEngine.LogiX.Utility.GetBodyNodeOtherSide
+## Get Side@GetBodyNodeSide#FrooxEngine.LogiX.Utility.GetBodyNodeSide
+## Finger Segment@GetFingerSegmentType#FrooxEngine.LogiX.Utility.GetFingerSegmentType
+## Finger Type@GetFingerType#FrooxEngine.LogiX.Utility.GetFingerType
+## Is Eye@IsBodyNodeEye#FrooxEngine.LogiX.Utility.IsBodyNodeEye
+## Relative Body Node@RelativeBodyNode#FrooxEngine.LogiX.Utility.RelativeBodyNode
+# Body Node Slot@BodyNodeSlot#FrooxEngine.LogiX.Avatar.BodyNodeSlot
+# Default User Scale@DefaultUserScale#FrooxEngine.LogiX.Avatar.DefaultUserScale
+# Equip Avatar@EquipAvatar#FrooxEngine.LogiX.Avatar.EquipAvatar
+# Finger Pose@FingerPose#FrooxEngine.LogiX.Avatar.FingerPose
+# Nearest User Hand@NearestUserHand#FrooxEngine.LogiX.Avatar.NearestUserHand
+# Nearest User Head@NearestUserHead#FrooxEngine.LogiX.Avatar.NearestUserHead
+# User Finger Pose Source@UserFingerPoseSource#FrooxEngine.LogiX.Avatar.UserFingerPoseSource
+ Color
+# Blending
+## Additive Blend@ColorAdditiveBlend#FrooxEngine.LogiX.Color.ColorAdditiveBlend
+## Alpha Blend@ColorAlphaBlend#FrooxEngine.LogiX.Color.ColorAlphaBlend
+## Multiplicative Blend@ColorMultiplicativeBlend#FrooxEngine.LogiX.Color.ColorMultiplicativeBlend
+## Soft Additive Blend@ColorSoftAdditiveBlend#FrooxEngine.LogiX.Color.ColorSoftAdditiveBlend
+# Channels
+## Add A@ColorAddAlpha#FrooxEngine.LogiX.Color.ColorAddAlpha
+## Add B@ColorAddBlue#FrooxEngine.LogiX.Color.ColorAddBlue
+## Add B (HDR)@ColorAddBlueHDR#FrooxEngine.LogiX.Color.ColorAddBlueHDR
+## Add G@ColorAddGreen#FrooxEngine.LogiX.Color.ColorAddGreen
+## Add G (HDR)@ColorAddGreenHDR#FrooxEngine.LogiX.Color.ColorAddGreenHDR
+## Add Hue@ColorAddHue#FrooxEngine.LogiX.Color.ColorAddHue
+## Add R@ColorAddRed#FrooxEngine.LogiX.Color.ColorAddRed
+## Add R (HDR)@ColorAddRedHDR#FrooxEngine.LogiX.Color.ColorAddRedHDR
+## Add Saturation@ColorAddSaturation#FrooxEngine.LogiX.Color.ColorAddSaturation
+## Add Value@ColorAddValue#FrooxEngine.LogiX.Color.ColorAddValue
+## Add Value (HDR)@ColorAddValueHDR#FrooxEngine.LogiX.Color.ColorAddValueHDR
+## Mul A@ColorMulAlpha#FrooxEngine.LogiX.Color.ColorMulAlpha
+## Mul B@ColorMulBlue#FrooxEngine.LogiX.Color.ColorMulBlue
+## Mul G@ColorMulGreen#FrooxEngine.LogiX.Color.ColorMulGreen
+## Mul Hue@ColorMulHue#FrooxEngine.LogiX.Color.ColorMulHue
+## Mul R@ColorMulRed#FrooxEngine.LogiX.Color.ColorMulRed
+## Mul RGB@ColorMulRGB#FrooxEngine.LogiX.Color.ColorMulRGB
+## Mul Saturation@ColorMulSaturation#FrooxEngine.LogiX.Color.ColorMulSaturation
+## Mul Value@ColorMulValue#FrooxEngine.LogiX.Color.ColorMulValue
+## Set A@ColorSetAlpha#FrooxEngine.LogiX.Color.ColorSetAlpha
+## Set B@ColorSetBlue#FrooxEngine.LogiX.Color.ColorSetBlue
+## Set G@ColorSetGreen#FrooxEngine.LogiX.Color.ColorSetGreen
+## Set Hue@ColorSetHue#FrooxEngine.LogiX.Color.ColorSetHue
+## Set R@ColorSetRed#FrooxEngine.LogiX.Color.ColorSetRed
+## Set Saturation@ColorSetSaturation#FrooxEngine.LogiX.Color.ColorSetSaturation
+## Set Value@ColorSetValue#FrooxEngine.LogiX.Color.ColorSetValue
+# Black Body Color@BlackBodyColor#FrooxEngine.LogiX.Color.BlackBodyColor
+# Color From Hex Code@ColorFromHexCode#FrooxEngine.LogiX.Color.ColorFromHexCode
+# Hue@ColorHue#FrooxEngine.LogiX.Color.ColorHue
+# Luminance@ColorLuminance#FrooxEngine.LogiX.Color.ColorLuminance
+# Color (RGBA)@ColorTextInput#FrooxEngine.LogiX.Input.ColorTextInput
+# Color To Hex Code@ColorToHexCode#FrooxEngine.LogiX.Color.ColorToHexCode
+# To HSL@ColorToHSL#FrooxEngine.LogiX.Color.ColorToHSL
+# To HSV@ColorToHSV#FrooxEngine.LogiX.Color.ColorToHSV
+# From HSL@HSL_ToColor#FrooxEngine.LogiX.Color.HSL_ToColor
+# From HSV@HSV_ToColor#FrooxEngine.LogiX.Color.HSV_ToColor
+# Invert@InvertColor#FrooxEngine.LogiX.Color.InvertColor
+ Components
+# Get Component Enabled@GetComponentEnabled#FrooxEngine.LogiX.Components.GetComponentEnabled
+# Set Component Enabled@SetComponentEnabled#FrooxEngine.LogiX.Components.SetComponentEnabled
+ Debug
+# Debug Axes@DebugAxes#FrooxEngine.LogiX.Debug.DebugAxes
+# Debug Box@DebugBox#FrooxEngine.LogiX.Debug.DebugBox
+# Debug Line@DebugLine#FrooxEngine.LogiX.Debug.DebugLine
+# Debug Sphere@DebugSphere#FrooxEngine.LogiX.Debug.DebugSphere
+# Debug Text@DebugText#FrooxEngine.LogiX.Debug.DebugText
+# Debug Triangle@DebugTriangle#FrooxEngine.LogiX.Debug.DebugTriangle
+# Debug Vector@DebugVector#FrooxEngine.LogiX.Debug.DebugVector
+# Estimated Master Clock Error@EstimatedMasterClockError#FrooxEngine.LogiX.Debug.EstimatedMasterClockError
+ Experimental
+# Reactivate Dash@ReactivateDash#FrooxEngine.LogiX.Experimental.ReactivateDash
+# Write Text To File@WriteTextToFile#FrooxEngine.LogiX.Experimental.WriteTextToFile
+ Flow
+# Events
+## On Activated@OnActivatedNode#FrooxEngine.LogiX.ProgramFlow.OnActivatedNode
+## On Deactivated@OnDeactivatedNode#FrooxEngine.LogiX.ProgramFlow.OnDeactivatedNode
+## On Destroying@OnDestroyingNode#FrooxEngine.LogiX.ProgramFlow.OnDestroyingNode
+## On Destroy@OnDestroyNode#FrooxEngine.LogiX.ProgramFlow.OnDestroyNode
+## On Duplicate@OnDuplicateNode#FrooxEngine.LogiX.ProgramFlow.OnDuplicateNode
+## On Loaded@OnLoadedNode#FrooxEngine.LogiX.ProgramFlow.OnLoadedNode
+## On Paste@OnPasteNode#FrooxEngine.LogiX.ProgramFlow.OnPasteNode
+## On Saving@OnSavingNode#FrooxEngine.LogiX.ProgramFlow.OnSavingNode
+## On Start@OnStartNode#FrooxEngine.LogiX.ProgramFlow.OnStartNode
+# Boolean Latch@BooleanToggle#FrooxEngine.LogiX.ProgramFlow.BooleanToggle
+# Delay@DelayNode#FrooxEngine.LogiX.ProgramFlow.DelayNode
+# Delay with value@DelayWithValueNode<T>#FrooxEngine.LogiX.ProgramFlow.DelayWithValueNode`1
+# Dynamic Impulse Receiver@DynamicImpulseReceiver#FrooxEngine.LogiX.ProgramFlow.DynamicImpulseReceiver
+# Dynamic Impulse Receiver With Value`1@DynamicImpulseReceiverWithValue<T>#FrooxEngine.LogiX.ProgramFlow.DynamicImpulseReceiverWithValue`1
+# Dynamic Impulse Trigger@DynamicImpulseTrigger#FrooxEngine.LogiX.ProgramFlow.DynamicImpulseTrigger
+# Dynamic Impulse Trigger With Value`1@DynamicImpulseTriggerWithValue<T>#FrooxEngine.LogiX.ProgramFlow.DynamicImpulseTriggerWithValue`1
+# Fire On Change@FireOnChange<T>#FrooxEngine.LogiX.ProgramFlow.FireOnChange`1
+# Fire On False@FireOnFalse#FrooxEngine.LogiX.ProgramFlow.FireOnFalse
+# Fire On True@FireOnTrue#FrooxEngine.LogiX.ProgramFlow.FireOnTrue
+# Fire While True@FireWhileTrue#FrooxEngine.LogiX.ProgramFlow.FireWhileTrue
+# For@ForNode#FrooxEngine.LogiX.ProgramFlow.ForNode
+# If@IfNode#FrooxEngine.LogiX.ProgramFlow.IfNode
+# Impulse Demultiplexer@ImpulseDemultiplexer#FrooxEngine.LogiX.ProgramFlow.ImpulseDemultiplexer
+# Impulse Multiplexer@ImpulseMultiplexer#FrooxEngine.LogiX.ProgramFlow.ImpulseMultiplexer
+# Local Fire On Change`1@LocalFireOnChange<T>#FrooxEngine.LogiX.ProgramFlow.LocalFireOnChange`1
+# Local Fire On False@LocalFireOnFalse#FrooxEngine.LogiX.ProgramFlow.LocalFireOnFalse
+# Local Fire On True@LocalFireOnTrue#FrooxEngine.LogiX.ProgramFlow.LocalFireOnTrue
+# Local Impulse Timeout@LocalImpulseTimeout#FrooxEngine.LogiX.ProgramFlow.LocalImpulseTimeout
+# Local Leaky Impulse Bucket@LocalLeakyImpulseBucket#FrooxEngine.LogiX.ProgramFlow.LocalLeakyImpulseBucket
+# One Per Frame@OnePerFrame#FrooxEngine.LogiX.ProgramFlow.OnePerFrame
+# Pulse Random@PulseRandom#FrooxEngine.LogiX.ProgramFlow.PulseRandom
+# Sequence@SequenceImpulse#FrooxEngine.LogiX.ProgramFlow.SequenceImpulse
+# Timer@TimerNode#FrooxEngine.LogiX.ProgramFlow.TimerNode
+# Update@UpdateNode#FrooxEngine.LogiX.ProgramFlow.UpdateNode
+# Updates Delay@UpdatesDelayNode#FrooxEngine.LogiX.ProgramFlow.UpdatesDelayNode
+# Updates Delay with value@UpdatesDelayWithValueNode<T>#FrooxEngine.LogiX.ProgramFlow.UpdatesDelayWithValueNode`1
+# While@WhileNode#FrooxEngine.LogiX.ProgramFlow.WhileNode
+ Formatting
+# Current Culture@CurrentCulture#FrooxEngine.LogiX.CurrentCulture
+# Invariant Culture@InvariantCulture#FrooxEngine.LogiX.InvariantCulture
+ Input
+# Uncommon
+## byte@ByteInput#FrooxEngine.LogiX.Input.ByteInput
+## decimal@DecimalInput#FrooxEngine.LogiX.Input.DecimalInput
+## double2@Double2Input#FrooxEngine.LogiX.Input.Double2Input
+## double3@Double3Input#FrooxEngine.LogiX.Input.Double3Input
+## double4@Double4Input#FrooxEngine.LogiX.Input.Double4Input
+## double@DoubleInput#FrooxEngine.LogiX.Input.DoubleInput
+## long2@Long2Input#FrooxEngine.LogiX.Input.Long2Input
+## long3@Long3Input#FrooxEngine.LogiX.Input.Long3Input
+## long4@Long4Input#FrooxEngine.LogiX.Input.Long4Input
+## long@LongInput#FrooxEngine.LogiX.Input.LongInput
+## sbyte@SbyteInput#FrooxEngine.LogiX.Input.SbyteInput
+## short@ShortInput#FrooxEngine.LogiX.Input.ShortInput
+## System.TimeSpan@TimeSpanInput#FrooxEngine.LogiX.Input.TimeSpanInput
+## ulong2@Ulong2Input#FrooxEngine.LogiX.Input.Ulong2Input
+## ulong3@Ulong3Input#FrooxEngine.LogiX.Input.Ulong3Input
+## ulong4@Ulong4Input#FrooxEngine.LogiX.Input.Ulong4Input
+## ulong@UlongInput#FrooxEngine.LogiX.Input.UlongInput
+## ushort@UshortInput#FrooxEngine.LogiX.Input.UshortInput
+# bool2@Bool2Input#FrooxEngine.LogiX.Input.Bool2Input
+# bool3@Bool3Input#FrooxEngine.LogiX.Input.Bool3Input
+# bool4@Bool4Input#FrooxEngine.LogiX.Input.Bool4Input
+# bool@BoolInput#FrooxEngine.LogiX.Input.BoolInput
+# char@CharInput#FrooxEngine.LogiX.Input.CharInput
+# Color (RGBA)@ColorTextInput#FrooxEngine.LogiX.Input.ColorTextInput
+# dT@DeltaTimeNode#FrooxEngine.LogiX.Input.DeltaTimeNode
+# Elapsed Time@ElapsedTimeNode#FrooxEngine.LogiX.Input.ElapsedTimeNode
+# Enum Input`1@EnumInput<E>#FrooxEngine.LogiX.Input.EnumInput`1
+# Euler@EulerAnglesInput#FrooxEngine.LogiX.Input.EulerAnglesInput
+# float2@Float2Input#FrooxEngine.LogiX.Input.Float2Input
+# float3@Float3Input#FrooxEngine.LogiX.Input.Float3Input
+# float4@Float4Input#FrooxEngine.LogiX.Input.Float4Input
+# float@FloatInput#FrooxEngine.LogiX.Input.FloatInput
+# Impulse@ImpulseInput#FrooxEngine.LogiX.Input.ImpulseInput
+# int2@Int2Input#FrooxEngine.LogiX.Input.Int2Input
+# int3@Int3Input#FrooxEngine.LogiX.Input.Int3Input
+# int4@Int4Input#FrooxEngine.LogiX.Input.Int4Input
+# int@IntInput#FrooxEngine.LogiX.Input.IntInput
+# Rect@RectTextInput#FrooxEngine.LogiX.Input.RectTextInput
+# Stopwatch@StopwatchNode#FrooxEngine.LogiX.Input.StopwatchNode
+# string@StringInput#FrooxEngine.LogiX.Input.StringInput
+# T*10@Time10Node#FrooxEngine.LogiX.Input.Time10Node
+# T/2@TimeHalfNode#FrooxEngine.LogiX.Input.TimeHalfNode
+# T@TimeNode#FrooxEngine.LogiX.Input.TimeNode
+# T/10@TimeTenthNode#FrooxEngine.LogiX.Input.TimeTenthNode
+# Type@TypeInput#FrooxEngine.LogiX.Input.TypeInput
+# uint2@Uint2Input#FrooxEngine.LogiX.Input.Uint2Input
+# uint3@Uint3Input#FrooxEngine.LogiX.Input.Uint3Input
+# uint4@Uint4Input#FrooxEngine.LogiX.Input.Uint4Input
+# uint@UintInput#FrooxEngine.LogiX.Input.UintInput
+# Uri@UriInput#FrooxEngine.LogiX.Input.UriInput
+# UtcNow@UtcNowNode#FrooxEngine.LogiX.Input.UtcNowNode
+ Input Devices
+# Controllers
+## Cosmos Controller@CosmosController#FrooxEngine.LogiX.Input.CosmosController
+## HPReverb Controller@HPReverbController#FrooxEngine.LogiX.Input.HPReverbController
+## Index Controller@IndexController#FrooxEngine.LogiX.Input.IndexController
+## Standard Controller@StandardController#FrooxEngine.LogiX.Input.StandardController
+## Touch Controller@TouchController#FrooxEngine.LogiX.Input.TouchController
+## Vive Controller@ViveController#FrooxEngine.LogiX.Input.ViveController
+## Windows MR Controller@WindowsMR_Controller#FrooxEngine.LogiX.Input.WindowsMR_Controller
+# Haptics
+## Trigger Haptics In Hierarchy@TriggerHapticsInHierarchy#FrooxEngine.LogiX.Input.TriggerHapticsInHierarchy
+## Trigger Haptics On Controller@TriggerHapticsOnController#FrooxEngine.LogiX.Input.TriggerHapticsOnController
+# Keyboard
+## Key Held@KeyHeld#FrooxEngine.LogiX.Input.KeyHeld
+## Key Pressed@KeyPressed#FrooxEngine.LogiX.Input.KeyPressed
+## Key Released@KeyReleased#FrooxEngine.LogiX.Input.KeyReleased
+## Type Delta@TypeDelta#FrooxEngine.LogiX.Input.TypeDelta
+# Mouse
+## Desktop Mouse Position@DesktopMousePosition#FrooxEngine.LogiX.Input.DesktopMousePosition
+## Left Mouse Button Held@LeftMouseButtonHeld#FrooxEngine.LogiX.Input.LeftMouseButtonHeld
+## Left Mouse Button Released@LeftMouseButtonReleased#FrooxEngine.LogiX.Input.LeftMouseButtonReleased
+## Left Mouse Pressed@LeftMousePressed#FrooxEngine.LogiX.Input.LeftMousePressed
+## Middle Mouse Button Held@MiddleMouseButtonHeld#FrooxEngine.LogiX.Input.MiddleMouseButtonHeld
+## Middle Mouse Button Released@MiddleMouseButtonReleased#FrooxEngine.LogiX.Input.MiddleMouseButtonReleased
+## Middle Mouse Pressed@MiddleMousePressed#FrooxEngine.LogiX.Input.MiddleMousePressed
+## Mouse Movement Delta@MouseMovementDelta#FrooxEngine.LogiX.Input.MouseMovementDelta
+## Mouse Position@MousePosition#FrooxEngine.LogiX.Input.MousePosition
+## Mouse Scroll Wheel Delta@MouseScrollWheelDelta#FrooxEngine.LogiX.Input.MouseScrollWheelDelta
+## Right Mouse Button Held@RightMouseButtonHeld#FrooxEngine.LogiX.Input.RightMouseButtonHeld
+## Right Mouse Button Released@RightMouseButtonReleased#FrooxEngine.LogiX.Input.RightMouseButtonReleased
+## Right Mouse Pressed@RightMousePressed#FrooxEngine.LogiX.Input.RightMousePressed
+# General Headset@GeneralHeadset#FrooxEngine.LogiX.Input.GeneralHeadset
+ Interaction
+# Grabbable
+## Grabbable Grabber@GrabbableGrabber#FrooxEngine.LogiX.Interaction.GrabbableGrabber
+## Grabber Body Node@GrabberBodyNode#FrooxEngine.LogiX.Interaction.GrabberBodyNode
+## Is Grabbable Grabbed@IsGrabbableGrabbed#FrooxEngine.LogiX.Interaction.IsGrabbableGrabbed
+## Is Grabbable Scalable@IsGrabbableScalable#FrooxEngine.LogiX.Interaction.IsGrabbableScalable
+## On Grabbable Grabbed@OnGrabbableGrabbed#FrooxEngine.LogiX.Interaction.OnGrabbableGrabbed
+## On Grabbable Receiver Surface Received@OnGrabbableReceiverSurfaceReceived#FrooxEngine.LogiX.Interaction.OnGrabbableReceiverSurfaceReceived
+## On Grabbable Released@OnGrabbableReleased#FrooxEngine.LogiX.Interaction.OnGrabbableReleased
+## Release All Grabbed@ReleaseAllGrabbed#FrooxEngine.LogiX.Interaction.ReleaseAllGrabbed
+# Touchable
+## Touchable Events@TouchableEvents#FrooxEngine.LogiX.Interaction.TouchableEvents
+# Button Events@ButtonEvents#FrooxEngine.LogiX.Interaction.ButtonEvents
+# Close Context Menu@CloseContextMenu#FrooxEngine.LogiX.Interaction.CloseContextMenu
+# Is Context Menu Open@IsContextMenuOpen#FrooxEngine.LogiX.Interaction.IsContextMenuOpen
+# Notify Modified@NotifyModified#FrooxEngine.LogiX.Interaction.NotifyModified
+# Text Editor Events@TextEditorEvents#FrooxEngine.LogiX.Interaction.TextEditorEvents
+# Tip Jar Events@TipJarEvents#FrooxEngine.LogiX.Interaction.TipJarEvents
+ Locomotion
+# Get Active Locomotion Module@GetActiveLocomotionModule#FrooxEngine.LogiX.Locomotion.GetActiveLocomotionModule
+# Install Locomotion Modules@InstallLocomotionModules#FrooxEngine.LogiX.Locomotion.InstallLocomotionModules
+# On Grip End@OnGripEnd#FrooxEngine.LogiX.Physics.OnGripEnd
+# On Grip Start@OnGripStart#FrooxEngine.LogiX.Physics.OnGripStart
+# On Grip Stay@OnGripStay#FrooxEngine.LogiX.Physics.OnGripStay
+# On Locomotion Grip Begin@OnLocomotionGripBegin#FrooxEngine.LogiX.Physics.OnLocomotionGripBegin
+# On Locomotion Grip End@OnLocomotionGripEnd#FrooxEngine.LogiX.Physics.OnLocomotionGripEnd
+# Switch Locomotion Module@SwitchLocomotionModule#FrooxEngine.LogiX.Locomotion.SwitchLocomotionModule
+ Math
+# Binary
+## Adder@AdderNode#FrooxEngine.LogiX.Math.Binary.AdderNode
+## Boolean Counter@BooleanCounter#FrooxEngine.LogiX.Math.Binary.BooleanCounter
+## Compose Bits Byte@ComposeBits_byte#FrooxEngine.LogiX.Math.Binary.ComposeBits_byte
+## Compose Bits Int@ComposeBits_int#FrooxEngine.LogiX.Math.Binary.ComposeBits_int
+## Compose Bits Long@ComposeBits_long#FrooxEngine.LogiX.Math.Binary.ComposeBits_long
+## Compose Bits Sbyte@ComposeBits_sbyte#FrooxEngine.LogiX.Math.Binary.ComposeBits_sbyte
+## Compose Bits Short@ComposeBits_short#FrooxEngine.LogiX.Math.Binary.ComposeBits_short
+## Compose Bits Uint@ComposeBits_uint#FrooxEngine.LogiX.Math.Binary.ComposeBits_uint
+## Compose Bits Ulong@ComposeBits_ulong#FrooxEngine.LogiX.Math.Binary.ComposeBits_ulong
+## Compose Bits Ushort@ComposeBits_ushort#FrooxEngine.LogiX.Math.Binary.ComposeBits_ushort
+## Double As ULong@DoubleAsULong#FrooxEngine.LogiX.Math.Binary.DoubleAsULong
+## Extract Bits Byte@ExtractBits_byte#FrooxEngine.LogiX.Math.Binary.ExtractBits_byte
+## Extract Bits Int@ExtractBits_int#FrooxEngine.LogiX.Math.Binary.ExtractBits_int
+## Extract Bits Long@ExtractBits_long#FrooxEngine.LogiX.Math.Binary.ExtractBits_long
+## Extract Bits Sbyte@ExtractBits_sbyte#FrooxEngine.LogiX.Math.Binary.ExtractBits_sbyte
+## Extract Bits Short@ExtractBits_short#FrooxEngine.LogiX.Math.Binary.ExtractBits_short
+## Extract Bits Uint@ExtractBits_uint#FrooxEngine.LogiX.Math.Binary.ExtractBits_uint
+## Extract Bits Ulong@ExtractBits_ulong#FrooxEngine.LogiX.Math.Binary.ExtractBits_ulong
+## Extract Bits Ushort@ExtractBits_ushort#FrooxEngine.LogiX.Math.Binary.ExtractBits_ushort
+## Float As UInt@FloatAsUInt#FrooxEngine.LogiX.Math.Binary.FloatAsUInt
+## HalfAdder@HalfAdderNode#FrooxEngine.LogiX.Math.Binary.HalfAdderNode
+## Half As UShort@HalfAsUShort#FrooxEngine.LogiX.Math.Binary.HalfAsUShort
+## UInt As Float@UIntAsFloat#FrooxEngine.LogiX.Math.Binary.UIntAsFloat
+## ULong As Double@ULongAsDouble#FrooxEngine.LogiX.Math.Binary.ULongAsDouble
+## UShort As Half@UShortAsHalf#FrooxEngine.LogiX.Math.Binary.UShortAsHalf
+# Constants
+## Deg -> Rad@DegToRadConstant#FrooxEngine.LogiX.Input.DegToRadConstant
+## e@e_Node#FrooxEngine.LogiX.Input.e_Node
+## π/2@HalfPiNode#FrooxEngine.LogiX.Input.HalfPiNode
+## Φ@Phi_Node#FrooxEngine.LogiX.Input.Phi_Node
+## π@PiNode#FrooxEngine.LogiX.Input.PiNode
+## Rad -> Deg@RadToDegConstant#FrooxEngine.LogiX.Input.RadToDegConstant
+## τ@TauNode#FrooxEngine.LogiX.Input.TauNode
+# DateTime
+## Construct DateTime@ConstructDateTime#FrooxEngine.LogiX.Math.Time.ConstructDateTime
+## Day@DatetimeDayNode#FrooxEngine.LogiX.Math.Time.DatetimeDayNode
+## DayOfWeek@DatetimeDayOfWeekNode#FrooxEngine.LogiX.Math.Time.DatetimeDayOfWeekNode
+## DayOfYear@DatetimeDayOfYearNode#FrooxEngine.LogiX.Math.Time.DatetimeDayOfYearNode
+## Hour@DatetimeHourNode#FrooxEngine.LogiX.Math.Time.DatetimeHourNode
+## Kind@DatetimeKindNode#FrooxEngine.LogiX.Math.Time.DatetimeKindNode
+## Millisecond@DatetimeMillisecondNode#FrooxEngine.LogiX.Math.Time.DatetimeMillisecondNode
+## Minute@DatetimeMinuteNode#FrooxEngine.LogiX.Math.Time.DatetimeMinuteNode
+## Month@DatetimeMonthNode#FrooxEngine.LogiX.Math.Time.DatetimeMonthNode
+## Second@DatetimeSecondNode#FrooxEngine.LogiX.Math.Time.DatetimeSecondNode
+## Ticks@DatetimeTicksNode#FrooxEngine.LogiX.Math.Time.DatetimeTicksNode
+## Year@DatetimeYearNode#FrooxEngine.LogiX.Math.Time.DatetimeYearNode
+## From Unix Milliseconds@FromUnixMilliseconds#FrooxEngine.LogiX.Math.Time.FromUnixMilliseconds
+## From Unix Seconds@FromUnixSeconds#FrooxEngine.LogiX.Math.Time.FromUnixSeconds
+## Local User Time Offset@LocalTimeOffset#FrooxEngine.LogiX.Math.Time.LocalTimeOffset
+## Set Kind@SetDatetimeKindNode#FrooxEngine.LogiX.Math.Time.SetDatetimeKindNode
+## To Local Time@ToLocalTime#FrooxEngine.LogiX.Math.Time.ToLocalTime
+## To Universal Time@ToUniversalTime#FrooxEngine.LogiX.Math.Time.ToUniversalTime
+## To Unix Milliseconds@ToUnixMilliseconds#FrooxEngine.LogiX.Math.Time.ToUnixMilliseconds
+## To Unix Seconds@ToUnixSeconds#FrooxEngine.LogiX.Math.Time.ToUnixSeconds
+## User Time@UserTime#FrooxEngine.LogiX.Math.Time.UserTime
+## User Time Offset@UserTimeOffset#FrooxEngine.LogiX.Math.Time.UserTimeOffset
+## UtcNow@UtcNowNode#FrooxEngine.LogiX.Input.UtcNowNode
+# Enums
+## Enum To Int`1@EnumToInt<E>#FrooxEngine.LogiX.Operators.EnumToInt`1
+## Int To Enum`1@IntToEnum<E>#FrooxEngine.LogiX.Operators.IntToEnum`1
+# Matrix
+## Compose Rotation@Compose_Rotation_Float3x3#FrooxEngine.LogiX.Operators.Compose_Rotation_Float3x3
+## Compose Scale@Compose_ScaleFloat3x3#FrooxEngine.LogiX.Operators.Compose_ScaleFloat3x3
+## Compose Scale Rotation@Compose_ScaleRotation_Float3x3#FrooxEngine.LogiX.Operators.Compose_ScaleRotation_Float3x3
+## Compose TRS Matrix@ComposeTRS_Float4x4#FrooxEngine.LogiX.Operators.ComposeTRS_Float4x4
+## Decomposed Position@Decomposed_Position_Float4x4#FrooxEngine.LogiX.Operators.Decomposed_Position_Float4x4
+## Decomposed Rotation@Decomposed_Rotation_Float3x3#FrooxEngine.LogiX.Operators.Decomposed_Rotation_Float3x3
+## Decomposed Scale@Decomposed_Scale_Float3x3#FrooxEngine.LogiX.Operators.Decomposed_Scale_Float3x3
+# Physics
+## Torque Estimate@TorqueEstimateNode#FrooxEngine.LogiX.Math.TorqueEstimateNode
+## Trajectory@TrajectoryNode#FrooxEngine.LogiX.Math.TrajectoryNode
+# Quantity
+## Base Value`1@BaseValue<U>#FrooxEngine.LogiX.Quantity.BaseValue`1
+## Format Quantity`1@FormatQuantity<U>#FrooxEngine.LogiX.Quantity.FormatQuantity`1
+## From Base Value`1@FromBaseValue<U>#FrooxEngine.LogiX.Quantity.FromBaseValue`1
+## Parse Quantity`1@ParseQuantity<U>#FrooxEngine.LogiX.Quantity.ParseQuantity`1
+# Random
+## Random Bool@RandomBool#FrooxEngine.LogiX.Math.RandomBool
+## Random Float@RandomFloat#FrooxEngine.LogiX.Math.RandomFloat
+## Random Float2@RandomFloat2#FrooxEngine.LogiX.Math.RandomFloat2
+## Random Float3@RandomFloat3#FrooxEngine.LogiX.Math.RandomFloat3
+## Random Grayscale@RandomGrayscale#FrooxEngine.LogiX.Math.RandomGrayscale
+## Random Hue@RandomHue#FrooxEngine.LogiX.Math.RandomHue
+## Random Int@RandomInt#FrooxEngine.LogiX.Math.RandomInt
+## Random Point In Circle@RandomPointInCircle#FrooxEngine.LogiX.Math.RandomPointInCircle
+## Random Point In Cube@RandomPointInCube#FrooxEngine.LogiX.Math.RandomPointInCube
+## Random Point In Sphere@RandomPointInSphere#FrooxEngine.LogiX.Math.RandomPointInSphere
+## Random Point In Square@RandomPointInSquare#FrooxEngine.LogiX.Math.RandomPointInSquare
+## Random Point On Circle@RandomPointOnCircle#FrooxEngine.LogiX.Math.RandomPointOnCircle
+## Random Point On Cube@RandomPointOnCube#FrooxEngine.LogiX.Math.RandomPointOnCube
+## Random Point On Sphere@RandomPointOnSphere#FrooxEngine.LogiX.Math.RandomPointOnSphere
+## Random Point On Square@RandomPointOnSquare#FrooxEngine.LogiX.Math.RandomPointOnSquare
+## Random RGB@RandomRGB#FrooxEngine.LogiX.Math.RandomRGB
+## Random RGBA@RandomRGBA#FrooxEngine.LogiX.Math.RandomRGBA
+## RandomRotation@RandomRotation#FrooxEngine.LogiX.Math.RandomRotation
+# Rect
+## Clip Rect@ClipRect#FrooxEngine.LogiX.Math.Rects.ClipRect
+## Encapsulate Rect@EncapsulateRect#FrooxEngine.LogiX.Math.Rects.EncapsulateRect
+## Rect From Min Max@RectFromMinMax#FrooxEngine.LogiX.Math.Rects.RectFromMinMax
+## Rect From Position Size@RectFromPositionSize#FrooxEngine.LogiX.Math.Rects.RectFromPositionSize
+## Rect From XYWH@RectFromXYWH#FrooxEngine.LogiX.Math.Rects.RectFromXYWH
+## Rect To Min Max@RectToMinMax#FrooxEngine.LogiX.Math.Rects.RectToMinMax
+## Rect To Position Size@RectToPositionSize#FrooxEngine.LogiX.Math.Rects.RectToPositionSize
+## Rect To XYWH@RectToXYWH#FrooxEngine.LogiX.Math.Rects.RectToXYWH
+## Translate Rect@TranslateRect#FrooxEngine.LogiX.Math.Rects.TranslateRect
+# Rotation
+## Axis Angle@AxisAngle_floatQ#FrooxEngine.LogiX.Math.Quaternions.AxisAngle_floatQ
+## Euler Angles@EulerAngles_floatQ#FrooxEngine.LogiX.Math.Quaternions.EulerAngles_floatQ
+## From Euler@FromEuler_floatQ#FrooxEngine.LogiX.Math.Quaternions.FromEuler_floatQ
+## From To Rotation@FromToRotation_floatQ#FrooxEngine.LogiX.Math.Quaternions.FromToRotation_floatQ
+## Inverse Rotation@InverseRotation_floatQ#FrooxEngine.LogiX.Math.Quaternions.InverseRotation_floatQ
+## Look Rotation@LookRotation_floatQ#FrooxEngine.LogiX.Math.Quaternions.LookRotation_floatQ
+## To Axis Angle@ToAxisAngle_floatQ#FrooxEngine.LogiX.Math.Quaternions.ToAxisAngle_floatQ
+# Shaping
+## Sin Shape@SinShape_Float#FrooxEngine.LogiX.Operators.SinShape_Float
+## Smoother Step@SmootherStep_Float#FrooxEngine.LogiX.Operators.SmootherStep_Float
+## Smooth Step@SmoothStep_Float#FrooxEngine.LogiX.Operators.SmoothStep_Float
+## Symmetric Power Shape@SymmetricPowShape_Float#FrooxEngine.LogiX.Operators.SymmetricPowShape_Float
+# TimeSpan
+## Days@TimespanDaysNode#FrooxEngine.LogiX.Math.Time.TimespanDaysNode
+## TimeSpan From Days@TimeSpanFromDays#FrooxEngine.LogiX.Math.Time.TimeSpanFromDays
+## TimeSpan From Hours@TimeSpanFromHours#FrooxEngine.LogiX.Math.Time.TimeSpanFromHours
+## TimeSpan From Milliseconds@TimeSpanFromMilliseconds#FrooxEngine.LogiX.Math.Time.TimeSpanFromMilliseconds
+## TimeSpan From Minutes@TimeSpanFromMinutes#FrooxEngine.LogiX.Math.Time.TimeSpanFromMinutes
+## TimeSpan From Seconds@TimeSpanFromSeconds#FrooxEngine.LogiX.Math.Time.TimeSpanFromSeconds
+## TimeSpan From Ticks@TimeSpanFromTicks#FrooxEngine.LogiX.Math.Time.TimeSpanFromTicks
+## Hours@TimespanHoursNode#FrooxEngine.LogiX.Math.Time.TimespanHoursNode
+## Milliseconds@TimespanMillisecondsNode#FrooxEngine.LogiX.Math.Time.TimespanMillisecondsNode
+## Minutes@TimespanMinutesNode#FrooxEngine.LogiX.Math.Time.TimespanMinutesNode
+## Seconds@TimespanSecondsNode#FrooxEngine.LogiX.Math.Time.TimespanSecondsNode
+## Ticks@TimespanTicksNode#FrooxEngine.LogiX.Math.Time.TimespanTicksNode
+## Total Days@TimespanTotalDaysNode#FrooxEngine.LogiX.Math.Time.TimespanTotalDaysNode
+## Total Hours@TimespanTotalHoursNode#FrooxEngine.LogiX.Math.Time.TimespanTotalHoursNode
+## Total Milliseconds@TimespanTotalMillisecondsNode#FrooxEngine.LogiX.Math.Time.TimespanTotalMillisecondsNode
+## Total Minutes@TimespanTotalMinutesNode#FrooxEngine.LogiX.Math.Time.TimespanTotalMinutesNode
+## Total Seconds@TimespanTotalSecondsNode#FrooxEngine.LogiX.Math.Time.TimespanTotalSecondsNode
+# Abs@Abs_Float#FrooxEngine.LogiX.Math.Abs_Float
+# Acos@Acos_Float#FrooxEngine.LogiX.Math.Acos_Float
+# Asin@Asin_Float#FrooxEngine.LogiX.Math.Asin_Float
+# Atan@Atan_Float#FrooxEngine.LogiX.Math.Atan_Float
+# Atan2@Atan2_Float#FrooxEngine.LogiX.Math.Atan2_Float
+# Avg@Avg_Float#FrooxEngine.LogiX.Math.Avg_Float
+# Ceil@Ceil_Float#FrooxEngine.LogiX.Math.Ceil_Float
+# Ceil To Int@CeilToInt_Float#FrooxEngine.LogiX.Math.CeilToInt_Float
+# Clamp@Clamp_Float#FrooxEngine.LogiX.Math.Clamp_Float
+# Clamp01@Clamp01_Float#FrooxEngine.LogiX.Math.Clamp01_Float
+# Constant Lerp@ConstantLerp_Float#FrooxEngine.LogiX.Math.ConstantLerp_Float
+# Constant Slerp@ConstantSlerp_floatQ#FrooxEngine.LogiX.Math.Quaternions.ConstantSlerp_floatQ
+# Cos@Cos_Float#FrooxEngine.LogiX.Math.Cos_Float
+# Cosine Lerp@CosineLerp_Float#FrooxEngine.LogiX.Math.CosineLerp_Float
+# Cubic Lerp@CubicLerp_Float#FrooxEngine.LogiX.Math.CubicLerp_Float
+# Δ@Delta_Float#FrooxEngine.LogiX.Math.Delta_Float
+# Exp@Exp_Float#FrooxEngine.LogiX.Math.Exp_Float
+# Floor@Floor_Float#FrooxEngine.LogiX.Math.Floor_Float
+# Floor To Int@FloorToInt_Float#FrooxEngine.LogiX.Math.FloorToInt_Float
+# Greatest Common Divisor@GreatestCommonDivisor_Int#FrooxEngine.LogiX.Math.GreatestCommonDivisor_Int
+# Inverse Lerp@InverseLerp_Float#FrooxEngine.LogiX.Math.InverseLerp_Float
+# Is Between@IsBetween_Float#FrooxEngine.LogiX.Math.IsBetween_Float
+# Least Common Multiple@LeastCommonMultiple_Int#FrooxEngine.LogiX.Math.LeastCommonMultiple_Int
+# Lerp@Lerp_Float#FrooxEngine.LogiX.Math.Lerp_Float
+# Log@Log_Float#FrooxEngine.LogiX.Math.Log_Float
+# Log10@Log10_Float#FrooxEngine.LogiX.Math.Log10_Float
+# Log N@LogN_Float#FrooxEngine.LogiX.Math.LogN_Float
+# Max@Max_Float#FrooxEngine.LogiX.Math.Max_Float
+# Min@Min_Float#FrooxEngine.LogiX.Math.Min_Float
+# Multi Lerp@MultiLerp_Float#FrooxEngine.LogiX.Math.MultiLerp_Float
+# Multi Slerp@MultiSlerp_Float3#FrooxEngine.LogiX.Math.MultiSlerp_Float3
+# Nᵗʰ Root@NthRoot_Float#FrooxEngine.LogiX.Math.NthRoot_Float
+# Ping Pong@PingPong_Float#FrooxEngine.LogiX.Math.PingPong_Float
+# Pow@Pow_Float#FrooxEngine.LogiX.Math.Pow_Float
+# Remap@Remap_Float#FrooxEngine.LogiX.Math.Remap_Float
+# Remap -1..1 to 0..1@Remap11_01_Float#FrooxEngine.LogiX.Math.Remap11_01_Float
+# Repeat@Repeat_Float#FrooxEngine.LogiX.Math.Repeat_Float
+# Repeat01@Repeat01_Float#FrooxEngine.LogiX.Math.Repeat01_Float
+# Round@Round_Float#FrooxEngine.LogiX.Math.Round_Float
+# Round To Int@RoundToInt_Float#FrooxEngine.LogiX.Math.RoundToInt_Float
+# Sigmoid@SigmoidNode#FrooxEngine.LogiX.Math.SigmoidNode
+# Sign@Sign_Float#FrooxEngine.LogiX.Math.Sign_Float
+# Simplex Noise@SimplexNoise_1D#FrooxEngine.LogiX.Math.SimplexNoise_1D
+# Sin@Sin_Float#FrooxEngine.LogiX.Math.Sin_Float
+# Slerp@Slerp_Float3#FrooxEngine.LogiX.Math.Slerp_Float3
+# Smooth Lerp@SmoothLerp_Float#FrooxEngine.LogiX.Math.SmoothLerp_Float
+# Sqrt@Sqrt_Float#FrooxEngine.LogiX.Math.Sqrt_Float
+# Tan@Tan_Float#FrooxEngine.LogiX.Math.Tan_Float
+ Meta
+# Remove All Logix Visuals@RemoveAllLogixVisuals#FrooxEngine.LogiX.Meta.RemoveAllLogixVisuals
+# Reveal All Logix Visuals@RevealAllLogixVisuals#FrooxEngine.LogiX.Meta.RevealAllLogixVisuals
+ Network
+# Twitch
+## Twitch Chat Message Event@TwitchChatMessageEvent#FrooxEngine.LogiX.Twitch.TwitchChatMessageEvent
+## Twitch Follow Event@TwitchFollowEvent#FrooxEngine.LogiX.Twitch.TwitchFollowEvent
+## Twitch Raid Event@TwitchRaidEvent#FrooxEngine.LogiX.Twitch.TwitchRaidEvent
+## Twitch Reward Redeem Event@TwitchRewardRedeemEvent#FrooxEngine.LogiX.Twitch.TwitchRewardRedeemEvent
+## Twitch Subscription Event@TwitchSubscriptionEvent#FrooxEngine.LogiX.Twitch.TwitchSubscriptionEvent
+# Websocket
+## Websocket Connect@WebsocketConnect#FrooxEngine.LogiX.Network.WebsocketConnect
+## Websocket Connection Events@WebsocketConnectionEvents#FrooxEngine.LogiX.Network.WebsocketConnectionEvents
+## Websocket Text Message Receiver@WebsocketTextMessageReceiver#FrooxEngine.LogiX.Network.WebsocketTextMessageReceiver
+## Websocket Text Message Sender@WebsocketTextMessageSender#FrooxEngine.LogiX.Network.WebsocketTextMessageSender
+# Escape Uri Data String@EscapeUriDataString#FrooxEngine.LogiX.Network.EscapeUriDataString
+# GET String@GET_String#FrooxEngine.LogiX.Network.GET_String
+# Is Host Access Allowed@IsHostAccessAllowedUrl#FrooxEngine.LogiX.Network.IsHostAccessAllowedUrl
+# POST String@POST_String#FrooxEngine.LogiX.Network.POST_String
+# Request Host Access@RequestHostAccessUrl#FrooxEngine.LogiX.Network.RequestHostAccessUrl
+# Unescape Uri Data String@UnescapeUriDataString#FrooxEngine.LogiX.Network.UnescapeUriDataString
+ Operators
+# Bool Vectors
+## All@All_Bool2#FrooxEngine.LogiX.Operators.All_Bool2
+## Any@Any_Bool2#FrooxEngine.LogiX.Operators.Any_Bool2
+## None@None_Bool2#FrooxEngine.LogiX.Operators.None_Bool2
+# Nullable
+## Pack Nullable`1@PackNullable<T>#FrooxEngine.LogiX.Operators.PackNullable`1
+## Unpack Nullable`1@UnpackNullable<T>#FrooxEngine.LogiX.Operators.UnpackNullable`1
+# Parsing
+## Parse Bool@Parse_Bool#FrooxEngine.LogiX.Operators.Parse_Bool
+## Parse Bool2@Parse_Bool2#FrooxEngine.LogiX.Operators.Parse_Bool2
+## Parse Bool3@Parse_Bool3#FrooxEngine.LogiX.Operators.Parse_Bool3
+## Parse Bool4@Parse_Bool4#FrooxEngine.LogiX.Operators.Parse_Bool4
+## Parse Byte@Parse_Byte#FrooxEngine.LogiX.Operators.Parse_Byte
+## Parse Char@Parse_Char#FrooxEngine.LogiX.Operators.Parse_Char
+## Parse Color@Parse_Color#FrooxEngine.LogiX.Operators.Parse_Color
+## Parse Color X@Parse_ColorX#FrooxEngine.LogiX.Operators.Parse_ColorX
+## Parse Date Time@Parse_DateTime#FrooxEngine.LogiX.Operators.Parse_DateTime
+## Parse Decimal@Parse_Decimal#FrooxEngine.LogiX.Operators.Parse_Decimal
+## Parse Double@Parse_Double#FrooxEngine.LogiX.Operators.Parse_Double
+## Parse Double2@Parse_Double2#FrooxEngine.LogiX.Operators.Parse_Double2
+## Parse Double3@Parse_Double3#FrooxEngine.LogiX.Operators.Parse_Double3
+## Parse Double4@Parse_Double4#FrooxEngine.LogiX.Operators.Parse_Double4
+## Parse Double Q@Parse_DoubleQ#FrooxEngine.LogiX.Operators.Parse_DoubleQ
+## Parse Float@Parse_Float#FrooxEngine.LogiX.Operators.Parse_Float
+## Parse Float2@Parse_Float2#FrooxEngine.LogiX.Operators.Parse_Float2
+## Parse Float3@Parse_Float3#FrooxEngine.LogiX.Operators.Parse_Float3
+## Parse Float4@Parse_Float4#FrooxEngine.LogiX.Operators.Parse_Float4
+## Parse Float Q@Parse_FloatQ#FrooxEngine.LogiX.Operators.Parse_FloatQ
+## Parse Int@Parse_Int#FrooxEngine.LogiX.Operators.Parse_Int
+## Parse Int2@Parse_Int2#FrooxEngine.LogiX.Operators.Parse_Int2
+## Parse Int3@Parse_Int3#FrooxEngine.LogiX.Operators.Parse_Int3
+## Parse Int4@Parse_Int4#FrooxEngine.LogiX.Operators.Parse_Int4
+## Parse Long@Parse_Long#FrooxEngine.LogiX.Operators.Parse_Long
+## Parse Long2@Parse_Long2#FrooxEngine.LogiX.Operators.Parse_Long2
+## Parse Long3@Parse_Long3#FrooxEngine.LogiX.Operators.Parse_Long3
+## Parse Long4@Parse_Long4#FrooxEngine.LogiX.Operators.Parse_Long4
+## Parse Sbyte@Parse_Sbyte#FrooxEngine.LogiX.Operators.Parse_Sbyte
+## Parse Short@Parse_Short#FrooxEngine.LogiX.Operators.Parse_Short
+## Parse Time Span@Parse_TimeSpan#FrooxEngine.LogiX.Operators.Parse_TimeSpan
+## Parse Uint@Parse_Uint#FrooxEngine.LogiX.Operators.Parse_Uint
+## Parse Uint2@Parse_Uint2#FrooxEngine.LogiX.Operators.Parse_Uint2
+## Parse Uint3@Parse_Uint3#FrooxEngine.LogiX.Operators.Parse_Uint3
+## Parse Uint4@Parse_Uint4#FrooxEngine.LogiX.Operators.Parse_Uint4
+## Parse Ulong@Parse_Ulong#FrooxEngine.LogiX.Operators.Parse_Ulong
+## Parse Ulong2@Parse_Ulong2#FrooxEngine.LogiX.Operators.Parse_Ulong2
+## Parse Ulong3@Parse_Ulong3#FrooxEngine.LogiX.Operators.Parse_Ulong3
+## Parse Ulong4@Parse_Ulong4#FrooxEngine.LogiX.Operators.Parse_Ulong4
+## Parse Ushort@Parse_Ushort#FrooxEngine.LogiX.Operators.Parse_Ushort
+# +@Add_Float#FrooxEngine.LogiX.Operators.Add_Float
+# &@AND_Int#FrooxEngine.LogiX.Operators.AND_Int
+# °@Angle_Float2#FrooxEngine.LogiX.Operators.Angle_Float2
+# ≈@Approximately_Float#FrooxEngine.LogiX.Operators.Approximately_Float
+# ?:@Conditional_Float#FrooxEngine.LogiX.Operators.Conditional_Float
+# Pack xy@Construct_Float2#FrooxEngine.LogiX.Operators.Construct_Float2
+# Pack xyz@Construct_Float3#FrooxEngine.LogiX.Operators.Construct_Float3
+# Pack xyzw@Construct_Float4#FrooxEngine.LogiX.Operators.Construct_Float4
+# Pack rgba@Construct_Color#FrooxEngine.LogiX.Operators.Construct_Color
+# Cross@Cross_Float3#FrooxEngine.LogiX.Operators.Cross_Float3
+# x<sup>3</sup>@Cube_Float#FrooxEngine.LogiX.Operators.Cube_Float
+# -1@Dec_Float#FrooxEngine.LogiX.Operators.Dec_Float
+# Unpack xy@Deconstruct_Float2#FrooxEngine.LogiX.Operators.Deconstruct_Float2
+# Unpack xyz@Deconstruct_Float3#FrooxEngine.LogiX.Operators.Deconstruct_Float3
+# Unpack xyzw@Deconstruct_Float4#FrooxEngine.LogiX.Operators.Deconstruct_Float4
+# Determinant@Determinant_Float2x2#FrooxEngine.LogiX.Operators.Determinant_Float2x2
+# Distance@Distance_Float#FrooxEngine.LogiX.Operators.Distance_Float
+# ÷@Div_Float#FrooxEngine.LogiX.Operators.Div_Float
+# ÷dT@DivDeltaTime_Float#FrooxEngine.LogiX.Operators.DivDeltaTime_Float
+# ·@Dot_Float2#FrooxEngine.LogiX.Operators.Dot_Float2
+# ==@Equals_Float#FrooxEngine.LogiX.Operators.Equals_Float
+# Filter Invalid@FilterInvalid_Float#FrooxEngine.LogiX.Operators.FilterInvalid_Float
+# Get Type@GetType#FrooxEngine.LogiX.Operators.GetType
+# ≥@GreaterOrEqual_Float#FrooxEngine.LogiX.Operators.GreaterOrEqual_Float
+# >@GreaterThan_Float#FrooxEngine.LogiX.Operators.GreaterThan_Float
+# +1@Inc_Float#FrooxEngine.LogiX.Operators.Inc_Float
+# A^-1@Inverse_Float2x2#FrooxEngine.LogiX.Operators.Inverse_Float2x2
+# IsInfinity@IsInfinity_Float#FrooxEngine.LogiX.Operators.IsInfinity_Float
+# IsNaN@IsNaN_Float#FrooxEngine.LogiX.Operators.IsNaN_Float
+# IsNull@IsNullNode<T>#FrooxEngine.LogiX.Operators.IsNullNode`1
+# <@LessThan_Float#FrooxEngine.LogiX.Operators.LessThan_Float
+# |V|@Magnitude_Float2#FrooxEngine.LogiX.Operators.Magnitude_Float2
+# Mask@Mask_Float2#FrooxEngine.LogiX.Operators.Mask_Float2
+# Matrix Element@MatrixElement_Float2x2#FrooxEngine.LogiX.Operators.MatrixElement_Float2x2
+# %@Mod_Float#FrooxEngine.LogiX.Operators.Mod_Float
+# ×@Mul_Float#FrooxEngine.LogiX.Operators.Mul_Float
+# ×dT@MulDeltaTime_Float#FrooxEngine.LogiX.Operators.MulDeltaTime_Float
+# NAND@NAND_Int#FrooxEngine.LogiX.Operators.NAND_Int
+# -n@Negate_Float#FrooxEngine.LogiX.Operators.Negate_Float
+# NOR@NOR_Int#FrooxEngine.LogiX.Operators.NOR_Int
+# Normalized@Normalized_Float2#FrooxEngine.LogiX.Operators.Normalized_Float2
+# !@NOT_Int#FrooxEngine.LogiX.Operators.NOT_Int
+# !=@NotEquals_Float#FrooxEngine.LogiX.Operators.NotEquals_Float
+# NotNull@NotNullNode<T>#FrooxEngine.LogiX.Operators.NotNullNode`1
+# ??@NullCoalesce<T>#FrooxEngine.LogiX.Operators.NullCoalesce`1
+# 1-x@OneMinus_Float#FrooxEngine.LogiX.Operators.OneMinus_Float
+# |@OR_Int#FrooxEngine.LogiX.Operators.OR_Int
+# Pack Columns@PackColumns_Float2x2#FrooxEngine.LogiX.Operators.PackColumns_Float2x2
+# Pack Rows@PackRows_Float2x2#FrooxEngine.LogiX.Operators.PackRows_Float2x2
+# +/-@PlusMinus_Float#FrooxEngine.LogiX.Operators.PlusMinus_Float
+# Project@Project_Float2#FrooxEngine.LogiX.Operators.Project_Float2
+# 1/x@Reciprocal_Float#FrooxEngine.LogiX.Operators.Reciprocal_Float
+# Reflect@Reflect_Float3#FrooxEngine.LogiX.Operators.Reflect_Float3
+# ROL@RotateLeft_Int#FrooxEngine.LogiX.Operators.RotateLeft_Int
+# ROR@RotateRight_Int#FrooxEngine.LogiX.Operators.RotateRight_Int
+# <<@ShiftLeft_Int#FrooxEngine.LogiX.Operators.ShiftLeft_Int
+# >>@ShiftRight_Int#FrooxEngine.LogiX.Operators.ShiftRight_Int
+# ≤@SmallerOrEqual_Float#FrooxEngine.LogiX.Operators.SmallerOrEqual_Float
+# |V|²@SqrMagnitude_Float2#FrooxEngine.LogiX.Operators.SqrMagnitude_Float2
+# x<sup>2</sup>@Square_Float#FrooxEngine.LogiX.Operators.Square_Float
+# -@Sub_Float#FrooxEngine.LogiX.Operators.Sub_Float
+# To String@ToString_Float#FrooxEngine.LogiX.Operators.ToString_Float
+# Transpose@Transpose_Float2x2#FrooxEngine.LogiX.Operators.Transpose_Float2x2
+# Unpack Columns@UnpackColumns_Float2x2#FrooxEngine.LogiX.Operators.UnpackColumns_Float2x2
+# Unpack Rows@UnpackRows_Float2x2#FrooxEngine.LogiX.Operators.UnpackRows_Float2x2
+# XNOR@XNOR_Int#FrooxEngine.LogiX.Operators.XNOR_Int
+# ^@XOR_Int#FrooxEngine.LogiX.Operators.XOR_Int
+# 0 1@ZeroOne#FrooxEngine.LogiX.Math.ZeroOne
+ Physics
+# Apply Character Force@ApplyCharacterForce#FrooxEngine.LogiX.Physics.ApplyCharacterForce
+# Apply Character Impulse@ApplyCharacterImpulse#FrooxEngine.LogiX.Physics.ApplyCharacterImpulse
+# As Character Controller@AsCharacterController#FrooxEngine.LogiX.Physics.AsCharacterController
+# Character Controller User@CharacterControllerUser#FrooxEngine.LogiX.Physics.CharacterControllerUser
+# Character Gravity@CharacterGravity#FrooxEngine.LogiX.Physics.CharacterGravity
+# Character Ground Collider@CharacterGroundCollider#FrooxEngine.LogiX.Physics.CharacterGroundCollider
+# Character Linear Velocity@CharacterLinearVelocity#FrooxEngine.LogiX.Physics.CharacterLinearVelocity
+# Find Character Controller@FindCharacterControllerFromSlot#FrooxEngine.LogiX.Physics.FindCharacterControllerFromSlot
+# Hit UV Coordinate@HitUVCoordinate#FrooxEngine.LogiX.Physics.HitUVCoordinate
+# Is Character Controller@IsCharacterController#FrooxEngine.LogiX.Physics.IsCharacterController
+# Is Character On Ground@IsCharacterOnGround#FrooxEngine.LogiX.Physics.IsCharacterOnGround
+# On Collision End@OnCollisionEnd#FrooxEngine.LogiX.Physics.OnCollisionEnd
+# On Collision Start@OnCollisionStart#FrooxEngine.LogiX.Physics.OnCollisionStart
+# On Collision Stay@OnCollisionStay#FrooxEngine.LogiX.Physics.OnCollisionStay
+# Raycaster@Raycaster#FrooxEngine.LogiX.Physics.Raycaster
+# Raycast One@RaycastOne#FrooxEngine.LogiX.Physics.RaycastOne
+# Set Character Gravity@SetCharacterGravity#FrooxEngine.LogiX.Physics.SetCharacterGravity
+# Set Character Velocity@SetCharacterVelocity#FrooxEngine.LogiX.Physics.SetCharacterVelocity
+ Playback
+# Drive Playback@DrivePlaybackNode#FrooxEngine.LogiX.Actions.DrivePlaybackNode
+# Clip Length@PlaybackClipLength#FrooxEngine.LogiX.Playback.PlaybackClipLength
+# IsLooped@PlaybackIsLooped#FrooxEngine.LogiX.Playback.PlaybackIsLooped
+# IsPlaying@PlaybackIsPlaying#FrooxEngine.LogiX.Playback.PlaybackIsPlaying
+# Normalized Position@PlaybackNormalizedPosition#FrooxEngine.LogiX.Playback.PlaybackNormalizedPosition
+# Pause@PlaybackPause#FrooxEngine.LogiX.Playback.PlaybackPause
+# Pause/Resume@PlaybackPauseResume#FrooxEngine.LogiX.Playback.PlaybackPauseResume
+# Play@PlaybackPlay#FrooxEngine.LogiX.Playback.PlaybackPlay
+# Play & Wait@PlaybackPlayAndWait#FrooxEngine.LogiX.Playback.PlaybackPlayAndWait
+# Position@PlaybackPosition#FrooxEngine.LogiX.Playback.PlaybackPosition
+# Playback State@PlaybackReadState#FrooxEngine.LogiX.Playback.PlaybackReadState
+# Resume@PlaybackResume#FrooxEngine.LogiX.Playback.PlaybackResume
+# Set Loop@PlaybackSetLoop#FrooxEngine.LogiX.Playback.PlaybackSetLoop
+# Set Normalized Position@PlaybackSetNormalizedPosition#FrooxEngine.LogiX.Playback.PlaybackSetNormalizedPosition
+# Set Position@PlaybackSetPosition#FrooxEngine.LogiX.Playback.PlaybackSetPosition
+# Set Speed@PlaybackSetSpeed#FrooxEngine.LogiX.Playback.PlaybackSetSpeed
+# Shift Position@PlaybackShiftPosition#FrooxEngine.LogiX.Playback.PlaybackShiftPosition
+# Speed@PlaybackSpeed#FrooxEngine.LogiX.Playback.PlaybackSpeed
+# Stop@PlaybackStop#FrooxEngine.LogiX.Playback.PlaybackStop
+# Wait@PlaybackWait#FrooxEngine.LogiX.Playback.PlaybackWait
+ References
+# Allocating User@AllocatingUser#FrooxEngine.LogiX.References.AllocatingUser
+# RefID@ReferenceID#FrooxEngine.LogiX.References.ReferenceID
+# ->@ReferenceTarget<T>#FrooxEngine.LogiX.References.ReferenceTarget`1
+# Write Ref@WriteReferenceNode<T>#FrooxEngine.LogiX.Actions.WriteReferenceNode`1
+ Rendering
+# Bake Reflection Probe@BakeReflectionProbe#FrooxEngine.LogiX.Rendering.BakeReflectionProbe
+# Bake Reflection Probes@BakeReflectionProbes#FrooxEngine.LogiX.Rendering.BakeReflectionProbes
+# Render To Texture Asset@RenderToTextureAsset#FrooxEngine.LogiX.Rendering.RenderToTextureAsset
+# Sample Color@SampleColor#FrooxEngine.LogiX.Rendering.SampleColor
+ Slots
+# Children Count@ChildrenCount#FrooxEngine.LogiX.WorldModel.ChildrenCount
+# Destroy Slot@DestroySlot#FrooxEngine.LogiX.WorldModel.DestroySlot
+# Destroy Slot Children@DestroySlotChildren#FrooxEngine.LogiX.WorldModel.DestroySlotChildren
+# Duplicate Slot@DuplicateSlot#FrooxEngine.LogiX.WorldModel.DuplicateSlot
+# Find Child By Name@FindChildByName#FrooxEngine.LogiX.WorldModel.FindChildByName
+# Find Child By Tag@FindChildByTag#FrooxEngine.LogiX.WorldModel.FindChildByTag
+# Find Parent By Name@FindParentByName#FrooxEngine.LogiX.WorldModel.FindParentByName
+# Find Parent By Tag@FindParentByTag#FrooxEngine.LogiX.WorldModel.FindParentByTag
+# Get Active User@GetActiveUser#FrooxEngine.LogiX.WorldModel.GetActiveUser
+# Get Active User Root@GetActiveUserRoot#FrooxEngine.LogiX.WorldModel.GetActiveUserRoot
+# Get Active User Self@GetActiveUserSelf#FrooxEngine.LogiX.WorldModel.GetActiveUserSelf
+# Get Child@GetChild#FrooxEngine.LogiX.WorldModel.GetChild
+# Get Object Root@GetObjectRoot#FrooxEngine.LogiX.WorldModel.GetObjectRoot
+# Get Parent Slot@GetParentSlot#FrooxEngine.LogiX.WorldModel.GetParentSlot
+# Get Slot@GetSlot#FrooxEngine.LogiX.WorldModel.GetSlot
+# Get Slot Active@GetSlotActive#FrooxEngine.LogiX.WorldModel.GetSlotActive
+# Get Slot Active Self@GetSlotActiveSelf#FrooxEngine.LogiX.WorldModel.GetSlotActiveSelf
+# Get Slot Name@GetSlotName#FrooxEngine.LogiX.WorldModel.GetSlotName
+# Get Slot Order Offset@GetSlotOrderOffset#FrooxEngine.LogiX.WorldModel.GetSlotOrderOffset
+# Get Slot Persistent@GetSlotPersistent#FrooxEngine.LogiX.WorldModel.GetSlotPersistent
+# Get Slot Persistent Self@GetSlotPersistentSelf#FrooxEngine.LogiX.WorldModel.GetSlotPersistentSelf
+# Get Tag@GetTag#FrooxEngine.LogiX.WorldModel.GetTag
+# Has Tag@HasTag#FrooxEngine.LogiX.WorldModel.HasTag
+# Index Of Child@IndexOfChild#FrooxEngine.LogiX.WorldModel.IndexOfChild
+# Is Child Of@IsChildOf#FrooxEngine.LogiX.WorldModel.IsChildOf
+# Root Slot@RootSlot#FrooxEngine.LogiX.WorldModel.RootSlot
+# Set Child Index@SetChildIndex#FrooxEngine.LogiX.WorldModel.SetChildIndex
+# Set Parent@SetParent#FrooxEngine.LogiX.WorldModel.SetParent
+# Set Slot Active Self@SetSlotActiveSelf#FrooxEngine.LogiX.WorldModel.SetSlotActiveSelf
+# Set Slot Name@SetSlotName#FrooxEngine.LogiX.WorldModel.SetSlotName
+# Set Slot Order Offset@SetSlotOrderOffset#FrooxEngine.LogiX.WorldModel.SetSlotOrderOffset
+# Set Slot Persistent Self@SetSlotPersistentSelf#FrooxEngine.LogiX.WorldModel.SetSlotPersistentSelf
+# Set Tag@SetTag#FrooxEngine.LogiX.WorldModel.SetTag
+# Slot Children Events@SlotChildrenEvents#FrooxEngine.LogiX.WorldModel.SlotChildrenEvents
+ String
+# Characters
+## +@Add_Float#FrooxEngine.LogiX.Operators.Add_Float
+## From UTF16@FromUTF16#FrooxEngine.LogiX.String.Characters.FromUTF16
+## From UTF32@FromUTF32#FrooxEngine.LogiX.String.Characters.FromUTF32
+## Get Character@GetCharacter#FrooxEngine.LogiX.String.Characters.GetCharacter
+## Is Control@IsControl#FrooxEngine.LogiX.String.Characters.IsControl
+## Is Digit@IsDigit#FrooxEngine.LogiX.String.Characters.IsDigit
+## Is Letter@IsLetter#FrooxEngine.LogiX.String.Characters.IsLetter
+## Is Letter Or Digit@IsLetterOrDigit#FrooxEngine.LogiX.String.Characters.IsLetterOrDigit
+## Is Lower@IsLower#FrooxEngine.LogiX.String.Characters.IsLower
+## Is Number@IsNumber#FrooxEngine.LogiX.String.Characters.IsNumber
+## Is Punctuation@IsPunctuation#FrooxEngine.LogiX.String.Characters.IsPunctuation
+## Is Separator@IsSeparator#FrooxEngine.LogiX.String.Characters.IsSeparator
+## Is Surrogate@IsSurrogate#FrooxEngine.LogiX.String.Characters.IsSurrogate
+## Is Symbol@IsSymbol#FrooxEngine.LogiX.String.Characters.IsSymbol
+## Is Upper@IsUpper#FrooxEngine.LogiX.String.Characters.IsUpper
+## Is White Space@IsWhiteSpace#FrooxEngine.LogiX.String.Characters.IsWhiteSpace
+## String To UTF32@StringToUTF32#FrooxEngine.LogiX.String.Characters.StringToUTF32
+## Surrogate Pair To UTF32@SurrogatePairToUTF32#FrooxEngine.LogiX.String.Characters.SurrogatePairToUTF32
+## To Lower@ToLower#FrooxEngine.LogiX.String.Characters.ToLower
+## To Upper@ToUpper#FrooxEngine.LogiX.String.Characters.ToUpper
+## To UTF16@ToUTF16#FrooxEngine.LogiX.String.Characters.ToUTF16
+# Quick Format
+## To Time String@FormatAsTime#FrooxEngine.LogiX.String.FormatAsTime
+## Format Date@FormatDateTimeAsDate#FrooxEngine.LogiX.String.FormatDateTimeAsDate
+## Format Time@FormatDateTimeAsTime#FrooxEngine.LogiX.String.FormatDateTimeAsTime
+## Format Timespan@FormatTimespan#FrooxEngine.LogiX.String.FormatTimespan
+# Special Characters
+## \b@Backspace#FrooxEngine.LogiX.String.Characters.Backspace
+## \a@Bell#FrooxEngine.LogiX.String.Characters.Bell
+## \r@CarriageReturn#FrooxEngine.LogiX.String.Characters.CarriageReturn
+## \f@FormFeed#FrooxEngine.LogiX.String.Characters.FormFeed
+## \n@NewLine#FrooxEngine.LogiX.String.Characters.NewLine
+## ' '@Space#FrooxEngine.LogiX.String.Characters.Space
+## \t@Tab#FrooxEngine.LogiX.String.Characters.Tab
+## \v@VerticalTab#FrooxEngine.LogiX.String.Characters.VerticalTab
+# Capitalize@Capitalize#FrooxEngine.LogiX.String.Capitalize
+# Compare Strings@CompareStrings#FrooxEngine.LogiX.String.CompareStrings
+# +@Add_Float#FrooxEngine.LogiX.Operators.Add_Float
+# Contains@Contains#FrooxEngine.LogiX.String.Contains
+# Empty String@EmptyString#FrooxEngine.LogiX.String.EmptyString
+# Ends With@EndsWith#FrooxEngine.LogiX.String.EndsWith
+# Escape String@EscapeString#FrooxEngine.LogiX.String.EscapeString
+# Format@FormatString#FrooxEngine.LogiX.String.FormatString
+# Get Type@GetType#FrooxEngine.LogiX.Operators.GetType
+# ≥@GreaterOrEqual_Float#FrooxEngine.LogiX.Operators.GreaterOrEqual_Float
+# >@GreaterThan_Float#FrooxEngine.LogiX.Operators.GreaterThan_Float
+# Index Of String@IndexOfString#FrooxEngine.LogiX.String.IndexOfString
+# Is String Empty@IsStringEmpty#FrooxEngine.LogiX.String.IsStringEmpty
+# <@LessThan_Float#FrooxEngine.LogiX.Operators.LessThan_Float
+# ×@Mul_Float#FrooxEngine.LogiX.Operators.Mul_Float
+# New Line@NewLine#FrooxEngine.LogiX.String.NewLine
+# Null String@NullString#FrooxEngine.LogiX.String.NullString
+# Replace First Substring@ReplaceFirstSubstring#FrooxEngine.LogiX.String.ReplaceFirstSubstring
+# Replace Substring@ReplaceSubstring#FrooxEngine.LogiX.String.ReplaceSubstring
+# Reverse String@ReverseString#FrooxEngine.LogiX.String.ReverseString
+# ≤@SmallerOrEqual_Float#FrooxEngine.LogiX.Operators.SmallerOrEqual_Float
+# Starts With@StartsWith#FrooxEngine.LogiX.String.StartsWith
+# String Insert@StringInsert#FrooxEngine.LogiX.String.StringInsert
+# String Join@StringJoin#FrooxEngine.LogiX.String.StringJoin
+# String Length@StringLength#FrooxEngine.LogiX.String.StringLength
+# String Remove@StringRemove#FrooxEngine.LogiX.String.StringRemove
+# Strip RTF Tags@StripRTF_Tags#FrooxEngine.LogiX.String.StripRTF_Tags
+# Substring@Substring#FrooxEngine.LogiX.String.Substring
+# To Lower@ToLower#FrooxEngine.LogiX.String.ToLower
+# To String@ToString_Float#FrooxEngine.LogiX.Operators.ToString_Float
+# To Upper@ToUpper#FrooxEngine.LogiX.String.ToUpper
+# Trim String@TrimString#FrooxEngine.LogiX.String.TrimString
+# Unescape String@UnescapeString#FrooxEngine.LogiX.String.UnescapeString
+ Tools
+# Dequip Tooltip@DequipTooltip#FrooxEngine.LogiX.Tools.DequipTooltip
+# Equip Tooltip@EquipTooltip#FrooxEngine.LogiX.Tools.EquipTooltip
+# Get Raw Data Tooltip Hit@GetRawDataTooltipHit#FrooxEngine.LogiX.Tools.GetRawDataTooltipHit
+# Get Tooltip@GetTooltip#FrooxEngine.LogiX.Tools.GetTooltip
+# Has Tooltip@HasTooltip#FrooxEngine.LogiX.Tools.HasTooltip
+# Is Tooltip Equipped@IsTooltipEquipped#FrooxEngine.LogiX.Tools.IsTooltipEquipped
+# Is Tooltip In Use@IsTooltipInUse#FrooxEngine.LogiX.Tools.IsTooltipInUse
+# Raw Data Tooltip Events@RawDataTooltipEvents#FrooxEngine.LogiX.Tools.RawDataTooltipEvents
+# Tooltip Equipping Side@TooltipEquippingSide#FrooxEngine.LogiX.Tools.TooltipEquippingSide
+# Tooltip Equipping Slot@TooltipEquippingSlot#FrooxEngine.LogiX.Tools.TooltipEquippingSlot
+# Tooltip Events@TooltipEvents#FrooxEngine.LogiX.Tools.TooltipEvents
+ Transactions
+# Currency Conversion@CurrencyConversion#FrooxEngine.LogiX.Transactions.CurrencyConversion
+# Tokens Enabled@TokensEnabled#FrooxEngine.LogiX.Transactions.TokensEnabled
+ Transform
+# Bounds
+## Bounding Box From Center Size@BoundingBoxFromCenterSize#FrooxEngine.LogiX.Transform.BoundingBoxFromCenterSize
+## Bounding Box Properties@BoundingBoxProperties#FrooxEngine.LogiX.Transform.BoundingBoxProperties
+## Compute Bounding Box@ComputeBoundingBox#FrooxEngine.LogiX.Transform.ComputeBoundingBox
+## Empty Bounding Box@EmptyBoundingBox#FrooxEngine.LogiX.Transform.EmptyBoundingBox
+## Encapsulate Bounds@EncapsulateBounds#FrooxEngine.LogiX.Transform.EncapsulateBounds
+## Encapsulate Point@EncapsulatePoint#FrooxEngine.LogiX.Transform.EncapsulatePoint
+## Transform Bounds@TransformBounds#FrooxEngine.LogiX.Transform.TransformBounds
+# Backward@GetBackward#FrooxEngine.LogiX.WorldModel.GetBackward
+# Down@GetDown#FrooxEngine.LogiX.WorldModel.GetDown
+# Forward@GetForward#FrooxEngine.LogiX.WorldModel.GetForward
+# Left@GetLeft#FrooxEngine.LogiX.WorldModel.GetLeft
+# Right@GetRight#FrooxEngine.LogiX.WorldModel.GetRight
+# Up@GetUp#FrooxEngine.LogiX.WorldModel.GetUp
+# Global Direction To Local@GlobalDirectionToLocal#FrooxEngine.LogiX.WorldModel.GlobalDirectionToLocal
+# Global Point To Local@GlobalPointToLocal#FrooxEngine.LogiX.WorldModel.GlobalPointToLocal
+# Global Rotation To Local@GlobalRotationToLocal#FrooxEngine.LogiX.WorldModel.GlobalRotationToLocal
+# Global Scale To Local@GlobalScaleToLocal#FrooxEngine.LogiX.WorldModel.GlobalScaleToLocal
+# Global Transform@GlobalTransform#FrooxEngine.LogiX.WorldModel.GlobalTransform
+# Global Vector To Local@GlobalVectorToLocal#FrooxEngine.LogiX.WorldModel.GlobalVectorToLocal
+# Local Direction To Global@LocalDirectionToGlobal#FrooxEngine.LogiX.WorldModel.LocalDirectionToGlobal
+# Local Point To Global@LocalPointToGlobal#FrooxEngine.LogiX.WorldModel.LocalPointToGlobal
+# Local Rotation To Global@LocalRotationToGlobal#FrooxEngine.LogiX.WorldModel.LocalRotationToGlobal
+# Local Scale To Global@LocalScaleToGlobal#FrooxEngine.LogiX.WorldModel.LocalScaleToGlobal
+# Local Transform@LocalTransform#FrooxEngine.LogiX.WorldModel.LocalTransform
+# Local Vector To Global@LocalVectorToGlobal#FrooxEngine.LogiX.WorldModel.LocalVectorToGlobal
+# Set Backward@SetBackward#FrooxEngine.LogiX.WorldModel.SetBackward
+# Set Down@SetDown#FrooxEngine.LogiX.WorldModel.SetDown
+# Set Forward@SetForward#FrooxEngine.LogiX.WorldModel.SetForward
+# Set Global Position@SetGlobalPosition#FrooxEngine.LogiX.WorldModel.SetGlobalPosition
+# Set Global Position Rotation@SetGlobalPositionRotation#FrooxEngine.LogiX.WorldModel.SetGlobalPositionRotation
+# Set Global Rotation@SetGlobalRotation#FrooxEngine.LogiX.WorldModel.SetGlobalRotation
+# Set Global Scale@SetGlobalScale#FrooxEngine.LogiX.WorldModel.SetGlobalScale
+# Set Global Transform@SetGlobalTransform#FrooxEngine.LogiX.WorldModel.SetGlobalTransform
+# Set Global Transform Matrix@SetGlobalTransformMatrix#FrooxEngine.LogiX.WorldModel.SetGlobalTransformMatrix
+# Set Left@SetLeft#FrooxEngine.LogiX.WorldModel.SetLeft
+# Set Local Position@SetLocalPosition#FrooxEngine.LogiX.WorldModel.SetLocalPosition
+# Set Local Position Rotation@SetLocalPositionRotation#FrooxEngine.LogiX.WorldModel.SetLocalPositionRotation
+# Set Local Rotation@SetLocalRotation#FrooxEngine.LogiX.WorldModel.SetLocalRotation
+# Set Local Scale@SetLocalScale#FrooxEngine.LogiX.WorldModel.SetLocalScale
+# Set Local Transform@SetLocalTransform#FrooxEngine.LogiX.WorldModel.SetLocalTransform
+# Set Right@SetRight#FrooxEngine.LogiX.WorldModel.SetRight
+# Set TRS@SetTRS#FrooxEngine.LogiX.WorldModel.SetTRS
+# Set Up@SetUp#FrooxEngine.LogiX.WorldModel.SetUp
+# Transform Direction@TransformDirection#FrooxEngine.LogiX.WorldModel.TransformDirection
+# Transform Point@TransformPoint#FrooxEngine.LogiX.WorldModel.TransformPoint
+# Transform Rotation@TransformRotation#FrooxEngine.LogiX.WorldModel.TransformRotation
+# Transform Scale@TransformScale#FrooxEngine.LogiX.WorldModel.TransformScale
+# Transform Vector@TransformVector#FrooxEngine.LogiX.WorldModel.TransformVector
+ UI
+# Rect
+## Clip Rect@ClipRect#FrooxEngine.LogiX.Math.Rects.ClipRect
+## Encapsulate Rect@EncapsulateRect#FrooxEngine.LogiX.Math.Rects.EncapsulateRect
+## Rect From Min Max@RectFromMinMax#FrooxEngine.LogiX.Math.Rects.RectFromMinMax
+## Rect From Position Size@RectFromPositionSize#FrooxEngine.LogiX.Math.Rects.RectFromPositionSize
+## Rect From XYWH@RectFromXYWH#FrooxEngine.LogiX.Math.Rects.RectFromXYWH
+## Rect@RectTextInput#FrooxEngine.LogiX.Input.RectTextInput
+## Rect To Min Max@RectToMinMax#FrooxEngine.LogiX.Math.Rects.RectToMinMax
+## Rect To Position Size@RectToPositionSize#FrooxEngine.LogiX.Math.Rects.RectToPositionSize
+## Rect To XYWH@RectToXYWH#FrooxEngine.LogiX.Math.Rects.RectToXYWH
+## Translate Rect@TranslateRect#FrooxEngine.LogiX.Math.Rects.TranslateRect
+# Clear Focus@ClearFocus#FrooxEngine.LogiX.UI.ClearFocus
+# Defocus@DefocusFocusable#FrooxEngine.LogiX.UI.DefocusFocusable
+# Focus@FocusFocusable#FrooxEngine.LogiX.UI.FocusFocusable
+# Has Local Focus@HasLocalFocus#FrooxEngine.LogiX.UI.HasLocalFocus
+ Undo
+# Begin Undo Batch@BeginUndoBatch#FrooxEngine.LogiX.Undo.BeginUndoBatch
+# Create Field Undo Step@CreateFieldUndoStep#FrooxEngine.LogiX.Undo.CreateFieldUndoStep
+# Create Reference Undo Step@CreateReferenceUndoStep#FrooxEngine.LogiX.Undo.CreateReferenceUndoStep
+# Create Spawn Undo Step@CreateSpawnUndoStep#FrooxEngine.LogiX.Undo.CreateSpawnUndoStep
+# Create Transform Undo Step@CreateTransformUndoStep#FrooxEngine.LogiX.Undo.CreateTransformUndoStep
+# Create Type Field Undo Step@CreateTypeFieldUndoStep#FrooxEngine.LogiX.Undo.CreateTypeFieldUndoStep
+# Create Undo Batch@CreateUndoBatch#FrooxEngine.LogiX.Undo.CreateUndoBatch
+# End Undo Batch@EndUndoBatch#FrooxEngine.LogiX.Undo.EndUndoBatch
+# Undoable Destroy@UndoableDestroy#FrooxEngine.LogiX.Undo.UndoableDestroy
+ Users
+# Local Output
+## Desktop FOV@DesktopFOV#FrooxEngine.LogiX.WorldModel.DesktopFOV
+## Ears Overriden@EarsOverriden#FrooxEngine.LogiX.WorldModel.EarsOverriden
+## Ears Position@EarsPosition#FrooxEngine.LogiX.WorldModel.EarsPosition
+## Ears Rotation@EarsRotation#FrooxEngine.LogiX.WorldModel.EarsRotation
+## Ears Scale@EarsScale#FrooxEngine.LogiX.WorldModel.EarsScale
+## View Overriden@ViewOverriden#FrooxEngine.LogiX.WorldModel.ViewOverriden
+## View Position@ViewPosition#FrooxEngine.LogiX.WorldModel.ViewPosition
+## View Rotation@ViewRotation#FrooxEngine.LogiX.WorldModel.ViewRotation
+## View Scale@ViewScale#FrooxEngine.LogiX.WorldModel.ViewScale
+# User Root
+## Controller Slot@ControllerSlot#FrooxEngine.LogiX.WorldModel.ControllerSlot
+## Feet Position@FeetPosition#FrooxEngine.LogiX.WorldModel.FeetPosition
+## Feet Rotation@FeetRotation#FrooxEngine.LogiX.WorldModel.FeetRotation
+## Hand Slot@HandSlot#FrooxEngine.LogiX.WorldModel.HandSlot
+## Head Facing Direction@HeadFacingDirection#FrooxEngine.LogiX.WorldModel.HeadFacingDirection
+## Head Facing Rotation@HeadFacingRotation#FrooxEngine.LogiX.WorldModel.HeadFacingRotation
+## Head Position@HeadPosition#FrooxEngine.LogiX.WorldModel.HeadPosition
+## Head Rotation@HeadRotation#FrooxEngine.LogiX.WorldModel.HeadRotation
+## Head Slot@HeadSlot#FrooxEngine.LogiX.WorldModel.HeadSlot
+## Hips Position@HipsPosition#FrooxEngine.LogiX.WorldModel.HipsPosition
+## Hips Rotation@HipsRotation#FrooxEngine.LogiX.WorldModel.HipsRotation
+## Left Hand Position@LeftHandPosition#FrooxEngine.LogiX.WorldModel.LeftHandPosition
+## Left Hand Rotation@LeftHandRotation#FrooxEngine.LogiX.WorldModel.LeftHandRotation
+## Right Hand Position@RightHandPosition#FrooxEngine.LogiX.WorldModel.RightHandPosition
+## Right Hand Rotation@RightHandRotation#FrooxEngine.LogiX.WorldModel.RightHandRotation
+## Set Feet Position@SetFeetPosition#FrooxEngine.LogiX.WorldModel.SetFeetPosition
+## Set Feet Rotation@SetFeetRotation#FrooxEngine.LogiX.WorldModel.SetFeetRotation
+## Set Head Facing Direction@SetHeadFacingDirection#FrooxEngine.LogiX.WorldModel.SetHeadFacingDirection
+## Set Head Facing Rotation@SetHeadFacingRotation#FrooxEngine.LogiX.WorldModel.SetHeadFacingRotation
+## Set Head Position@SetHeadPosition#FrooxEngine.LogiX.WorldModel.SetHeadPosition
+## Set Head Rotation@SetHeadRotation#FrooxEngine.LogiX.WorldModel.SetHeadRotation
+## Set Hips Position@SetHipsPosition#FrooxEngine.LogiX.WorldModel.SetHipsPosition
+## Set Hips Rotation@SetHipsRotation#FrooxEngine.LogiX.WorldModel.SetHipsRotation
+## Set User Scale@SetUserScale#FrooxEngine.LogiX.WorldModel.SetUserScale
+## User Root Global Scale@UserRootGlobalScale#FrooxEngine.LogiX.WorldModel.UserRootGlobalScale
+# Active User Root User@ActiveUserRootUser#FrooxEngine.LogiX.WorldModel.ActiveUserRootUser
+# Host User@HostUser#FrooxEngine.LogiX.WorldModel.HostUser
+# Is Local User@IsLocalUser#FrooxEngine.LogiX.WorldModel.IsLocalUser
+# Is Neos Dash Opened@IsNeosDashOpened#FrooxEngine.LogiX.WorldModel.IsNeosDashOpened
+# Is Platform Dash Opened@IsPlatformDashOpened#FrooxEngine.LogiX.WorldModel.IsPlatformDashOpened
+# Is User Host@IsUserHost#FrooxEngine.LogiX.WorldModel.IsUserHost
+# Is User In Edit Mode@IsUserInEditMode#FrooxEngine.LogiX.WorldModel.IsUserInEditMode
+# Is User In Kiosk Mode@IsUserInKioskMode#FrooxEngine.LogiX.WorldModel.IsUserInKioskMode
+# Is User Patron@IsUserPatron#FrooxEngine.LogiX.WorldModel.IsUserPatron
+# Is User Present@IsUserPresent#FrooxEngine.LogiX.WorldModel.IsUserPresent
+# Is User Present In Headset@IsUserPresentInHeadset#FrooxEngine.LogiX.WorldModel.IsUserPresentInHeadset
+# Is User Present In World@IsUserPresentInWorld#FrooxEngine.LogiX.WorldModel.IsUserPresentInWorld
+# Is User Silenced@IsUserSilenced#FrooxEngine.LogiX.WorldModel.IsUserSilenced
+# Local User@LocalUser#FrooxEngine.LogiX.WorldModel.LocalUser
+# Local User Root@LocalUserRoot#FrooxEngine.LogiX.WorldModel.LocalUserRoot
+# Local User Slot@LocalUserSlot#FrooxEngine.LogiX.WorldModel.LocalUserSlot
+# Local User Space@LocalUserSpace#FrooxEngine.LogiX.WorldModel.LocalUserSpace
+# User Active View Targetting Controller@UserActiveViewTargettingController#FrooxEngine.LogiX.WorldModel.UserActiveViewTargettingController
+# User Downloaded Bytes@UserDownloadedBytes#FrooxEngine.LogiX.WorldModel.UserDownloadedBytes
+# User Download Speed@UserDownloadSpeed#FrooxEngine.LogiX.WorldModel.UserDownloadSpeed
+# User Download Speed Max@UserDownloadSpeedMax#FrooxEngine.LogiX.WorldModel.UserDownloadSpeedMax
+# User FPS@UserFPS#FrooxEngine.LogiX.WorldModel.UserFPS
+# User From ID@UserFromID#FrooxEngine.LogiX.WorldModel.UserFromID
+# User From Username@UserFromUsername#FrooxEngine.LogiX.WorldModel.UserFromUsername
+# User Head Output Device@UserHeadOutputDevice#FrooxEngine.LogiX.WorldModel.UserHeadOutputDevice
+# User Joined@UserJoined#FrooxEngine.LogiX.WorldModel.UserJoined
+# User Left@UserLeft#FrooxEngine.LogiX.WorldModel.UserLeft
+# MachineID@UserMachineID#FrooxEngine.LogiX.WorldModel.UserMachineID
+# User Ping@UserPing#FrooxEngine.LogiX.WorldModel.UserPing
+# User Platform@UserPlatform#FrooxEngine.LogiX.WorldModel.UserPlatform
+# User Primary Hand@UserPrimaryHand#FrooxEngine.LogiX.WorldModel.UserPrimaryHand
+# User Queued Messages@UserQueuedMessages#FrooxEngine.LogiX.WorldModel.UserQueuedMessages
+# User Recording Voice Message@UserRecordingVoiceMessage#FrooxEngine.LogiX.WorldModel.UserRecordingVoiceMessage
+# User Root Slot@UserRootSlot#FrooxEngine.LogiX.WorldModel.UserRootSlot
+# User Spawn@UserSpawn#FrooxEngine.LogiX.WorldModel.UserSpawn
+# User Uploaded Bytes@UserUploadedBytes#FrooxEngine.LogiX.WorldModel.UserUploadedBytes
+# User Upload Speed@UserUploadSpeed#FrooxEngine.LogiX.WorldModel.UserUploadSpeed
+# User Upload Speed Max@UserUploadSpeedMax#FrooxEngine.LogiX.WorldModel.UserUploadSpeedMax
+# UserID@UserUserID#FrooxEngine.LogiX.WorldModel.UserUserID
+# User Username@UserUsername#FrooxEngine.LogiX.WorldModel.UserUsername
+# User User Root@UserUserRoot#FrooxEngine.LogiX.WorldModel.UserUserRoot
+# User View Reference Active@UserViewReferenceActive#FrooxEngine.LogiX.WorldModel.UserViewReferenceActive
+# User View Voice Active@UserViewVoiceActive#FrooxEngine.LogiX.WorldModel.UserViewVoiceActive
+# User Voice Mode@UserVoiceMode#FrooxEngine.LogiX.WorldModel.UserVoiceMode
+# User VR Active@UserVR_Active#FrooxEngine.LogiX.WorldModel.UserVR_Active
+ Utility
+# Empty GUID@EmptyGUID#FrooxEngine.LogiX.Utility.EmptyGUID
+# Index Of First Match@IndexOfFirstMatch<T>#FrooxEngine.LogiX.Utility.IndexOfFirstMatch`1
+# Parse GUID@ParseGUID#FrooxEngine.LogiX.Utility.ParseGUID
+# Random GUID@RandomGUID#FrooxEngine.LogiX.Utility.RandomGUID
+ Variables
+# Storage
+## Slot@SlotRegister#FrooxEngine.LogiX.Data.SlotRegister
+## User@UserRegister#FrooxEngine.LogiX.Data.UserRegister
+## Value Register`1@ValueRegister<T>#FrooxEngine.LogiX.Data.ValueRegister`1
+# Clear Dynamic Variables@ClearDynamicVariables#FrooxEngine.LogiX.Data.ClearDynamicVariables
+# Clear Dynamic Variables Of Type`1@ClearDynamicVariablesOfType<T>#FrooxEngine.LogiX.Data.ClearDynamicVariablesOfType`1
+# Create Dynamic Variable`1@CreateDynamicVariable<T>#FrooxEngine.LogiX.Data.CreateDynamicVariable`1
+# Delete Dynamic Variable`1@DeleteDynamicVariable<T>#FrooxEngine.LogiX.Data.DeleteDynamicVariable`1
+# Dynamic Variable Input`1@DynamicVariableInput<T>#FrooxEngine.LogiX.Data.DynamicVariableInput`1
+# Dynamic Variable Input With Events`1@DynamicVariableInputWithEvents<T>#FrooxEngine.LogiX.Data.DynamicVariableInputWithEvents`1
+# Read Cloud Variable`1@ReadCloudVariable<T>#FrooxEngine.LogiX.Data.ReadCloudVariable`1
+# Read Dynamic Variable`1@ReadDynamicVariable<T>#FrooxEngine.LogiX.Data.ReadDynamicVariable`1
+# Write Cloud Variable`1@WriteCloudVariable<T>#FrooxEngine.LogiX.Data.WriteCloudVariable`1
+# Write Dynamic Variable`1@WriteDynamicVariable<T>#FrooxEngine.LogiX.Data.WriteDynamicVariable`1
+# Write Or Create Dynamic Variable`1@WriteOrCreateDynamicVariable<T>#FrooxEngine.LogiX.Data.WriteOrCreateDynamicVariable`1
+ Visualization
+# Flash Highlight Hierarchy@FlashHighlightHierarchy#FrooxEngine.LogiX.Nodes.Visualization.FlashHighlightHierarchy
+ World
+# Focus World@FocusWorld#FrooxEngine.LogiX.WorldNodes.FocusWorld
+# Open World@OpenWorld#FrooxEngine.LogiX.WorldNodes.OpenWorld
+# World Access Level@WorldAccessLevel#FrooxEngine.LogiX.WorldNodes.WorldAccessLevel
+# World Away Kick Enabled@WorldAwayKickEnabled#FrooxEngine.LogiX.WorldNodes.WorldAwayKickEnabled
+# World Away Kick Minutes@WorldAwayKickMinutes#FrooxEngine.LogiX.WorldNodes.WorldAwayKickMinutes
+# World Description@WorldDescription#FrooxEngine.LogiX.WorldNodes.WorldDescription
+# World Hide From Listing@WorldHideFromListing#FrooxEngine.LogiX.WorldNodes.WorldHideFromListing
+# World Max Users@WorldMaxUsers#FrooxEngine.LogiX.WorldNodes.WorldMaxUsers
+# World Mobile Friendly@WorldMobileFriendly#FrooxEngine.LogiX.WorldNodes.WorldMobileFriendly
+# World Name@WorldName#FrooxEngine.LogiX.WorldNodes.WorldName
+# World Saved@WorldSaved#FrooxEngine.LogiX.WorldNodes.WorldSaved
+# World Session ID@WorldSessionID#FrooxEngine.LogiX.WorldNodes.WorldSessionID
+# World Session URL@WorldSessionURL#FrooxEngine.LogiX.WorldNodes.WorldSessionURL
+# World Session Web URL@WorldSessionWebURL#FrooxEngine.LogiX.WorldNodes.WorldSessionWebURL
+# World URL@WorldURL#FrooxEngine.LogiX.WorldNodes.WorldURL
+# World User Count@WorldUserCount#FrooxEngine.LogiX.WorldNodes.WorldUserCount
+ Cache@CacheNode<T>#FrooxEngine.LogiX.CacheNode`1
+ Delay Value@DelayValueNode<T>#FrooxEngine.LogiX.DelayValueNode`1
+ Demultiplex@Demultiplexer<T>#FrooxEngine.LogiX.Operators.Demultiplexer`1
+ Display@Display_Dummy#FrooxEngine.LogiX.Display.Display_Dummy
+ Display Impulse@DisplayImpulse#FrooxEngine.LogiX.Display.DisplayImpulse
+ Impulse Relay@ImpulseRelay#FrooxEngine.LogiX.ImpulseRelay
+ Multiplex@Multiplexer<T>#FrooxEngine.LogiX.Operators.Multiplexer`1
+ Pick Random@PickRandom<T>#FrooxEngine.LogiX.Operators.PickRandom`1
+ Relay@RelayNode<T>#FrooxEngine.LogiX.RelayNode`1
+ Updating Relay@UpdatingRelayNode<T>#FrooxEngine.LogiX.UpdatingRelayNode`1
