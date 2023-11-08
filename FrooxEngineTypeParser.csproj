@@ -5,27 +5,27 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <ResonitePath Condition="Exists('D:\SteamLibrary\steamapps\common\Resonite\')">D:\SteamLibrary\steamapps\common\Resonite\</ResonitePath>
-    <ResonitePath Condition="Exists('$HOME:\SteamLibrary\steamapps\common\Resonite\')">D:\SteamLibrary\steamapps\common\Resonite\</ResonitePath>
-    <ResonitePath Condition="Exists('Resonite\Resonite_Data\Managed\')">Resonite\</ResonitePath>
-    <ManagedPath>$(ResonitePath)\Resonite_Data\Managed\</ManagedPath>
+    <ResonitePath Condition="Exists('/home/runner/Steam/steamapps/common/Resonite/')">/home/runner/Steam/steamapps/common/Resonite/Resonite_Data/Managed/</ResonitePath>
+    <ResonitePath Condition="Exists('D:\SteamLibrary\steamapps\common\Resonite\')">D:\SteamLibrary\steamapps\common\Resonite\Resonite_Data\Managed\</ResonitePath>
+    <ResonitePath Condition="Exists('$HOME:\SteamLibrary\steamapps\common\Resonite\')">D:\SteamLibrary\steamapps\common\Resonite\Resonite_Data\Managed\</ResonitePath>
+    <ResonitePath Condition="Exists('Resonite\Resonite_Data\Managed\')">Resonite\Resonite_Data\Managed\</ResonitePath>
   </PropertyGroup>
 
   <ItemGroup>
     <Reference Include="Elements.Core">
-      <HintPath>$(ManagedPath)Elements.Core.dll</HintPath>
+      <HintPath>$(ResonitePath)Elements.Core.dll</HintPath>
     </Reference>
     <Reference Include="FrooxEngine">
-      <HintPath>$(ManagedPath)FrooxEngine.dll</HintPath>
+      <HintPath>$(ResonitePath)FrooxEngine.dll</HintPath>
     </Reference>
     <Reference Include="ProtoFlux.Core.dll">
-      <HintPath>$(ManagedPath)ProtoFlux.Core.dll</HintPath>
+      <HintPath>$(ResonitePath)ProtoFlux.Core.dll</HintPath>
     </Reference>
     <Reference Include="ProtoFlux.Nodes.Core.dll">
-      <HintPath>$(ManagedPath)ProtoFlux.Nodes.Core.dll</HintPath>
+      <HintPath>$(ResonitePath)ProtoFlux.Nodes.Core.dll</HintPath>
     </Reference>
     <Reference Include="ProtoFluxBindings.dll">
-      <HintPath>$(ManagedPath)ProtoFluxBindings.dll</HintPath>
+      <HintPath>$(ResonitePath)ProtoFluxBindings.dll</HintPath>
     </Reference>
   </ItemGroup>
 
