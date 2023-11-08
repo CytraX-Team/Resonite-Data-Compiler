@@ -132,4 +132,4 @@ foreach (Type? node in ProtofluxPath.Elements)
 }
 
 // Writes our Protoflux list to a file.
-await File.WriteAllTextAsync("../../../../lists/ProtofluxList.txt", ProtofluxString.ToString());
+await File.WriteAllTextAsync("../../../../lists/ProtoFluxList.txt", ProtofluxString.ToString());

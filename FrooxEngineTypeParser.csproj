@@ -6,7 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <ResonitePath Condition="Exists('D:\SteamLibrary\steamapps\common\Resonite\')">D:\SteamLibrary\steamapps\common\Resonite\</ResonitePath>
-    <ResonitePath Condition="Exists('..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Resonite\')">..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Resonite\</ResonitePath>
+    <ResonitePath Condition="Exists('$HOME:\SteamLibrary\steamapps\common\Resonite\')">D:\SteamLibrary\steamapps\common\Resonite\</ResonitePath>
+    <ResonitePath Condition="Exists('Resonite\Resonite_Data\Managed\')">Resonite\</ResonitePath>
     <ManagedPath>$(ResonitePath)\Resonite_Data\Managed\</ManagedPath>
   </PropertyGroup>
 
@@ -16,6 +17,15 @@
     </Reference>
     <Reference Include="FrooxEngine">
       <HintPath>$(ManagedPath)FrooxEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="ProtoFlux.Core.dll">
+      <HintPath>$(ManagedPath)ProtoFlux.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ProtoFlux.Nodes.Core.dll">
+      <HintPath>$(ManagedPath)ProtoFlux.Nodes.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ProtoFluxBindings.dll">
+      <HintPath>$(ManagedPath)ProtoFluxBindings.dll</HintPath>
     </Reference>
   </ItemGroup>
 
