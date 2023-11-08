@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ResonitePath Condition="Exists('/home/runner/Steam/steamapps/common/Resonite/')">/home/runner/Steam/steamapps/common/Resonite/Resonite_Data/Managed/</ResonitePath>
+    <ResonitePath Condition="Exists('D:\SteamLibrary\steamapps\common\Resonite\')">D:\SteamLibrary\steamapps\common\Resonite\Resonite_Data\Managed\</ResonitePath>
+    <ResonitePath Condition="Exists('$HOME:\SteamLibrary\steamapps\common\Resonite\')">D:\SteamLibrary\steamapps\common\Resonite\Resonite_Data\Managed\</ResonitePath>
+    <ResonitePath Condition="Exists('Resonite\Resonite_Data\Managed\')">Resonite\Resonite_Data\Managed\</ResonitePath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Elements.Core">
+      <HintPath>$(ResonitePath)Elements.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FrooxEngine">
+      <HintPath>$(ResonitePath)FrooxEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="ProtoFlux.Core.dll">
+      <HintPath>$(ResonitePath)ProtoFlux.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ProtoFlux.Nodes.Core.dll">
+      <HintPath>$(ResonitePath)ProtoFlux.Nodes.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ProtoFluxBindings.dll">
+      <HintPath>$(ResonitePath)ProtoFluxBindings.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

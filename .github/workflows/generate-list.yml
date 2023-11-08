@@ -1,7 +1,7 @@
 name: Compile Component & Logix Lists
 
 on:
-  # Allows you to run this workflow manually from the Actions tab. DO NOT REMOVE.
+  push:
   workflow_dispatch:
 
 jobs:
@@ -11,63 +11,48 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-        # Lets get SteamCMD downloaded.
-      - name: Install SteamCMD
-        # Check for a NeosVR cache
-        if: steps.NeosVRCache.outputs.cache-hit != 'true'
-        uses: CyberAndrii/setup-steamcmd@v1.1.1
+      # Lets get SteamCMD downloaded.
+    - name: Install SteamCMD
+      # Check for a Resonite cache
+      uses: CyberAndrii/setup-steamcmd@v1
 
-        # And now to download NeosVR.
-      - name: Install NeosVR
-        # Check for a NeosVR cache
-        if: steps.NeosVRCache.outputs.cache-hit != 'true'
-        id: install-neosvr
-        run: steamcmd +force_install_dir $HOME/Steam/steamapps/common/NeosVR +login ${{ secrets.PASSCODE }} +app_update 740250 validate +quit
+      # And now to download Resonite.
+    - name: Install Resonite
+      # Check for a Resonite cache
+      run: steamcmd +force_install_dir $HOME/Steam/steamapps/common/Resonite +login ${{ secrets.PASSCODE }} +app_update 2519830 validate +quit
 
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it.
-      - name: Checkout
-        uses: actions/checkout@v3.0.2
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it.
+    - name: Checkout
+      uses: actions/checkout@v3
 
-      # Moves our custom cs file into the correct location.
-      - name: Move Scripts
-        run: |
-          mv $GITHUB_WORKSPACE/script/NeosTypeParser.cs $HOME/Steam/steamapps/common/NeosVR/Neos_Data/Managed/
-          mv $GITHUB_WORKSPACE/script/NeosTypeParser.csproj $HOME/Steam/steamapps/common/NeosVR/Neos_Data/Managed/
+    # Runs our custom cs file to generate the list.
+    - name: Build Script
+      run: |
+        dotnet build -c Release
+        cd $GITHUB_WORKSPACE/bin/Release/net7.0/
+        ./FrooxEngineTypeParser
 
-      # Sets up .NET Core 6.0.x
-      - name: Setup .NET Core SDK 6.0.x
-        uses: actions/setup-dotnet@v2
-        with:
-          dotnet-version: '6.0.x'
+    # Moves our generated list into root of our repo.
+    # - name: Move Output File
+    #   run: |
+    #     cd $HOME/Steam/steamapps/common/Resonite/Resonite_Data/Managed/output
+    #     mv $HOME/Steam/steamapps/common/Resonite/Resonite_Data/Managed/output/ComponentList.txt $GITHUB_WORKSPACE
+    #     mv $HOME/Steam/steamapps/common/Resonite/Resonite_Data/Managed/output/ProtoFluxList.txt $GITHUB_WORKSPACE
+    #     cd $GITHUB_WORKSPACE
 
-      # Runs our custom cs file to generate the list.
-      - name: Build Script
-        id: generate-list
-        run: |
-          cd $HOME/Steam/steamapps/common/NeosVR/Neos_Data/Managed/
-          dotnet build
-          dotnet run
+    # Commits the changes to the repo.
+    - name: Commit
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "Updated Component Lists"
+        git pull origin ${{ github.ref_name }}
+        git add lists/ComponentList.txt
+        git add lists/ProtoFluxList.txt
+        git commit -m "Automatic component list compile" || true
 
-      # Moves our generated list into root of our repo.
-      - name: Move Output File
-        run: |
-          mv $HOME/Steam/steamapps/common/NeosVR/Neos_Data/Managed/ComponentList.txt $GITHUB_WORKSPACE
-          mv $HOME/Steam/steamapps/common/NeosVR/Neos_Data/Managed/LogixList.txt $GITHUB_WORKSPACE
-          cd $GITHUB_WORKSPACE
-
-      # Commits the changes to the repo.
-      - name: Commit
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "Component List"
-          git pull origin main
-          git add ComponentList.txt
-          git add LogixList.txt
-          git commit -m "Automatic component list compile" || true
-
-      # Pushes the changes to the repo.
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+    # Pushes the changes to the repo.
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
