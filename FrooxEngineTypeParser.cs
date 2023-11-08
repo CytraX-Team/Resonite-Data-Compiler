@@ -4,132 +4,161 @@ using Elements.Core;
 using FrooxEngine;
 using FrooxEngine.ProtoFlux;
 
-const char SEPARATOR = '#';
-
-static IEnumerable<Type> GetLoadableTypes(Assembly assembly)
+internal class Program
 {
-    try
+    private static async Task Main(string[] args)
     {
-        return assembly.GetTypes();
-    }
-    catch (ReflectionTypeLoadException e)
-    {
-        return e.Types.Where(t => t != null)!;
-    }
-}
+        const char SEPARATOR = '#';
 
-IEnumerable<Assembly> asms = Directory
-    .GetFiles(Directory.GetCurrentDirectory())
-    .Where((s) => s.EndsWith(".dll") && !s.StartsWith("System"))
-    .Select(
-        (s) =>
+        static IEnumerable<Type> GetLoadableTypes(Assembly assembly)
         {
             try
             {
-                return Assembly.LoadFrom(s);
+                return assembly.GetTypes();
             }
-            // For non C# dlls in the managed folder
-            catch (BadImageFormatException) { }
-            return null;
+            catch (ReflectionTypeLoadException e)
+            {
+                return e.Types.Where(t => t != null)!;
+            }
         }
-    )
-    .Where((asm) => asm != null)!;
 
-Console.WriteLine($"Loaded {asms.Count()} assemblies.");
+        IEnumerable<Assembly> asms = Directory
+            .GetFiles(Directory.GetCurrentDirectory())
+            .Where((s) => s.EndsWith(".dll") && !s.StartsWith("System"))
+            .Select(
+                (s) =>
+                {
+                    try
+                    {
+                        return Assembly.LoadFrom(s);
+                    }
+                    // For non C# dlls in the managed folder
+                    catch (BadImageFormatException) { }
+                    return null;
+                }
+            )
+            .Where((asm) => asm != null)!;
 
-List<Type> allTypes = asms.SelectMany(GetLoadableTypes).ToList();
+        Console.WriteLine($"Loaded {asms.Count()} assemblies.");
 
-Console.WriteLine($"Loaded {allTypes.Count} types.");
+        List<Type> allTypes = asms.SelectMany(GetLoadableTypes).ToList();
 
-WorkerInitializer.Initialize(allTypes, true);
+        Console.WriteLine($"Loaded {allTypes.Count} types.");
 
-StringBuilder componentsString = new();
+        WorkerInitializer.Initialize(allTypes, true);
 
-void PrintComp(Type element, StringBuilder builder, int depth, HashSet<string> seenOverloads)
-{
-    if (typeof(ProtoFluxNode).IsAssignableFrom(element))
-    {
-        Type toPrint = element;
-        /*
-        if (ProtoFluxHelper.IsHidden(element)) return;
-        string overloadName = ProtoFluxHelper.GetOverloadName(element);
-        if (overloadName != null)
+        StringBuilder componentsString = new();
+
+        void PrintComp(
+            Type element,
+            StringBuilder builder,
+            int depth,
+            HashSet<string> seenOverloads
+        )
         {
-            if (seenOverloads.Add(overloadName))
+            if (typeof(ProtoFluxNode).IsAssignableFrom(element))
             {
-                toPrint = ProtoFluxHelper.GetMatchingOverload(overloadName, null, typeof(ComponentSelector).GetMethod("GetTypeRank", BindingFlags.NonPublic | BindingFlags.Static)?.CreateDelegate<Func<Type, int>>());
-            }
-            else
-            {
+                Type toPrint = element;
+                /*
+                if (ProtoFluxHelper.IsHidden(element)) return;
+                string overloadName = ProtoFluxHelper.GetOverloadName(element);
+                if (overloadName != null)
+                {
+                    if (seenOverloads.Add(overloadName))
+                    {
+                        toPrint = ProtoFluxHelper.GetMatchingOverload(overloadName, null, typeof(ComponentSelector).GetMethod("GetTypeRank", BindingFlags.NonPublic | BindingFlags.Static)?.CreateDelegate<Func<Type, int>>());
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                */
+                //builder.AppendLine(new string(SEPARATOR, depth + 1) + " " + ProtoFluxHelper.GetDisplayNode(toPrint).FullName + "@" + toPrint.GetNiceName() + SEPARATOR + toPrint.FullName);
+                _ = builder.AppendLine(
+                    new string(SEPARATOR, depth + 1)
+                        + " "
+                        + toPrint.GetNiceName()
+                        + SEPARATOR
+                        + toPrint.FullName
+                );
                 return;
             }
+            _ = builder.AppendLine(
+                new string(SEPARATOR, depth + 1)
+                    + " "
+                    + element.GetNiceName()
+                    + SEPARATOR
+                    + element.FullName
+            );
         }
-        */
-        //builder.AppendLine(new string(SEPARATOR, depth + 1) + " " + ProtoFluxHelper.GetDisplayNode(toPrint).FullName + "@" + toPrint.GetNiceName() + SEPARATOR + toPrint.FullName);
-        _ = builder.AppendLine(
-            new string(SEPARATOR, depth + 1)
-                + " "
-                + toPrint.GetNiceName()
-                + SEPARATOR
-                + toPrint.FullName
+
+        void ProcessNode(CategoryNode<Type> node, StringBuilder builder, int depth)
+        {
+            _ = builder.AppendLine(new string(SEPARATOR, depth) + " " + node.Name);
+            foreach (CategoryNode<Type>? subdir in node.Subcategories)
+            {
+                ProcessNode(subdir, builder, depth + 1);
+            }
+            // the line below is only useful in logix mode
+            // but commenting it out will cause the PrintComp line to error since it requires that variable
+            HashSet<string> seenOverloads = new();
+            foreach (Type element in node.Elements)
+            {
+                PrintComp(element, builder, depth, seenOverloads);
+            }
+        }
+
+        foreach (CategoryNode<Type>? node in WorkerInitializer.ComponentLibrary.Subcategories)
+        {
+            if (node.Name == "ProtoFlux")
+            {
+                continue;
+            }
+
+            ProcessNode(node, componentsString, 0);
+        }
+
+        string outputFolder = (args.Length < 1) ? "../../../lists/" : args[0];
+
+        // Get the directory name from the file path
+        string directoryName = Path.GetDirectoryName(outputFolder)!;
+
+        // Check if the directory exists, if not, create it
+        if (!Directory.Exists(directoryName))
+        {
+            _ = Directory.CreateDirectory(directoryName);
+        }
+        // Writes our components list to a file.
+        await File.WriteAllTextAsync(
+            Path.Combine(outputFolder, "ComponentList.txt"),
+            componentsString.ToString()
         );
-        return;
+
+        StringBuilder ProtofluxString = new();
+        CategoryNode<Type> ProtofluxPath = WorkerInitializer.ComponentLibrary.GetSubcategory(
+            "ProtoFlux"
+        );
+        // .GetSubcategory("Runtimes")
+        // .GetSubcategory("Execution")
+        // .GetSubcategory("Nodes");
+
+
+        foreach (CategoryNode<Type>? node in ProtofluxPath.Subcategories)
+        {
+            ProcessNode(node, ProtofluxString, 0);
+        }
+
+        HashSet<string> seenOverloads = new();
+        foreach (Type? node in ProtofluxPath.Elements)
+        {
+            PrintComp(node, ProtofluxString, -1, seenOverloads);
+        }
+
+        // Writes our ProtoFlux list to a file.
+        await File.WriteAllTextAsync(
+            Path.Combine(outputFolder, "ProtoFluxList.txt"),
+            ProtofluxString.ToString()
+        );
     }
-    _ = builder.AppendLine(
-        new string(SEPARATOR, depth + 1)
-            + " "
-            + element.GetNiceName()
-            + SEPARATOR
-            + element.FullName
-    );
 }
-
-void ProcessNode(CategoryNode<Type> node, StringBuilder builder, int depth)
-{
-    _ = builder.AppendLine(new string(SEPARATOR, depth) + " " + node.Name);
-    foreach (CategoryNode<Type>? subdir in node.Subcategories)
-    {
-        ProcessNode(subdir, builder, depth + 1);
-    }
-    // the line below is only useful in logix mode
-    // but commenting it out will cause the PrintComp line to error since it requires that variable
-    HashSet<string> seenOverloads = new();
-    foreach (Type element in node.Elements)
-    {
-        PrintComp(element, builder, depth, seenOverloads);
-    }
-}
-
-foreach (CategoryNode<Type>? node in WorkerInitializer.ComponentLibrary.Subcategories)
-{
-    if (node.Name == "ProtoFlux")
-    {
-        continue;
-    }
-
-    ProcessNode(node, componentsString, 0);
-}
-
-// Writes our components list to a file.
-await File.WriteAllTextAsync("../../../../lists/ComponentList.txt", componentsString.ToString());
-
-StringBuilder ProtofluxString = new();
-CategoryNode<Type> ProtofluxPath = WorkerInitializer.ComponentLibrary
-    .GetSubcategory("ProtoFlux");
-    // .GetSubcategory("Runtimes")
-    // .GetSubcategory("Execution")
-    // .GetSubcategory("Nodes");
-
-foreach (CategoryNode<Type>? node in ProtofluxPath.Subcategories)
-{
-    ProcessNode(node, ProtofluxString, 0);
-}
-
-HashSet<string> seenOverloads = new();
-foreach (Type? node in ProtofluxPath.Elements)
-{
-    PrintComp(node, ProtofluxString, -1, seenOverloads);
-}
-
-// Writes our Protoflux list to a file.
-await File.WriteAllTextAsync("../../../../lists/ProtoFluxList.txt", ProtofluxString.ToString());

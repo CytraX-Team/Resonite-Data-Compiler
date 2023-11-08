@@ -26,10 +26,11 @@ jobs:
       uses: actions/checkout@v3
 
     # Moves our custom cs file into the correct location.
-    - name: Move Scripts
+    # Why are we doing it like this? Simplifies the csproj file.
+    - name: Move Code
       run: |
-        mv $GITHUB_WORKSPACE/script/FrooxEngineTypeParser.cs $HOME/Steam/steamapps/common/Resonite/Resonite_Data/Managed/
-        mv $GITHUB_WORKSPACE/script/FrooxEngineTypeParser.csproj $HOME/Steam/steamapps/common/Resonite/Resonite_Data/Managed/
+        mv $GITHUB_WORKSPACE/FrooxEngineTypeParser.cs $HOME/Steam/steamapps/common/Resonite/Resonite_Data/Managed/
+        mv $GITHUB_WORKSPACE/FrooxEngineTypeParser.csproj $HOME/Steam/steamapps/common/Resonite/Resonite_Data/Managed/
 
     # Runs our custom cs file to generate the list.
     - name: Build Script
@@ -37,13 +38,13 @@ jobs:
       run: |
         cd $HOME/Steam/steamapps/common/Resonite/Resonite_Data/Managed/
         dotnet build
-        dotnet run
+        dotnet run output/
 
     # Moves our generated list into root of our repo.
     - name: Move Output File
       run: |
-        mv $HOME/Steam/steamapps/common/Resonite/Resonite_Data/Managed/ComponentList.txt $GITHUB_WORKSPACE
-        mv $HOME/Steam/steamapps/common/Resonite/Resonite_Data/Managed/ProtoFluxList.txt $GITHUB_WORKSPACE
+        mv $HOME/Steam/steamapps/common/Resonite/Resonite_Data/Managed/output/ComponentList.txt $GITHUB_WORKSPACE
+        mv $HOME/Steam/steamapps/common/Resonite/Resonite_Data/Managed/output/ProtoFluxList.txt $GITHUB_WORKSPACE
         cd $GITHUB_WORKSPACE
 
     # Commits the changes to the repo.
