@@ -30,7 +30,7 @@ jobs:
       run: |
         dotnet build -c Release
         cd $GITHUB_WORKSPACE/bin/Release/net7.0/
-        ./FrooxEngineTypeParser.exe
+        ./FrooxEngineTypeParser
 
     # Moves our generated list into root of our repo.
     # - name: Move Output File
