@@ -2,10 +2,7 @@ name: Compile Component & Logix Lists
 
 on:
   push:
-    branches: [ "main", "dev" ]
-  # Allows you to run this workflow manually from the Actions tab. DO NOT REMOVE.
   workflow_dispatch:
-    branches: [ "main", "dev" ]
 
 jobs:
   generate-component-list:
@@ -50,7 +47,7 @@ jobs:
         git config --local user.name "Component List"
         git pull origin main
         git add lists/ComponentList.txt
-        git add lists/LogixList.txt
+        git add lists/ProtofluxList.txt
         git commit -m "Automatic component list compile" || true
 
     # Pushes the changes to the repo.

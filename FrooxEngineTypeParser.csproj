@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ResonitePath Condition="Exists('D:\SteamLibrary\steamapps\common\Resonite\')">D:\SteamLibrary\steamapps\common\Resonite\</ResonitePath>
+    <ResonitePath Condition="Exists('..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Resonite\')">..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Resonite\</ResonitePath>
+    <ManagedPath>$(ResonitePath)\Resonite_Data\Managed\</ManagedPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Elements.Core">
+      <HintPath>$(ManagedPath)Elements.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FrooxEngine">
+      <HintPath>$(ManagedPath)FrooxEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
