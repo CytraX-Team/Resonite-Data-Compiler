@@ -46,8 +46,8 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "Updated Component Lists"
         git pull origin ${{ github.ref_name }}
-        git add ComponentList.txt
-        git add ProtofluxList.txt
+        git add lists/ComponentList.txt
+        git add lists/ProtoFluxList.txt
         git commit -m "Automatic component list compile" || true
 
     # Pushes the changes to the repo.
