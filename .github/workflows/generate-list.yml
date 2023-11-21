@@ -5,6 +5,8 @@ on:
     - cron: "0 0 * * *"
   push:
   workflow_dispatch:
+env:
+  VERSION: NULL VERSION
 
 jobs:
   generate-component-list:
@@ -22,6 +24,13 @@ jobs:
     - name: Install Resonite
       # Check for a Resonite cache
       run: steamcmd +force_install_dir $HOME/Steam/steamapps/common/Resonite +login ${{ secrets.PASSCODE }} +app_update 2519830 validate +quit
+
+    - name: Get Version ID
+      run: |
+        cd $HOME/Steam/steamapps/common/Resonite
+        VERSION=$(cat Build.version)
+        echo "VERSION=$VERSION" >> $GITHUB_ENV
+        echo ${{ env.VERSION }} works!
 
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it.
     - name: Checkout
@@ -50,7 +59,7 @@ jobs:
         git pull origin ${{ github.ref_name }}
         git add lists/ComponentList.txt
         git add lists/ProtoFluxList.txt
-        git commit -m "Automatic component list compile" || true
+        git commit -m "${{ env.VERSION }}" || true
 
     # Pushes the changes to the repo.
     - name: Push changes
