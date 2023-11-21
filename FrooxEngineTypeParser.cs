@@ -119,7 +119,7 @@ internal class Program
             ProcessNode(node, componentsString, 0);
         }
 
-        string outputFolder = (args.Length < 1) ? "../../../lists/" : args[0];
+        string outputFolder = (args.Length < 1) ? "../../../data/" : args[0];
 
         // Get the directory name from the file path
         string directoryName = Path.GetDirectoryName(outputFolder)!;
