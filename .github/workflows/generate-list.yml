@@ -1,4 +1,4 @@
-name: Compile Component & Logix Lists
+name: Compile Resonite Data
 
 on:
   schedule:
@@ -7,8 +7,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  generate-component-list:
-    name: "Generate Lists"
+  compile-resonite-data:
+    name: "Compile Resonite Data"
     # The type of runner that the job will run on.
     runs-on: ubuntu-latest
 
@@ -37,24 +37,26 @@ jobs:
 
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it.
     - name: Checkout
+      if: steps.getversion.outputs.should_update == 'true'
       uses: actions/checkout@v3
 
     # Runs our custom cs file to generate the list.
     - name: Build Script
+      if: steps.getversion.outputs.should_update == 'true'
       run: |
         dotnet build -c Release
         cd $GITHUB_WORKSPACE/bin/Release/net8.0/
         ./FrooxEngineTypeParser
-      if: steps.getversion.outputs.should_update == 'true'
 
     # Moves the Version file to github repo.
     - name: Move Version File
+      if: steps.getversion.outputs.should_update == 'true'
       run: |
         mv $HOME/Steam/steamapps/common/Resonite/Build.version $GITHUB_WORKSPACE/data
-      if: steps.getversion.outputs.should_update == 'true'
 
     # Commits the changes to the repo.
     - name: Commit
+      if: steps.getversion.outputs.should_update == 'true'
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "Updated Data"
@@ -63,12 +65,27 @@ jobs:
         git add data/ProtoFluxList.txt
         git add data/Build.version
         git commit -m "${{ steps.getversion.outputs.version }}" || true
-      if: steps.getversion.outputs.should_update == 'true'
 
     # Pushes the changes to the repo.
     - name: Push changes
       uses: ad-m/github-push-action@master
+      if: steps.getversion.outputs.should_update == 'true'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
-      if: steps.getversion.outputs.should_update == 'true'
+
+    # TODO: Make this one step.
+    - name: Fancy Output
+      if: ${{ success() }}
+      run: echo "## Action Successful!" >> $GITHUB_STEP_SUMMARY
+
+    - name: Fancy Output
+      if: ${{ failure() }}
+      run: |
+        echo "## Update Failed! 😢" >> $GITHUB_STEP_SUMMARY
+
+    - name: Fancy Output
+      if: steps.getversion.outputs.should_update == 'false'
+      run: |
+        echo "### Update skipped!" >> $GITHUB_STEP_SUMMARY
+        echo "It wasn't needed." >> $GITHUB_STEP_SUMMARY
