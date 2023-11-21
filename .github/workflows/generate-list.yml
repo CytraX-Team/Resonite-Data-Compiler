@@ -31,7 +31,7 @@ jobs:
     - name: Build Script
       run: |
         dotnet build -c Release
-        cd $GITHUB_WORKSPACE/bin/Release/net7.0/
+        cd $GITHUB_WORKSPACE/bin/Release/net8.0/
         ./FrooxEngineTypeParser
 
     # Moves our generated list into root of our repo.
