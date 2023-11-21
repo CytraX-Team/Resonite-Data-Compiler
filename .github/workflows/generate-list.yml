@@ -33,7 +33,7 @@ jobs:
     - name: Do we need to update?
       run: |
         cd $HOME/Steam/steamapps/common/Resonite
-        echo "should_update=${{steps.getversion.outputs.version == steps.getversion.outputs.current_version }}" >> $GITHUB_OUTPUT
+        echo "should_update=${{steps.getversion.outputs.version != steps.getversion.outputs.current_version }}" >> $GITHUB_OUTPUT
 
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it.
     - name: Checkout
@@ -45,11 +45,13 @@ jobs:
         dotnet build -c Release
         cd $GITHUB_WORKSPACE/bin/Release/net8.0/
         ./FrooxEngineTypeParser
+      if: steps.getversion.outputs.should_update == 'true'
 
     # Moves the Version file to github repo.
     - name: Move Version File
       run: |
         mv $HOME/Steam/steamapps/common/Resonite/Build.version $GITHUB_WORKSPACE/data
+      if: steps.getversion.outputs.should_update == 'true'
 
     # Commits the changes to the repo.
     - name: Commit
@@ -61,6 +63,7 @@ jobs:
         git add data/ProtoFluxList.txt
         git add data/Build.version
         git commit -m "${{ steps.getversion.outputs.version }}" || true
+      if: steps.getversion.outputs.should_update == 'true'
 
     # Pushes the changes to the repo.
     - name: Push changes
@@ -68,3 +71,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
+      if: steps.getversion.outputs.should_update == 'true'
