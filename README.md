@@ -1,4 +1,4 @@
-#  Resonite Component List Generator
+#  Resonite Data Compiler
 
 [![forthebadge](https://forthebadge.com/images/badges/license-mit.svg)](https://forthebadge.com)
 
