@@ -74,18 +74,9 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
 
-    # TODO: Make this one step.
+    # TODO: Make this better.
     - name: Fancy Output
       if: ${{ success() }}
-      run: echo "## Action Successful!" >> $GITHUB_STEP_SUMMARY
-
-    - name: Fancy Output
-      if: ${{ failure() }}
       run: |
-        echo "## Update Failed! 😢" >> $GITHUB_STEP_SUMMARY
-
-    - name: Fancy Output
-      if: steps.getversion.outputs.should_update == 'false'
-      run: |
-        echo "### Update skipped!" >> $GITHUB_STEP_SUMMARY
-        echo "It wasn't needed." >> $GITHUB_STEP_SUMMARY
+        echo "## Action Successful!" >> $GITHUB_STEP_SUMMARY
+        echo "Version: ${{ steps.getversion.outputs.version }}" >> $GITHUB_STEP_SUMMARY
