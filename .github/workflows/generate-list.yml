@@ -27,7 +27,7 @@ jobs:
       id: getversion
       run: |
         cd $HOME/Steam/steamapps/common/Resonite
-        echo "::set-output name=version::$(cat Build.version)"
+        echo "version=$(cat Build.version)" >> $GITHUB_OUTPUT
 
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it.
     - name: Checkout
