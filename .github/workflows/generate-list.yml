@@ -13,6 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it.
+    - name: Checkout
+      uses: actions/checkout@v3
+
       # Lets get SteamCMD downloaded.
     - name: Install SteamCMD
       # Check for a Resonite cache
@@ -34,11 +38,6 @@ jobs:
       run: |
         cd $HOME/Steam/steamapps/common/Resonite
         echo "should_update=${{steps.getversion.outputs.version != steps.getversion.outputs.current_version }}" >> $GITHUB_OUTPUT
-
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it.
-    - name: Checkout
-      if: steps.getversion.outputs.should_update == 'true'
-      uses: actions/checkout@v3
 
     # Runs our custom cs file to generate the list.
     - name: Build Script
