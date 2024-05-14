@@ -76,7 +76,7 @@ jobs:
       if: steps.check_version.outputs.should_update == 'true'
       run: |
         set -e
-        cd $HOME/Steam/steamapps/common/Resonite
+        cd $GITHUB_WORKSPACE
         dotnet build -c Release
 
     - name: Run FrooxEngineTypeParser and prepare the outputs
