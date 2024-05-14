@@ -100,6 +100,7 @@ jobs:
         git pull origin ${{ github.ref_name }}
         git add data/ComponentList.txt
         git add data/ProtoFluxList.txt
+        git add data/MethodsList.txt
         git add data/Build.version
 
         # Commit Time!
