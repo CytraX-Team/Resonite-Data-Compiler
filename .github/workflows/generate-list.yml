@@ -29,7 +29,7 @@ jobs:
       run: steamcmd +force_install_dir $HOME/Steam/steamapps/common/Resonite +login ${{ secrets.PASSCODE }} +app_update 2519830 validate +quit
 
 
-    - name: Get VERSION IDs
+    - name: Gather Version Information
       id: getversion
       run: |
         # Goto the Resonite directory.
@@ -37,7 +37,10 @@ jobs:
         # Make some envrionment variables for our version IDs.
         echo "resonite_cached_version=$(cat $GITHUB_WORKSPACE/data/Build.version)" >> $GITHUB_ENV
         echo "resonite_latest_version=$(cat Build.version)" >> $GITHUB_ENV
-        # Put our versions into the summary.
+
+    # Put our versions into the summary.
+    - name: Print Version Information
+      run: |
         echo "Cached Version: $resonite_cached_version" >> $GITHUB_STEP_SUMMARY
         echo "Latest Version: $resonite_latest_version" >> $GITHUB_STEP_SUMMARY
 
@@ -45,11 +48,27 @@ jobs:
     - name: Check if update is required
       id: check_version
       run: |
-        should_update=$(if [ "$resonite_cached_version" == "$resonite_latest_version" ]; then echo 'false'; else echo 'true'; fi)
-        echo "should_update=$should_update" >> $GITHUB_ENV
-        if [ "$should_update" == "true" ]; then
-          echo 'Requires an update!' >> $GITHUB_STEP_SUMMARY
+        should_update=$(if [ "${resonite_cached_version}" = "${resonite_latest_version}" ]; then printf 'false'; else printf 'true'; fi)
+        echo "::debug::should_update=$should_update"
+        if [ -w "${GITHUB_ENV}" ]; then
+          printf "should_update=%s\n" "${should_update}" >> "${GITHUB_ENV}"
+        else
+          printf "Error: %s does not exist or is not writable\n" "${GITHUB_ENV}"
+          exit 1
         fi
+        if [ "${should_update}" = "true" ]; then
+          if [ -w "${GITHUB_STEP_SUMMARY}" ]; then
+            printf 'Requires an update!\n' >> "${GITHUB_STEP_SUMMARY}"
+          else
+            printf "Error: %s does not exist or is not writable\n" "${GITHUB_STEP_SUMMARY}"
+            exit 1
+          fi
+        fi
+        echo "::debug::GITHUB_ENV contents: $(cat "${GITHUB_ENV}")"
+        echo "::debug::GITHUB_STEP_SUMMARY contents: $(cat "${GITHUB_STEP_SUMMARY}")"
+
+    - name: Debug
+      run: "echo 'Should update: ${{ steps.check_version.outputs.should_update }}'"
 
     # Builds Resonite with our custom cs file and runs to generate our output files.
     - name: Build and run our script.
