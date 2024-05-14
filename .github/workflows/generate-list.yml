@@ -66,10 +66,8 @@ jobs:
         echo "::debug::GITHUB_ENV contents: $(cat "${GITHUB_ENV}")"
         echo "::debug::GITHUB_STEP_SUMMARY contents: $(cat "${GITHUB_STEP_SUMMARY}")"
       env:
+        # I am REALLY making sure it's set :)))))
         should_update: ${{ steps.check_version.outputs.should_update }}
-
-    - name: Debug
-      run: "echo 'Should update: ${{ steps.check_version.outputs.should_update }}'"
 
     # Builds Resonite with our custom cs file and runs to generate our output files.
     - name: Build FrooxEngineTypeParser
@@ -100,6 +98,7 @@ jobs:
         git pull origin ${{ github.ref_name }}
         git add data/ComponentList.txt
         git add data/ProtoFluxList.txt
+        git add data/MethodsList.txt
         git add data/Build.version
 
         # Commit Time!
