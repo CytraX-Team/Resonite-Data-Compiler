@@ -28,7 +28,7 @@ jobs:
       run: |
         cd $HOME/Steam/steamapps/common/Resonite
         echo "version=$(cat Build.version)" >> $GITHUB_OUTPUT
-        echo "current_version=$(cat Build.version)" >> $GITHUB_OUTPUT
+        echo "current_version=$(cat $GITHUB_WORKSPACE/data/Build.version)" >> $GITHUB_OUTPUT
 
     - name: Do we need to update?
       run: |
