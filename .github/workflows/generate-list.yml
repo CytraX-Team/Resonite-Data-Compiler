@@ -46,7 +46,7 @@ jobs:
       id: check_version
       run: |
         should_update=$(if [ "$resonite_cached_version" == "$resonite_latest_version" ]; then echo 'false'; else echo 'true'; fi)
-        echo "::set-output name=should_update::$should_update"
+        echo "should_update=$should_update" >> $GITHUB_ENV
         if [ "$should_update" == "true" ]; then
           echo 'Requires an update!' >> $GITHUB_STEP_SUMMARY
         fi
@@ -58,7 +58,7 @@ jobs:
         set -e
         cd $HOME/Steam/steamapps/common/Resonite
         dotnet build -c Release
-        cd $GITHUB_WORKSPACE/bin/Release/net8.0/
+        cd $GITHUB_WORKSPACE
         ./FrooxEngineTypeParser
 
     # Moves the Version file to github repo.
