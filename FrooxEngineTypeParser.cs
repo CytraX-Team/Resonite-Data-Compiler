@@ -88,7 +88,7 @@ internal class Program
         {
             List<Type> types = [];
 
-            Console.WriteLine($"Loading types from assembly: {assembly.FullName}");
+            // Console.WriteLine($"Loading types from assembly: {assembly.FullName}");
 
             try
             {
