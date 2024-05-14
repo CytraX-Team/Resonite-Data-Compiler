@@ -56,6 +56,7 @@ jobs:
         fi
 
         echo "should_update=$should_update" >> "$GITHUB_ENV"
+        echo "should_update=$should_update" >> "$GITHUB_OUTPUT"
         echo "::debug::should_update=$should_update"
 
         if [ "$should_update" = "true" ]; then
@@ -64,6 +65,8 @@ jobs:
 
         echo "::debug::GITHUB_ENV contents: $(cat "${GITHUB_ENV}")"
         echo "::debug::GITHUB_STEP_SUMMARY contents: $(cat "${GITHUB_STEP_SUMMARY}")"
+      env:
+        should_update: ${{ steps.check_version.outputs.should_update }}
 
     - name: Debug
       run: "echo 'Should update: ${{ steps.check_version.outputs.should_update }}'"
