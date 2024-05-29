@@ -5788,6 +5788,7 @@
 ##### ViewRotation#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Users.LocalOutput.ViewRotation
 ##### ViewScale#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Users.LocalOutput.ViewScale
 #### Status
+##### AreAppFacetsOpened#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Users.AreAppFacetsOpened
 ##### IsAppDashOpened#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Users.IsAppDashOpened
 ##### IsLocalUser#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Users.IsLocalUser
 ##### IsPlatformDashOpened#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Users.IsPlatformDashOpened
