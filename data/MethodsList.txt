@@ -52319,6 +52319,7 @@ MouseSettings
 # Equals(Object)#Boolean
 # GetHashCode()#Int32
 MovementSettings
+# get_Version()#Int32
 # ResetToDefault()#Void
 # GetSyncMember(Int32)#ISyncMember
 # __New()#MovementSettings
@@ -52405,7 +52406,6 @@ MovementSettings
 # get_GizmoType()#Type
 # add_Disposing(Action`1)#Void
 # remove_Disposing(Action`1)#Void
-# get_Version()#Int32
 # get_WorkerType()#Type
 # get_WorkerTypeName()#String
 # get_Name()#String
@@ -52760,6 +52760,7 @@ NewWorldDialog
 NotificationPanel
 # get_NewSessionTime()#TimeSpan
 # get_OnlineStatusCooldown()#TimeSpan
+# get_SociableStatusCooldown()#TimeSpan
 # get_UserspaceOnly()#Boolean
 # get_Current()#NotificationPanel
 # get_CANVAS_SIZE()#float2
