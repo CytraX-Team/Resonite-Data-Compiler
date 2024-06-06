@@ -3814,8 +3814,10 @@
 #### Geometry 3D
 ##### ClosestPointOnConeSurface#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Geometry3D.ClosestPointOnConeSurface
 ##### ClosestPointOnLine#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Geometry3D.ClosestPointOnLine
+##### ClosestPointOnSphericalSectorSurface#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Geometry3D.ClosestPointOnSphericalSectorSurface
 ##### ClosestPointsBetweenLines#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Geometry3D.ClosestPointsBetweenLines
 ##### DistanceFromCone#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Geometry3D.DistanceFromCone
+##### DistanceFromSphericalSector#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Geometry3D.DistanceFromSphericalSector
 ##### OrientationOnUVSphere#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Geometry3D.OrientationOnUVSphere
 ##### PointOnUVSphere#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Geometry3D.PointOnUVSphere
 ##### RayPlaneIntersection#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Geometry3D.RayPlaneIntersection

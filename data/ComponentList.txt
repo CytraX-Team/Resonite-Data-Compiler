@@ -341,6 +341,7 @@
 # DebugSettingListener#FrooxEngine.DebugSettingListener
 # DebugSettingSwitchSource#FrooxEngine.DebugSettingSwitchSource
 # DebugSphereRaycast#FrooxEngine.DebugSphereRaycast
+# DebugSphereSectorDistance#FrooxEngine.DebugSphereSectorDistance
 # DebugTangentSpace#FrooxEngine.DebugTangentSpace
 # DebugTransform#FrooxEngine.DebugTransform
 # DebugUsers#FrooxEngine.DebugUsers
@@ -1141,6 +1142,7 @@
 # NotificationSettings#FrooxEngine.NotificationSettings
 # NullableMemberEditor#FrooxEngine.NullableMemberEditor
 # ObjectOrb#FrooxEngine.ObjectOrb
+# OnlineStatusSettings#FrooxEngine.OnlineStatusSettings
 # OverlayManager#FrooxEngine.OverlayManager
 # PhotoCaptureManager#FrooxEngine.PhotoCaptureManager
 # PhotoCaptureSettings#FrooxEngine.PhotoCaptureSettings
