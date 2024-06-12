@@ -52025,6 +52025,7 @@ MissingComponent
 # GetHashCode()#Int32
 ModelExportable
 # get_ExportName()#String
+# get_ExportRoots()#IEnumerable`1
 # get_ExportTypeCount()#Int32
 # GetExportDescription(Int32)#LocaleString
 # Export(String, String, Int32)#Task`1
