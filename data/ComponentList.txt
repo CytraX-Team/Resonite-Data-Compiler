@@ -238,7 +238,6 @@
 # ContactLink#FrooxEngine.ContactLink
 # InventoryLink#FrooxEngine.InventoryLink
 # LegacyCloudStorageSpaceIndicator#FrooxEngine.LegacyCloudStorageSpaceIndicator
-# SessionOrbsController#FrooxEngine.SessionOrbsController
 # UserLoginManager#FrooxEngine.UserLoginManager
 # WorldSubmitter#FrooxEngine.WorldSubmitter
  Common UI
@@ -338,7 +337,6 @@
 # DebugHands#FrooxEngine.DebugHands
 # DebugHapticPoint#FrooxEngine.DebugHapticPoint
 # DebugLinePoint#FrooxEngine.DebugLinePoint
-# DebugSceneHierarchyFeed#FrooxEngine.DebugSceneHierarchyFeed
 # DebugSettingListener#FrooxEngine.DebugSettingListener
 # DebugSettingSwitchSource#FrooxEngine.DebugSettingSwitchSource
 # DebugSphereRaycast#FrooxEngine.DebugSphereRaycast
@@ -488,6 +486,7 @@
 # Data Feeds
 ## Feeds
 ### EnumFeed<E>#FrooxEngine.EnumFeed`1
+### WorldsDataFeed#FrooxEngine.WorldsDataFeed
 ### WorldUsersFeed#FrooxEngine.WorldUsersFeed
 ## Interactions
 ### MoveUpDataFeedCategory#FrooxEngine.MoveUpDataFeedCategory
@@ -508,6 +507,9 @@
 ### FeedToggleInterface#FrooxEngine.FeedToggleInterface
 ### FeedValueActionInterface<T>#FrooxEngine.FeedValueActionInterface`1
 ### FeedValueFieldInterface<T>#FrooxEngine.FeedValueFieldInterface`1
+### MergedWorldDataItemInterface#FrooxEngine.MergedWorldDataItemInterface
+### SessionInfoItemInterface#FrooxEngine.SessionInfoItemInterface
+### WorldItemInterface#FrooxEngine.WorldItemInterface
 ## Views
 ### DebugDataFeedView#FrooxEngine.DebugDataFeedView
 ### RootCategoryView#FrooxEngine.RootCategoryView
@@ -554,9 +556,10 @@
 # Utility
 ## AlwaysOnFacetModule#FrooxEngine.AlwaysOnFacetModule
 # World Browsing
-## WorldDetail#FrooxEngine.WorldDetail
-## WorldListManager#FrooxEngine.WorldListManager
-## WorldThumbnailItem#FrooxEngine.WorldThumbnailItem
+## Legacy
+### LegacyWorldDetail#FrooxEngine.LegacyWorldDetail
+### LegacyWorldListManager#FrooxEngine.LegacyWorldListManager
+### LegacyWorldThumbnailItem#FrooxEngine.LegacyWorldThumbnailItem
 # Facet#FrooxEngine.Facet
 # RadiantDashStateSync#FrooxEngine.RadiantDashStateSync
  Relations
@@ -1107,6 +1110,7 @@
 # LegacyRadiantScreenWrapper<T>#FrooxEngine.LegacyRadiantScreenWrapper`1
 # LegacySegmentCircleMenuController#FrooxEngine.LegacySegmentCircleMenuController
 # LegacySegmentCircleProgress#FrooxEngine.LegacySegmentCircleProgress
+# LegacySessionOrbsController#FrooxEngine.LegacySessionOrbsController
 # LegacySettingsData#FrooxEngine.LegacySettingsData
 # LegacySwapCanvasPanel#FrooxEngine.LegacySwapCanvasPanel
 # LegacyTubeSpiralMeshAdapter#FrooxEngine.LegacyTubeSpiralMeshAdapter
@@ -1166,14 +1170,14 @@
 # ProtoFluxOutputProxy#FrooxEngine.ProtoFlux.ProtoFluxOutputProxy
 # ProtoFluxReferenceProxy#FrooxEngine.ProtoFlux.ProtoFluxReferenceProxy
 # ProtoFluxWireManager#FrooxEngine.ProtoFlux.ProtoFluxWireManager
-# Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnDuplicate+Proxy
-# Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Worlds.UserJoined+Proxy
-# Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Worlds.UserLeft+Proxy
 # Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnStart+Proxy
-# Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnActivated+Proxy
+# Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnDuplicate+Proxy
+# Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Worlds.UserLeft+Proxy
 # Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Security.VerifyJoinRequest+Proxy
 # Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Worlds.UserSpawn+Proxy
+# Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnActivated+Proxy
 # Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnPaste+Proxy
+# Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Worlds.UserJoined+Proxy
 # Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Worlds.WorldSaved+Proxy
 # Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnDestroy+Proxy
 # FieldDriveBase<T>#FrooxEngine.ProtoFlux.CoreNodes.FieldDriveBase`1+Proxy
@@ -1186,13 +1190,13 @@
 # AsyncDynamicImpulseReceiverWithObject<T>#ProtoFlux.Runtimes.Execution.Nodes.Actions.AsyncDynamicImpulseReceiverWithObject`1+Proxy
 # AsyncDynamicImpulseReceiverWithValue<T>#ProtoFlux.Runtimes.Execution.Nodes.Actions.AsyncDynamicImpulseReceiverWithValue`1+Proxy
 # DynamicImpulseReceiverWithObject<T>#ProtoFlux.Runtimes.Execution.Nodes.Actions.DynamicImpulseReceiverWithObject`1+Proxy
-# Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnDestroying+Proxy
 # Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Time.Stopwatch+Proxy
 # ElapsedTime<T>#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Time.ElapsedTime`1+Proxy
 # Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.GetActiveUserSelf+Proxy
 # Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnPackageImported+Proxy
 # Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnLoaded+Proxy
 # Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnSaving+Proxy
+# Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnDestroying+Proxy
 # Proxy#ProtoFlux.Runtimes.Execution.Nodes.Actions.AsyncDynamicImpulseReceiver+Proxy
 # QuaternionMemberEditor#FrooxEngine.QuaternionMemberEditor
 # RadiantDash#FrooxEngine.RadiantDash
@@ -1247,12 +1251,12 @@
 # SphereMeshGizmo#FrooxEngine.SphereMeshGizmo
 # SteamIntegrationSettings#FrooxEngine.SteamIntegrationSettings
 # SteamLinkSettings#FrooxEngine.SteamLinkSettings
-# Store#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelUserRefStore+Store
-# DataModelObjectRefStore<T>#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelObjectRefStore`1+Store
-# Store#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelTypeStore+Store
-# DataModelObjectFieldStore<T>#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelObjectFieldStore`1+Store
 # DataModelValueFieldStore<T>#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelValueFieldStore`1+Store
+# Store#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelTypeStore+Store
+# DataModelObjectRefStore<T>#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelObjectRefStore`1+Store
+# Store#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelUserRefStore+Store
 # DataModelObjectAssetRefStore<T>#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelObjectAssetRefStore`1+Store
+# DataModelObjectFieldStore<T>#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelObjectFieldStore`1+Store
 # SyncPlaybackEditor#FrooxEngine.SyncPlaybackEditor
 # TalkVisualizer#FrooxEngine.TalkVisualizer
 # TextExpandIndicator#FrooxEngine.UIX.TextExpandIndicator
