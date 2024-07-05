@@ -3221,6 +3221,8 @@
 ##### Pack_ColorX#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.Pack_ColorX
 ##### Unpack_Color#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.Unpack_Color
 ##### Unpack_ColorX#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.Unpack_ColorX
+#### ApplyHDRGammaColorX#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.ApplyHDRGammaColorX
+#### ApplyHDRInverseGammaColorX#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.ApplyHDRInverseGammaColorX
 #### BlackBodyColor#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.BlackBodyColor
 #### BlackBodyColorX#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.BlackBodyColorX
 #### ColorAdditiveBlend#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.ColorAdditiveBlend

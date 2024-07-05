@@ -929,6 +929,7 @@
 # NestedCanvas#FrooxEngine.NestedCanvas
 # RectTransform#FrooxEngine.UIX.RectTransform
  Uncategorized
+# AdjustHDRInverseGamma22#FrooxEngine.AdjustHDRInverseGamma22
 # AppEnder#FrooxEngine.AppEnder
 # AppVersionDriver#FrooxEngine.AppVersionDriver
 # AssetGatherSettings#FrooxEngine.AssetGatherSettings
