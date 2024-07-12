@@ -3070,15 +3070,6 @@
 ### SyncValueFunctionProxy_00FF<T0,T1,T2,T3,T4,T5,T6,T7,TResult>#FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.SyncValueFunctionProxy_00FF`9
 ### SyncValueFunctionProxy<TResult>#FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.SyncValueFunctionProxy`1
  Runtimes
-# DSP
-## Array
-### TestAddArraysNode#FrooxEngine.ProtoFlux.Runtimes.DSP.Array.TestAddArraysNode
-### TestAddArraysNodeExecution#FrooxEngine.ProtoFlux.Runtimes.DSP.Array.TestAddArraysNodeExecution
-### TestAmplifyArray#FrooxEngine.ProtoFlux.Runtimes.DSP.Array.TestAmplifyArray
-### TestConditionalCollectArrayNode#FrooxEngine.ProtoFlux.Runtimes.DSP.Array.TestConditionalCollectArrayNode
-### TestNegateArrayNode#FrooxEngine.ProtoFlux.Runtimes.DSP.Array.TestNegateArrayNode
-### TestRandomArrayNode#FrooxEngine.ProtoFlux.Runtimes.DSP.Array.TestRandomArrayNode
-### TestSequenceArrayNode#FrooxEngine.ProtoFlux.Runtimes.DSP.Array.TestSequenceArrayNode
 # Execution
 ## Nodes
 ### Actions
@@ -3252,6 +3243,8 @@
 #### HSV_ToColorX#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.HSV_ToColorX
 #### InvertColor#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.InvertColor
 #### InvertColorX#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.InvertColorX
+#### WavelengthColor#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.WavelengthColor
+#### WavelengthColorX#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.WavelengthColorX
 ### Components
 #### GetComponentEnabled#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Components.GetComponentEnabled
 #### GetUserFromComponent#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Users.GetUserFromComponent
@@ -4154,6 +4147,8 @@
 #### Exp_Float2#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Exp_Float2
 #### Exp_Float3#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Exp_Float3
 #### Exp_Float4#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Exp_Float4
+#### FactorialDouble#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.FactorialDouble
+#### FactorialFloat#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.FactorialFloat
 #### Floor_Color#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Floor_Color
 #### Floor_ColorX#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Floor_ColorX
 #### Floor_Double#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Floor_Double
