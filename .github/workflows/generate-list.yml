@@ -103,11 +103,8 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git pull origin ${{ github.ref_name }}
-        git add data/ComponentList.txt
-        git add data/ProtoFluxList.txt
-        git add data/MethodsList.txt
-        git add data/TypesList.txt
-        git add data/Build.version
+        rm -rf $GITHUB_WORKSPACE/data/*
+        git add data/
 
         # Commit Time!
         git commit -m "$resonite_latest_version" || true
