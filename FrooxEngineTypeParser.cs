@@ -19,7 +19,7 @@ internal class Program
         {
             Console.WriteLine("Getting FrooxEngine directory...");
 
-            var csprojPath = Directory
+            string? csprojPath = Directory
                 .GetFiles(Directory.GetCurrentDirectory(), "*.csproj", SearchOption.AllDirectories)
                 .FirstOrDefault();
 
@@ -30,8 +30,8 @@ internal class Program
             }
             Console.WriteLine($"Found .csproj file at {csprojPath}");
 
-            var doc = XDocument.Load(csprojPath);
-            var ns = doc.Root?.GetDefaultNamespace();
+            XDocument doc = XDocument.Load(csprojPath);
+            XNamespace? ns = doc.Root?.GetDefaultNamespace();
 
             if (ns == null)
             {
@@ -41,7 +41,7 @@ internal class Program
 
             Console.WriteLine($"Default namespace: {ns}");
 
-            var resonitePath = doc.Descendants(ns + "ResonitePath")
+            string? resonitePath = doc.Descendants(ns + "ResonitePath")
                 .FirstOrDefault(rp => Directory.Exists(rp.Value))
                 ?.Value;
 
@@ -51,7 +51,7 @@ internal class Program
                 throw new Exception("ResonitePath property not found or directory does not exist.");
             }
 
-            var hintPaths = doc.Descendants(ns + "HintPath")
+            IEnumerable<XElement> hintPaths = doc.Descendants(ns + "HintPath")
                 .Where(hp => hp.Value.Contains("FrooxEngine.dll"));
 
             if (!hintPaths.Any())
@@ -60,18 +60,18 @@ internal class Program
                 throw new Exception("FrooxEngine.dll HintPath not found in .csproj file.");
             }
 
-            var hintPath = hintPaths.First();
+            XElement hintPath = hintPaths.First();
 
-            var expandedHintPath = hintPath.Value.Replace("$(ResonitePath)", resonitePath);
+            string expandedHintPath = hintPath.Value.Replace("$(ResonitePath)", resonitePath);
             Console.WriteLine($"FrooxEngine.dll HintPath: {expandedHintPath}");
 
-            var frooxEngineDllPath = Path.GetFullPath(
+            string frooxEngineDllPath = Path.GetFullPath(
                 Path.Combine(Path.GetDirectoryName(csprojPath) ?? string.Empty, expandedHintPath)
             );
 
             Console.WriteLine($"Full path to FrooxEngine.dll: {frooxEngineDllPath}");
 
-            var frooxEngineDirectory = Path.GetDirectoryName(frooxEngineDllPath);
+            string? frooxEngineDirectory = Path.GetDirectoryName(frooxEngineDllPath);
 
             if (frooxEngineDirectory == null)
             {
@@ -92,14 +92,14 @@ internal class Program
 
             try
             {
-                var exportedTypes = assembly.GetExportedTypes();
+                Type[] exportedTypes = assembly.GetExportedTypes();
                 types.AddRange(exportedTypes);
                 Console.WriteLine($"Loaded {exportedTypes.Length} types from {assembly.FullName}");
             }
             catch (ReflectionTypeLoadException e)
             {
                 // Exclude types that can't be loaded
-                var loadableTypes = e.Types.Where(t => t != null).Cast<Type>();
+                IEnumerable<Type> loadableTypes = e.Types.Where(t => t != null).Cast<Type>();
                 types.AddRange(loadableTypes);
                 Console.WriteLine(
                     $"Loaded {loadableTypes.Count()} types from {assembly.FullName} after excluding unloadable types"
@@ -151,7 +151,7 @@ internal class Program
                     try
                     {
                         // This will throw a BadImageFormatException if s is not a valid assembly.
-                        var assemblyName = AssemblyName.GetAssemblyName(s);
+                        AssemblyName assemblyName = AssemblyName.GetAssemblyName(s);
                         return Assembly.LoadFrom(s);
                     }
                     catch (BadImageFormatException)
@@ -261,15 +261,25 @@ internal class Program
         async Task ProcessCategoryAndWriteToFile(string? categoryName, string fileName)
         {
             StringBuilder categoryString = new();
-            HashSet<string> seenOverloads = [];
+            HashSet<string> seenOverloads = new();
 
-            CategoryNode<Type> categoryPath = WorkerInitializer.ComponentLibrary.GetSubcategory(
-                categoryName
-            );
+            // Check if categoryName is null or empty
+            if (string.IsNullOrEmpty(categoryName))
+            {
+                throw new ArgumentException("Category name cannot be null or empty.", nameof(categoryName));
+            }
+
+            CategoryNode<Type>? categoryPath = WorkerInitializer.ComponentLibrary.GetSubcategory(categoryName);
+
+            // Check if categoryPath is null
+            if (categoryPath == null)
+            {
+                throw new InvalidOperationException($"Category '{categoryName}' not found.");
+            }
 
             foreach (CategoryNode<Type>? node in categoryPath.Subcategories)
             {
-                if (node.Name != "ProtoFlux")
+                if (node != null && node.Name != "ProtoFlux")
                 {
                     ProcessNode(node, categoryString, 0);
                 }
@@ -277,7 +287,10 @@ internal class Program
 
             foreach (Type? node in categoryPath.Elements)
             {
-                PrintComp(node, categoryString, -1, seenOverloads);
+                if (node != null)
+                {
+                    PrintComp(node, categoryString, -1, seenOverloads);
+                }
             }
 
             // Writes our category list to a file.
@@ -296,38 +309,42 @@ internal class Program
             {
                 foreach (Type? type in node.Elements)
                 {
-                    foreach (var method in type.GetMethods())
+                    foreach (MethodInfo method in type.GetMethods())
                     {
                         string methodSignature =
                             $"{method.Name}({string.Join(", ", method.GetParameters().Select(p => p.ParameterType.Name))}){SEPARATOR}{method.ReturnType.Name}";
-                        if (!typesToMethods.ContainsKey(type.Name))
+                        if (!typesToMethods.TryGetValue(type.Name, out List<string>? value))
                         {
-                            typesToMethods[type.Name] = [];
+                            value = [];
+                            typesToMethods[type.Name] = value;
                         }
-                        typesToMethods[type.Name].Add(methodSignature);
+
+                        value.Add(methodSignature);
                     }
                 }
             }
 
             foreach (Type? type in WorkerInitializer.ComponentLibrary.Elements)
             {
-                foreach (var method in type.GetMethods())
+                foreach (MethodInfo method in type.GetMethods())
                 {
                     string methodSignature =
                         $"{method.Name}({string.Join(", ", method.GetParameters().Select(p => p.ParameterType.Name))}){SEPARATOR}{method.ReturnType.Name}";
-                    if (!typesToMethods.ContainsKey(type.Name))
+                    if (!typesToMethods.TryGetValue(type.Name, out List<string>? value))
                     {
-                        typesToMethods[type.Name] = [];
+                        value = [];
+                        typesToMethods[type.Name] = value;
                     }
-                    typesToMethods[type.Name].Add(methodSignature);
+
+                    value.Add(methodSignature);
                 }
             }
 
             // Writes our all methods list to a file.
-            foreach (var pair in typesToMethods)
+            foreach (KeyValuePair<string, List<string>> pair in typesToMethods)
             {
                 allMethodsString.AppendLine($"{pair.Key}");
-                foreach (var methodSignature in pair.Value)
+                foreach (string methodSignature in pair.Value)
                 {
                     allMethodsString.AppendLine($"# {methodSignature}");
                 }
@@ -340,12 +357,12 @@ internal class Program
 
 
         // Output failed assemblies at the end
-        if (failedAssemblies.Any())
+        if (failedAssemblies.Count != 0)
         {
             Console.WriteLine($"Failed to load the following assemblies: {failedAssemblies.Count}");
-            foreach (var assembly in failedAssemblies)
+            foreach (KeyValuePair<string, string> assembly in failedAssemblies)
             {
-                Console.WriteLine(assembly.Value);
+                Console.WriteLine($"Assembly: {assembly.Key}, Error: {assembly.Value}");
             }
         }
     }
