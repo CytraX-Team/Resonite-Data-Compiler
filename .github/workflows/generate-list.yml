@@ -5,6 +5,11 @@ on:
     - cron: "0 0 * * *"
   push:
   workflow_dispatch:
+    inputs:
+      force_update:
+        description: 'Force update the data'
+        required: false
+        default: 'false'
 
 jobs:
   compile-resonite-data:
@@ -49,7 +54,9 @@ jobs:
     - name: Check if update is required
       id: check_version
       run: |
-        if [ "$resonite_cached_version" != "$resonite_latest_version" ]; then
+        if [ "${{ github.event.inputs.force_update }}" = "true" ]; then
+          should_update="true"
+        elif [ "$resonite_cached_version" != "$resonite_latest_version" ]; then
           should_update="true"
         else
           should_update="false"

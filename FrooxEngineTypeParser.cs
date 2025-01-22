@@ -12,7 +12,7 @@ internal class Program
         const char SEPARATOR = '#';
 
         HashSet<string> processedAssemblies = [];
-        Dictionary<string, string> failedAssemblies = new Dictionary<string, string>();
+        Dictionary<string, string> failedAssemblies = new();
         StringBuilder componentsString = new();
 
         string GetFrooxEngineDirectory()
@@ -355,6 +355,35 @@ internal class Program
 
         await ProcessAllMethodsAndWriteToFile("MethodsList.txt");
 
+        async Task ProcessAllTypesAndWriteToFile(string fileName)
+        {
+            StringBuilder allTypesString = new();
+            HashSet<string> seenTypes = new();
+
+            foreach (CategoryNode<Type> node in WorkerInitializer.ComponentLibrary.Subcategories)
+            {
+                foreach (Type type in node.Elements)
+                {
+                    if (type?.FullName != null && seenTypes.Add(type.FullName))
+                    {
+                        allTypesString.AppendLine(type.FullName);
+                    }
+                }
+            }
+
+            foreach (Type? type in WorkerInitializer.ComponentLibrary.Elements)
+            {
+                if (type?.FullName != null && seenTypes.Add(type.FullName))
+                {
+                    allTypesString.AppendLine(type.FullName);
+                }
+            }
+
+            // Writes our all types list to a file.
+            await File.WriteAllTextAsync(Path.Combine(outputFolder, fileName), allTypesString.ToString());
+        }
+
+        await ProcessAllTypesAndWriteToFile("TypesList.txt");
 
         // Output failed assemblies at the end
         if (failedAssemblies.Count != 0)
