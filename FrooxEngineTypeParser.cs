@@ -366,8 +366,16 @@ internal class Program
                 }
             }
 
+            // Sort the types alphabetically
+            // This is terrible but I am lazy!
+            var sortedTypes = allTypesString.ToString().Split(Environment.NewLine)
+                .Where(line => !string.IsNullOrWhiteSpace(line))
+                .OrderBy(line => line)
+                .ToList();
+
             // Writes our all types list to a file.
-            await File.WriteAllTextAsync(Path.Combine(outputFolder, fileName), allTypesString.ToString());
+            await File.WriteAllTextAsync(Path.Combine(outputFolder, fileName), string.Join(Environment.NewLine, sortedTypes));
+            // await File.WriteAllTextAsync(Path.Combine(outputFolder, fileName), allTypesString.ToString());
         }
 
         await ProcessAllTypesAndWriteToFile("TypesList.txt");
