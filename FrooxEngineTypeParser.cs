@@ -261,25 +261,15 @@ internal class Program
         async Task ProcessCategoryAndWriteToFile(string? categoryName, string fileName)
         {
             StringBuilder categoryString = new();
-            HashSet<string> seenOverloads = new();
+            HashSet<string> seenOverloads = [];
 
-            // Check if categoryName is null or empty
-            if (string.IsNullOrEmpty(categoryName))
-            {
-                throw new ArgumentException("Category name cannot be null or empty.", nameof(categoryName));
-            }
-
-            CategoryNode<Type>? categoryPath = WorkerInitializer.ComponentLibrary.GetSubcategory(categoryName);
-
-            // Check if categoryPath is null
-            if (categoryPath == null)
-            {
-                throw new InvalidOperationException($"Category '{categoryName}' not found.");
-            }
+            CategoryNode<Type> categoryPath = WorkerInitializer.ComponentLibrary.GetSubcategory(
+                categoryName ?? ""
+            );
 
             foreach (CategoryNode<Type>? node in categoryPath.Subcategories)
             {
-                if (node != null && node.Name != "ProtoFlux")
+                if (node.Name != "ProtoFlux")
                 {
                     ProcessNode(node, categoryString, 0);
                 }
@@ -287,10 +277,7 @@ internal class Program
 
             foreach (Type? node in categoryPath.Elements)
             {
-                if (node != null)
-                {
-                    PrintComp(node, categoryString, -1, seenOverloads);
-                }
+                PrintComp(node, categoryString, -1, seenOverloads);
             }
 
             // Writes our category list to a file.
