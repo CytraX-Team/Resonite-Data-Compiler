@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
     inputs:
       force_update:
+        type: boolean
         description: 'Force update the data'
         required: false
-        default: 'false'
 
 jobs:
   compile-resonite-data:
