@@ -84,6 +84,12 @@ jobs:
         cd $GITHUB_WORKSPACE
         dotnet build -c Release
 
+    # Remove old files in the data directory
+    - name: Remove old files
+      if: steps.check_version.outputs.should_update == 'true'
+      run: |
+        rm -rf $GITHUB_WORKSPACE/data/*
+
     - name: Run FrooxEngineTypeParser and prepare the outputs
       if: steps.check_version.outputs.should_update == 'true'
       run: |
@@ -103,7 +109,6 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git pull origin ${{ github.ref_name }}
-        rm -rf $GITHUB_WORKSPACE/data/*
         git add data/
 
         # Commit Time!
