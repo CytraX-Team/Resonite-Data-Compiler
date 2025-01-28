@@ -771,6 +771,7 @@
 # Visuals
 ## LegacyGlowCircle#FrooxEngine.LegacyGlowCircle
 ## LegacyUIStyle#FrooxEngine.LegacyUIStyle
+# AmbientLightSH2#FrooxEngine.AmbientLightSH2
 # AnimationTrack<T>#FrooxEngine.AnimationTrack`1
 # Animator#FrooxEngine.Animator
 # AtlasInfo#FrooxEngine.AtlasInfo
@@ -787,6 +788,7 @@
 # MeshRenderer#FrooxEngine.MeshRenderer
 # OverlayLayer#FrooxEngine.OverlayLayer
 # ReflectionProbe#FrooxEngine.ReflectionProbe
+# ReflectionProbeSH2#FrooxEngine.ReflectionProbeSH2
 # RenderMaterialOverride#FrooxEngine.RenderMaterialOverride
 # RenderTransformOverride#FrooxEngine.RenderTransformOverride
 # Rig#FrooxEngine.Rig
@@ -1209,6 +1211,7 @@
 # LabelContentDriver#FrooxEngine.LabelContentDriver
 # LaserSettings#FrooxEngine.LaserSettings
 # LeapMotionSettings#FrooxEngine.LeapMotionSettings
+# LineEmitter+LegacyAdapter#FrooxEngine.PhotonDust.LineEmitter+LegacyAdapter
 # LegacyAlignmentSizingAdapter#FrooxEngine.PhotonDust.LegacyAlignmentSizingAdapter
 # LegacyAnimationTypeAdapter#FrooxEngine.PhotonDust.LegacyAnimationTypeAdapter
 # LegacyAudioPlayer#FrooxEngine.LegacyAudioPlayer
@@ -1217,11 +1220,10 @@
 # LegacyCircleSegmentMesh#FrooxEngine.LegacyCircleSegmentMesh
 # LegacyColorAsLinearAdapter#FrooxEngine.LegacyColorAsLinearAdapter
 # CylinderEmitter+LegacyDirectionAdapter#FrooxEngine.PhotonDust.CylinderEmitter+LegacyDirectionAdapter
-# ConeEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.ConeEmitter+LegacyDirectionConverter
 # BoxEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.BoxEmitter+LegacyDirectionConverter
 # CircleEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.CircleEmitter+LegacyDirectionConverter
 # PointEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.PointEmitter+LegacyDirectionConverter
-# LineEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.LineEmitter+LegacyDirectionConverter
+# ConeEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.ConeEmitter+LegacyDirectionConverter
 # SphereEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.SphereEmitter+LegacyDirectionConverter
 # LegacyDistributionAdapter#FrooxEngine.PhotonDust.LegacyDistributionAdapter
 # LegacyFeatureSettings#FrooxEngine.LegacyFeatureSettings

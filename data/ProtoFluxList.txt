@@ -4095,6 +4095,7 @@
 ##### SymmetricPowShape_Float#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.SymmetricPowShape_Float
 #### Spherical Harmonics
 ##### EvaluateSH<S,T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.EvaluateSH`2
+##### PackSH1<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.PackSH1`1
 ##### PackSH2<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.PackSH2`1
 ##### PackSH3<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.PackSH3`1
 ##### PackSH4<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.PackSH4`1
@@ -4102,6 +4103,10 @@
 ##### ScaleOrdersSH2<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.ScaleOrdersSH2`1
 ##### ScaleOrdersSH3<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.ScaleOrdersSH3`1
 ##### ScaleOrdersSH4<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.ScaleOrdersSH4`1
+##### UnpackSH1<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.UnpackSH1`1
+##### UnpackSH2<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.UnpackSH2`1
+##### UnpackSH3<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.UnpackSH3`1
+##### UnpackSH4<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.UnpackSH4`1
 #### Trigonometry
 ##### Acos_Color#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Acos_Color
 ##### Acos_ColorX#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Acos_ColorX
