@@ -15057,10 +15057,13 @@ OverlayLayer
 # Equals(Object)#Boolean
 # GetHashCode()#Int32
 ReflectionProbe
+# add_OnChangesRenderFinished(Action`1)#Void
+# remove_OnChangesRenderFinished(Action`1)#Void
 # get_IsBaking()#Boolean
 # OnFocusChanged(WorldFocus)#Void
 # BuildInspectorUI(UIBuilder)#Void
 # Bake()#Void
+# NotifyOnChangesRenderFinished()#Void
 # BakeAsync()#Task`1
 # GetBakedReflectionProbes(Slot, Boolean, String)#List`1
 # BakeReflectionProbes(List`1, Single, Func`3, Func`3)#Task
