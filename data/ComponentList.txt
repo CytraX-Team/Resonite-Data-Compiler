@@ -689,6 +689,7 @@
 ### AngularVelocity3DConstantInitializer#FrooxEngine.PhotonDust.AngularVelocity3DConstantInitializer
 ### AngularVelocity3DRangeInitializer#FrooxEngine.PhotonDust.AngularVelocity3DRangeInitializer
 ### AngularVelocityConstantInitializer#FrooxEngine.PhotonDust.AngularVelocityConstantInitializer
+### AngularVelocityDrag#FrooxEngine.PhotonDust.AngularVelocityDrag
 ### AngularVelocityRangeInitializer#FrooxEngine.PhotonDust.AngularVelocityRangeInitializer
 ### ColorByOrientationDirection#FrooxEngine.PhotonDust.ColorByOrientationDirection
 ### ColorByOrientationDirectionSH1#FrooxEngine.PhotonDust.ColorByOrientationDirectionSH1
@@ -709,6 +710,7 @@
 ### ColorOverLifetimeStartEnd#FrooxEngine.PhotonDust.ColorOverLifetimeStartEnd
 ### ColorOverLifetimeTexture#FrooxEngine.PhotonDust.ColorOverLifetimeTexture
 ### ColorRangeInitializer#FrooxEngine.PhotonDust.ColorRangeInitializer
+### ConstantAngularVelocityForce#FrooxEngine.PhotonDust.ConstantAngularVelocityForce
 ### GravityForce#FrooxEngine.PhotonDust.GravityForce
 ### LifetimeConstantInitializer#FrooxEngine.PhotonDust.LifetimeConstantInitializer
 ### LifetimeRangeInitializer#FrooxEngine.PhotonDust.LifetimeRangeInitializer
@@ -736,6 +738,7 @@
 ### SimplexTurbulentForce#FrooxEngine.PhotonDust.SimplexTurbulentForce
 ### SizeConstantInitializer#FrooxEngine.PhotonDust.SizeConstantInitializer
 ### SizeModifier#FrooxEngine.PhotonDust.SizeModifier
+### SizeMultiplierByVelocity#FrooxEngine.PhotonDust.SizeMultiplierByVelocity
 ### SizeOffsetByVelocity#FrooxEngine.PhotonDust.SizeOffsetByVelocity
 ### SizeOverLifetimeStartEnd#FrooxEngine.PhotonDust.SizeOverLifetimeStartEnd
 ### SizeRangeInitializer#FrooxEngine.PhotonDust.SizeRangeInitializer
