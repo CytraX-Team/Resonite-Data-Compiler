@@ -696,6 +696,9 @@
 ### ColorByOrientationDirectionSH2#FrooxEngine.PhotonDust.ColorByOrientationDirectionSH2
 ### ColorByOrientationDirectionSH3#FrooxEngine.PhotonDust.ColorByOrientationDirectionSH3
 ### ColorByOrientationDirectionSH4#FrooxEngine.PhotonDust.ColorByOrientationDirectionSH4
+### ColorBySpeedMinMax#FrooxEngine.PhotonDust.ColorBySpeedMinMax
+### ColorBySpeedMinMaxHSV#FrooxEngine.PhotonDust.ColorBySpeedMinMaxHSV
+### ColorBySpeedTexture#FrooxEngine.PhotonDust.ColorBySpeedTexture
 ### ColorByThreadDiagnosticModule#FrooxEngine.PhotonDust.ColorByThreadDiagnosticModule
 ### ColorByVelocityDirection#ColorByVelocityDirection
 ### ColorByVelocityDirectionSH1#ColorByVelocityDirectionSH1
@@ -719,6 +722,8 @@
 ### ParticleLightsModule#FrooxEngine.PhotonDust.ParticleLightsModule
 ### ParticleRibbonsModule#FrooxEngine.PhotonDust.ParticleRibbonsModule
 ### ParticleTrailsModule#FrooxEngine.PhotonDust.ParticleTrailsModule
+### PivotFromVelocityMagnitude#FrooxEngine.PhotonDust.PivotFromVelocityMagnitude
+### PivotModule#FrooxEngine.PhotonDust.PivotModule
 ### PositionSimulatorModule#FrooxEngine.PhotonDust.PositionSimulatorModule
 ### RadialForce#FrooxEngine.PhotonDust.RadialForce
 ### RibbonColorConstantInitializer#FrooxEngine.PhotonDust.RibbonColorConstantInitializer
@@ -1137,6 +1142,7 @@
 # DynamicBoneSphereColliderGizmo#FrooxEngine.DynamicBoneSphereColliderGizmo
 # DynamicVariableInputProxy<T>#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableInputProxy`1
 # EarmuffSettings#FrooxEngine.EarmuffSettings
+# EditSettings#FrooxEngine.EditSettings
 # EngineDebugDialog#FrooxEngine.EngineDebugDialog
 # EnumMemberEditor#FrooxEngine.EnumMemberEditor
 # ExitScreen#FrooxEngine.ExitScreen
@@ -1223,10 +1229,10 @@
 # LegacyCircleSegmentMesh#FrooxEngine.LegacyCircleSegmentMesh
 # LegacyColorAsLinearAdapter#FrooxEngine.LegacyColorAsLinearAdapter
 # CylinderEmitter+LegacyDirectionAdapter#FrooxEngine.PhotonDust.CylinderEmitter+LegacyDirectionAdapter
-# BoxEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.BoxEmitter+LegacyDirectionConverter
-# CircleEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.CircleEmitter+LegacyDirectionConverter
-# PointEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.PointEmitter+LegacyDirectionConverter
 # ConeEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.ConeEmitter+LegacyDirectionConverter
+# CircleEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.CircleEmitter+LegacyDirectionConverter
+# BoxEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.BoxEmitter+LegacyDirectionConverter
+# PointEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.PointEmitter+LegacyDirectionConverter
 # SphereEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.SphereEmitter+LegacyDirectionConverter
 # LegacyDistributionAdapter#FrooxEngine.PhotonDust.LegacyDistributionAdapter
 # LegacyFeatureSettings#FrooxEngine.LegacyFeatureSettings
@@ -1308,14 +1314,13 @@
 # ProtoFluxOutputProxy#FrooxEngine.ProtoFlux.ProtoFluxOutputProxy
 # ProtoFluxReferenceProxy#FrooxEngine.ProtoFlux.ProtoFluxReferenceProxy
 # ProtoFluxWireManager#FrooxEngine.ProtoFlux.ProtoFluxWireManager
-# PlaybackDrive+Proxy#FrooxEngine.ProtoFlux.CoreNodes.PlaybackDrive+Proxy
-# FieldDriveBase<T>+Proxy#FrooxEngine.ProtoFlux.CoreNodes.FieldDriveBase`1+Proxy
 # FieldHookBase<T>+Proxy#FrooxEngine.ProtoFlux.CoreNodes.FieldHookBase`1+Proxy
+# FieldDriveBase<T>+Proxy#FrooxEngine.ProtoFlux.CoreNodes.FieldDriveBase`1+Proxy
+# PlaybackDrive+Proxy#FrooxEngine.ProtoFlux.CoreNodes.PlaybackDrive+Proxy
 # ReferenceDrive<T>+Proxy#FrooxEngine.ProtoFlux.CoreNodes.ReferenceDrive`1+Proxy
 # WorldSaved+Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Worlds.WorldSaved+Proxy
 # ElapsedTime<T>+Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Time.ElapsedTime`1+Proxy
 # AsyncDynamicImpulseReceiver+Proxy#ProtoFlux.Runtimes.Execution.Nodes.Actions.AsyncDynamicImpulseReceiver+Proxy
-# GetActiveUserSelf+Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.GetActiveUserSelf+Proxy
 # OnPackageImported+Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnPackageImported+Proxy
 # OnLoaded+Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnLoaded+Proxy
 # AsyncDynamicImpulseReceiverWithValue<T>+Proxy#ProtoFlux.Runtimes.Execution.Nodes.Actions.AsyncDynamicImpulseReceiverWithValue`1+Proxy
@@ -1323,9 +1328,9 @@
 # OnDestroying+Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnDestroying+Proxy
 # OnDestroy+Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnDestroy+Proxy
 # OnDeactivated+Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnDeactivated+Proxy
-# AsyncDynamicImpulseReceiverWithObject<T>+Proxy#ProtoFlux.Runtimes.Execution.Nodes.Actions.AsyncDynamicImpulseReceiverWithObject`1+Proxy
-# DynamicImpulseReceiver+Proxy#ProtoFlux.Runtimes.Execution.Nodes.Actions.DynamicImpulseReceiver+Proxy
 # OnActivated+Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnActivated+Proxy
+# GetActiveUserSelf+Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.GetActiveUserSelf+Proxy
+# AsyncDynamicImpulseReceiverWithObject<T>+Proxy#ProtoFlux.Runtimes.Execution.Nodes.Actions.AsyncDynamicImpulseReceiverWithObject`1+Proxy
 # OnPaste+Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnPaste+Proxy
 # DynamicImpulseReceiverWithValue<T>+Proxy#ProtoFlux.Runtimes.Execution.Nodes.Actions.DynamicImpulseReceiverWithValue`1+Proxy
 # OnDuplicate+Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.OnDuplicate+Proxy
@@ -1335,6 +1340,7 @@
 # UserSpawn+Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Worlds.UserSpawn+Proxy
 # UserLeft+Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Worlds.UserLeft+Proxy
 # UserJoined+Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Worlds.UserJoined+Proxy
+# DynamicImpulseReceiver+Proxy#ProtoFlux.Runtimes.Execution.Nodes.Actions.DynamicImpulseReceiver+Proxy
 # Stopwatch+Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Time.Stopwatch+Proxy
 # QuaternionMemberEditor#FrooxEngine.QuaternionMemberEditor
 # RadiantDash#FrooxEngine.RadiantDash
@@ -1435,8 +1441,8 @@
 # UserspaceScreensManager#FrooxEngine.UserspaceScreensManager
 # UserspaceTargettingController#FrooxEngine.UserspaceTargettingController
 # ValueFieldProxy<T>#FrooxEngine.ValueFieldProxy`1
-# ValueProxy<T>#FrooxEngine.ValueProxy`1
 # ValueProxy<T>#ProtoFlux.Runtimes.Execution.Nodes.Actions.ValueProxy`1
+# ValueProxy<T>#FrooxEngine.ValueProxy`1
 # ValueReceiver<T>#FrooxEngine.ValueReceiver`1
 # ValueTag<T>#FrooxEngine.ValueTag`1
 # VectorGizmo#FrooxEngine.VectorGizmo
