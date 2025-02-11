@@ -229,6 +229,7 @@
 ## AccountMigrationStatus#FrooxEngine.AccountMigrationStatus
 ## CloudServerStatus#FrooxEngine.CloudServerStatus
 ## CloudUserInfo#FrooxEngine.CloudUserInfo
+## FundingStatistics#FrooxEngine.FundingStatistics
 ## OnlineStatistics#FrooxEngine.OnlineStatistics
 ## RecordSyncStatus#FrooxEngine.RecordSyncStatus
 ## StorageUsageStatus#FrooxEngine.StorageUsageStatus

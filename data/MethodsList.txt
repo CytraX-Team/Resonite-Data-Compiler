@@ -751,6 +751,7 @@ StaticAudioClip
 # ConvertToWAV()#Task`1
 # ConvertToVorbis()#Task`1
 # ConvertToFLAC()#Task`1
+# ApplyZitaReverb(ZitaParameters)#Task`1
 # GetSyncMember(Int32)#ISyncMember
 # __New()#StaticAudioClip
 # get_Asset()#AudioClip
@@ -48697,6 +48698,7 @@ LegacyColorAsLinearAdapter
 # Equals(Object)#Boolean
 # GetHashCode()#Int32
 LegacyDirectionAdapter
+# get_Version()#Int32
 # GetSyncMember(Int32)#ISyncMember
 # __New()#LegacyDirectionAdapter
 # get_Slot()#Slot
@@ -48776,7 +48778,6 @@ LegacyDirectionAdapter
 # get_GizmoType()#Type
 # add_Disposing(Action`1)#Void
 # remove_Disposing(Action`1)#Void
-# get_Version()#Int32
 # get_WorkerType()#Type
 # get_WorkerTypeName()#String
 # get_Name()#String

@@ -3117,6 +3117,7 @@
 #### Texture2D_Format#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Assets.Texture2D_Format
 #### Texture3D_Format#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Assets.Texture3D_Format
 ### Audio
+#### ConstructZitaParameters#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Audio.ConstructZitaParameters
 #### PlayOneShot#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Audio.PlayOneShot
 #### PlayOneShotAndWait#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Audio.PlayOneShotAndWait
 ### Avatars
