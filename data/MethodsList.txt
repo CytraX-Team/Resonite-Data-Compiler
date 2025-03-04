@@ -23701,144 +23701,6 @@ AssetProxy`1
 # GetType()#Type
 # Equals(Object)#Boolean
 # GetHashCode()#Int32
-AssetReceiver`1
-# TryReceive(IEnumerable`1, Component, InteractionData, float3&)#Boolean
-# GetSyncMember(Int32)#ISyncMember
-# __New()#AssetReceiver`1
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
 AudioAccessibilitySettings
 # ResetToDefault()#Void
 # GetSyncMember(Int32)#ISyncMember
@@ -26833,143 +26695,6 @@ BooleanMemberEditor
 # GetType()#Type
 # Equals(Object)#Boolean
 # GetHashCode()#Int32
-BooleanUserOverride
-# GetSyncMember(Int32)#ISyncMember
-# __New()#BooleanUserOverride
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
 Bounds
 # get_HasBoundingBox()#Boolean
 # get_IsBoundingBoxAvailable()#Boolean
@@ -29416,6 +29141,7 @@ ContactsDialog
 # get_SelectedContactItem()#ContactItem
 # OpenContactPage(String)#Void
 # InviteContact(String)#Void
+# RequestInvite()#Void
 # AddSendingMessage(Message, Boolean)#Image
 # GetSyncMember(Int32)#ISyncMember
 # __New()#ContactsDialog
@@ -34602,7 +34328,6 @@ DevCreateNewForm
 # AddSpacer(String)#Void
 # SpawnEmpty(Slot)#Void
 # OpenInspector(Slot)#Void
-# SpawnLegacyParticleSystem(Slot)#Void
 # SpawnParticleSystem(Slot)#Void
 # SpawnText(Slot)#Void
 # SpawnTextOutLine(Slot)#Void
@@ -46238,6 +45963,7 @@ InventoryBrowser
 # set_SafeUser(User)#Void
 # get_CurrentDirectory()#RecordDirectory
 # CanInteract(User)#Boolean
+# OpenDirectoryFromRoot(String)#Void
 # Open(RecordDirectory, Slide)#Void
 # SaveItemFromGrabber(Grabber)#Void
 # AddItem(Slot, Boolean)#Boolean
@@ -58385,7 +58111,9 @@ PhotoCaptureManager
 # Equals(Object)#Boolean
 # GetHashCode()#Int32
 PhotoCaptureSettings
+# OpenAutosavePath()#Void
 # ResetToDefault()#Void
+# GeneratePhotoPath(String, World, DateTime, String, String)#String
 # GetSyncMember(Int32)#ISyncMember
 # __New()#PhotoCaptureSettings
 # BuildInspectorUI(UIBuilder)#Void
@@ -61242,558 +60970,6 @@ ProtoFluxWireManager
 # Equals(Object)#Boolean
 # GetHashCode()#Int32
 Proxy
-# OnUserLeft(User)#Void
-# GetSyncMember(Int32)#ISyncMember
-# __New()#Proxy
-# Matches(IProtoFluxNode, List`1)#Boolean
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-# get_Tag()#String
-# set_Tag(String)#Void
-# GetSyncMember(Int32)#ISyncMember
-# __New()#Proxy
-# Matches(IProtoFluxNode, List`1)#Boolean
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-# get_Tag()#String
-# set_Tag(String)#Void
-# GetSyncMember(Int32)#ISyncMember
-# __New()#Proxy
-# Matches(IProtoFluxNode, List`1)#Boolean
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-# OnUserJoined(User)#Void
-# GetSyncMember(Int32)#ISyncMember
-# __New()#Proxy
-# Matches(IProtoFluxNode, List`1)#Boolean
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
 # GetSyncMember(Int32)#ISyncMember
 # __New()#Proxy
 # Matches(IProtoFluxNode, List`1)#Boolean
@@ -62068,284 +61244,6 @@ Proxy
 # GetType()#Type
 # Equals(Object)#Boolean
 # GetHashCode()#Int32
-# get_Tag()#String
-# set_Tag(String)#Void
-# GetSyncMember(Int32)#ISyncMember
-# __New()#Proxy
-# Matches(IProtoFluxNode, List`1)#Boolean
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-# GetSyncMember(Int32)#ISyncMember
-# __New()#Proxy
-# Matches(IProtoFluxNode, List`1)#Boolean
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-# get_Tag()#String
-# set_Tag(String)#Void
 # GetSyncMember(Int32)#ISyncMember
 # __New()#Proxy
 # Matches(IProtoFluxNode, List`1)#Boolean
@@ -62896,7 +61794,8 @@ Proxy
 # GetType()#Type
 # Equals(Object)#Boolean
 # GetHashCode()#Int32
-# OnUserSpawn(User)#Void
+# get_Tag()#String
+# set_Tag(String)#Void
 # GetSyncMember(Int32)#ISyncMember
 # __New()#Proxy
 # Matches(IProtoFluxNode, List`1)#Boolean
@@ -62958,6 +61857,837 @@ Proxy
 # OnFocusChanged(WorldFocus)#Void
 # OnWorldDestroy()#Void
 # OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
+# get_Tag()#String
+# set_Tag(String)#Void
+# GetSyncMember(Int32)#ISyncMember
+# __New()#Proxy
+# Matches(IProtoFluxNode, List`1)#Boolean
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
+# get_Tag()#String
+# set_Tag(String)#Void
+# GetSyncMember(Int32)#ISyncMember
+# __New()#Proxy
+# Matches(IProtoFluxNode, List`1)#Boolean
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
+# get_Tag()#String
+# set_Tag(String)#Void
+# GetSyncMember(Int32)#ISyncMember
+# __New()#Proxy
+# Matches(IProtoFluxNode, List`1)#Boolean
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
+# get_Tag()#String
+# set_Tag(String)#Void
+# GetSyncMember(Int32)#ISyncMember
+# __New()#Proxy
+# Matches(IProtoFluxNode, List`1)#Boolean
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
+# GetSyncMember(Int32)#ISyncMember
+# __New()#Proxy
+# Matches(IProtoFluxNode, List`1)#Boolean
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
+# GetSyncMember(Int32)#ISyncMember
+# __New()#Proxy
+# Matches(IProtoFluxNode, List`1)#Boolean
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
 # OnUserLeft(User)#Void
 # OnWorldSaved()#Void
 # get_World()#World
@@ -63308,6 +63038,1513 @@ Proxy
 # GetType()#Type
 # Equals(Object)#Boolean
 # GetHashCode()#Int32
+# GetSyncMember(Int32)#ISyncMember
+# __New()#Proxy
+# Matches(IProtoFluxNode, List`1)#Boolean
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
+# GetSyncMember(Int32)#ISyncMember
+# __New()#Proxy
+# Matches(IProtoFluxNode, List`1)#Boolean
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
+# GetSyncMember(Int32)#ISyncMember
+# __New()#Proxy
+# Matches(IProtoFluxNode, List`1)#Boolean
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
+# GetSyncMember(Int32)#ISyncMember
+# __New()#Proxy
+# Matches(IProtoFluxNode, List`1)#Boolean
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
+# GetSyncMember(Int32)#ISyncMember
+# __New()#Proxy
+# Matches(IProtoFluxNode, List`1)#Boolean
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
+# GetSyncMember(Int32)#ISyncMember
+# __New()#Proxy
+# Matches(IProtoFluxNode, List`1)#Boolean
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
+# OnUserJoined(User)#Void
+# GetSyncMember(Int32)#ISyncMember
+# __New()#Proxy
+# Matches(IProtoFluxNode, List`1)#Boolean
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserSpawn(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
+# OnUserLeft(User)#Void
+# GetSyncMember(Int32)#ISyncMember
+# __New()#Proxy
+# Matches(IProtoFluxNode, List`1)#Boolean
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
+# GetSyncMember(Int32)#ISyncMember
+# __New()#Proxy
+# Matches(IProtoFluxNode, List`1)#Boolean
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
+# OnUserSpawn(User)#Void
+# GetSyncMember(Int32)#ISyncMember
+# __New()#Proxy
+# Matches(IProtoFluxNode, List`1)#Boolean
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
+# GetSyncMember(Int32)#ISyncMember
+# __New()#Proxy
+# Matches(IProtoFluxNode, List`1)#Boolean
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
 # VerifyJoinRequest(SessionConnection)#Task`1
 # GetSyncMember(Int32)#ISyncMember
 # __New()#Proxy
@@ -63446,1515 +64683,6 @@ Proxy
 # GetType()#Type
 # Equals(Object)#Boolean
 # GetHashCode()#Int32
-# GetSyncMember(Int32)#ISyncMember
-# __New()#Proxy
-# Matches(IProtoFluxNode, List`1)#Boolean
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-# GetSyncMember(Int32)#ISyncMember
-# __New()#Proxy
-# Matches(IProtoFluxNode, List`1)#Boolean
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-# GetSyncMember(Int32)#ISyncMember
-# __New()#Proxy
-# Matches(IProtoFluxNode, List`1)#Boolean
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-# GetSyncMember(Int32)#ISyncMember
-# __New()#Proxy
-# Matches(IProtoFluxNode, List`1)#Boolean
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-# GetSyncMember(Int32)#ISyncMember
-# __New()#Proxy
-# Matches(IProtoFluxNode, List`1)#Boolean
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-# GetSyncMember(Int32)#ISyncMember
-# __New()#Proxy
-# Matches(IProtoFluxNode, List`1)#Boolean
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-# GetSyncMember(Int32)#ISyncMember
-# __New()#Proxy
-# Matches(IProtoFluxNode, List`1)#Boolean
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-# GetSyncMember(Int32)#ISyncMember
-# __New()#Proxy
-# Matches(IProtoFluxNode, List`1)#Boolean
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-# GetSyncMember(Int32)#ISyncMember
-# __New()#Proxy
-# Matches(IProtoFluxNode, List`1)#Boolean
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-# GetSyncMember(Int32)#ISyncMember
-# __New()#Proxy
-# Matches(IProtoFluxNode, List`1)#Boolean
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-# GetSyncMember(Int32)#ISyncMember
-# __New()#Proxy
-# Matches(IProtoFluxNode, List`1)#Boolean
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-# get_Tag()#String
-# set_Tag(String)#Void
 # GetSyncMember(Int32)#ISyncMember
 # __New()#Proxy
 # Matches(IProtoFluxNode, List`1)#Boolean
@@ -66413,144 +66141,6 @@ ReferenceProxy
 # Trigger()#Void
 # GetSyncMember(Int32)#ISyncMember
 # __New()#ReferenceProxy
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-ReferenceReceiver`1
-# TryReceive(IEnumerable`1, Component, InteractionData, float3&)#Boolean
-# GetSyncMember(Int32)#ISyncMember
-# __New()#ReferenceReceiver`1
 # get_Slot()#Slot
 # get_IsUnderLocalUser()#Boolean
 # AssignKey(String, Int32, Boolean)#Boolean
@@ -78808,6 +78398,8 @@ UserspaceRadiantDash
 # ToggleSessionControl()#Void
 # OpenContact(String)#Void
 # OpenContactsDialog()#Task`1
+# OpenInventoryBrowser()#Task`1
+# OpenInventoryAtPath(String)#Void
 # ToggleLegacyInventory(Boolean)#Void
 # PositionDialog(Slot)#Void
 # GetSyncMember(Int32)#ISyncMember
@@ -79240,6 +78832,143 @@ UserspaceTargettingController
 # GetType()#Type
 # Equals(Object)#Boolean
 # GetHashCode()#Int32
+UV_Vertical_Adapter
+# GetSyncMember(Int32)#ISyncMember
+# __New()#UV_Vertical_Adapter
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
 ValueFieldProxy`1
 # get_IsValidGenericType()#Boolean
 # get_Value()#T
@@ -79521,145 +79250,6 @@ ValueProxy`1
 # Construct(World, T)#IGrabbable
 # GetSyncMember(Int32)#ISyncMember
 # __New()#ValueProxy`1
-# get_Slot()#Slot
-# get_IsUnderLocalUser()#Boolean
-# AssignKey(String, Int32, Boolean)#Boolean
-# HasKey(String)#Boolean
-# RemoveKey(String)#Void
-# get_IsStarted()#Boolean
-# get_IsDestroyed()#Boolean
-# get_IsRemoved()#Boolean
-# get_IsValid()#Boolean
-# get_IsChangeDirty()#Boolean
-# get_LastChangeUpdateIndex()#Int32
-# get_UserspaceOnly()#Boolean
-# get_UpdateOrder()#Int32
-# set_UpdateOrder(Int32)#Void
-# get_Persistent()#Boolean
-# set_Persistent(Boolean)#Void
-# get_IsPersistent()#Boolean
-# get_Enabled()#Boolean
-# set_Enabled(Boolean)#Void
-# IsSingleValidInstance()#Boolean
-# MarkChangeDirty()#Void
-# Destroy()#Void
-# Destroy(Boolean)#Void
-# CopyValues(Component, Action`2)#Void
-# CopyValues(Component)#Void
-# add_Changed(Action`1)#Void
-# remove_Changed(Action`1)#Void
-# add_Destroyed(Action`1)#Void
-# remove_Destroyed(Action`1)#Void
-# get_IsInInitPhase()#Boolean
-# EndInitPhase()#Void
-# get_IsLinked()#Boolean
-# get_IsDriven()#Boolean
-# get_IsHooked()#Boolean
-# get_ActiveLink()#ILinkRef
-# get_DirectLink()#ILinkRef
-# get_InheritedLink()#ILinkRef
-# Link(ILinkRef)#Void
-# ReleaseLink(ILinkRef)#Void
-# get_LinkableChildren()#IEnumerable`1
-# InheritLink(ILinkRef)#Void
-# ReleaseInheritedLink(ILinkRef)#Void
-# RunSynchronously(Action, Boolean)#Void
-# RunSynchronouslyAsync(Action, Boolean)#Task
-# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
-# RunInSeconds(Single, Action)#Coroutine
-# RunInUpdates(Int32, Action)#Coroutine
-# InternalRunStartup()#Void
-# InternalRunUpdate()#Void
-# InternalRunApplyChanges(Int32)#Void
-# InternalRunAudioUpdate()#Void
-# InternalRunAudioConfigurationChanged()#Void
-# RunOnDestroying()#Void
-# InternalRunDestruction()#Void
-# HasEventHandler(WorldEvent)#Boolean
-# OnFocusChanged(WorldFocus)#Void
-# OnWorldDestroy()#Void
-# OnUserJoined(User)#Void
-# OnUserSpawn(User)#Void
-# OnUserLeft(User)#Void
-# OnWorldSaved()#Void
-# get_World()#World
-# get_Engine()#Engine
-# get_Physics()#PhysicsManager
-# get_Cloud()#EngineSkyFrostInterface
-# get_Time()#TimeController
-# get_AudioSystem()#AudioSystem
-# get_InputInterface()#InputInterface
-# get_Input()#InputBindingManager
-# get_Debug()#DebugManager
-# get_Permissions()#PermissionController
-# get_LocalUser()#User
-# get_LocalUserRoot()#UserRoot
-# get_LocalUserSpace()#Slot
-# get_GizmoType()#Type
-# add_Disposing(Action`1)#Void
-# remove_Disposing(Action`1)#Void
-# get_Version()#Int32
-# get_WorkerType()#Type
-# get_WorkerTypeName()#String
-# get_Name()#String
-# get_WorkerCategoryPath()#String
-# get_ReferenceID()#RefID
-# get_IsLocalElement()#Boolean
-# get_IsDisposed()#Boolean
-# get_IsScheduledForValidation()#Boolean
-# get_SyncMemberCount()#Int32
-# get_SyncMethodCount()#Int32
-# get_DontDuplicate()#Boolean
-# get_SyncMembers()#IEnumerable`1
-# GetSyncMemberFieldInfo(Int32)#FieldInfo
-# GetSyncMemberName(Int32)#String
-# GetSyncMemberName(ISyncMember)#String
-# IndexOfMember(ISyncMember)#Int32
-# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
-# GetSyncMethod(Int32)#Delegate
-# GetSyncMethod(String)#Delegate
-# GetSyncMethodType(Int32)#Type
-# GetSyncMember(String)#ISyncMember
-# GetSyncMemberFieldInfo(String)#FieldInfo
-# get_PreserveWithAssets()#Boolean
-# get_GloballyRegistered()#Boolean
-# Dispose()#Void
-# CopyValues(Worker, Action`2, Boolean)#Void
-# CopyValues(Worker)#Void
-# CopyProperties(Worker, Boolean, Predicate`1)#Void
-# StartTask(Func`1)#Task
-# StartTask(Func`1)#Task`1
-# StartTask(Func`2, T)#Task
-# StartGlobalTask(Func`1)#Task
-# StartGlobalTask(Func`1)#Task`1
-# DelaySeconds(Single)#Task
-# DelayTimeSpan(TimeSpan)#Task
-# StartCoroutine(IEnumerator`1)#Coroutine
-# StopAllCoroutines()#Void
-# CheckPermission(Predicate`1, User)#Boolean
-# get_Parent()#IWorldElement
-# Load(DataTreeNode, LoadControl)#Void
-# Load(DataTreeNode, LoadControl, Predicate`1)#Void
-# Save(SaveControl)#DataTreeNode
-# TryGetField(String)#IField
-# TryGetField(String)#IField`1
-# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
-# ForeachSyncMember(Action`1)#Int32
-# GetSyncMembers(List`1, Boolean)#Int32
-# GetSyncMembers(List`1, Predicate`1)#Int32
-# GetSyncMembers()#List`1
-# GetSyncMembers(Int32, List`1)#Int32
-# PublicMembersEqual(Worker)#Boolean
-# ToString()#String
-# MembersToString()#String
-# GetType()#Type
-# Equals(Object)#Boolean
-# GetHashCode()#Int32
-ValueReceiver`1
-# TryAssignField(IField)#Boolean
-# TryReceive(IEnumerable`1, Component, InteractionData, float3&)#Boolean
-# GetSyncMember(Int32)#ISyncMember
-# __New()#ValueReceiver`1
 # get_Slot()#Slot
 # get_IsUnderLocalUser()#Boolean
 # AssignKey(String, Int32, Boolean)#Boolean
@@ -80367,6 +79957,150 @@ VideoImportDialog
 # RunImport()#Void
 # GetSyncMember(Int32)#ISyncMember
 # __New()#VideoImportDialog
+# get_Slot()#Slot
+# get_IsUnderLocalUser()#Boolean
+# AssignKey(String, Int32, Boolean)#Boolean
+# HasKey(String)#Boolean
+# RemoveKey(String)#Void
+# get_IsStarted()#Boolean
+# get_IsDestroyed()#Boolean
+# get_IsRemoved()#Boolean
+# get_IsValid()#Boolean
+# get_IsChangeDirty()#Boolean
+# get_LastChangeUpdateIndex()#Int32
+# get_UserspaceOnly()#Boolean
+# get_UpdateOrder()#Int32
+# set_UpdateOrder(Int32)#Void
+# get_Persistent()#Boolean
+# set_Persistent(Boolean)#Void
+# get_IsPersistent()#Boolean
+# get_Enabled()#Boolean
+# set_Enabled(Boolean)#Void
+# IsSingleValidInstance()#Boolean
+# MarkChangeDirty()#Void
+# Destroy()#Void
+# Destroy(Boolean)#Void
+# CopyValues(Component, Action`2)#Void
+# CopyValues(Component)#Void
+# add_Changed(Action`1)#Void
+# remove_Changed(Action`1)#Void
+# add_Destroyed(Action`1)#Void
+# remove_Destroyed(Action`1)#Void
+# get_IsInInitPhase()#Boolean
+# EndInitPhase()#Void
+# get_IsLinked()#Boolean
+# get_IsDriven()#Boolean
+# get_IsHooked()#Boolean
+# get_ActiveLink()#ILinkRef
+# get_DirectLink()#ILinkRef
+# get_InheritedLink()#ILinkRef
+# Link(ILinkRef)#Void
+# ReleaseLink(ILinkRef)#Void
+# get_LinkableChildren()#IEnumerable`1
+# InheritLink(ILinkRef)#Void
+# ReleaseInheritedLink(ILinkRef)#Void
+# RunSynchronously(Action, Boolean)#Void
+# RunSynchronouslyAsync(Action, Boolean)#Task
+# RunSynchronouslyAsync(Func`1, Boolean)#Task`1
+# RunInSeconds(Single, Action)#Coroutine
+# RunInUpdates(Int32, Action)#Coroutine
+# InternalRunStartup()#Void
+# InternalRunUpdate()#Void
+# InternalRunApplyChanges(Int32)#Void
+# InternalRunAudioUpdate()#Void
+# InternalRunAudioConfigurationChanged()#Void
+# RunOnDestroying()#Void
+# InternalRunDestruction()#Void
+# HasEventHandler(WorldEvent)#Boolean
+# OnFocusChanged(WorldFocus)#Void
+# OnWorldDestroy()#Void
+# OnUserJoined(User)#Void
+# OnUserSpawn(User)#Void
+# OnUserLeft(User)#Void
+# OnWorldSaved()#Void
+# get_World()#World
+# get_Engine()#Engine
+# get_Physics()#PhysicsManager
+# get_Cloud()#EngineSkyFrostInterface
+# get_Time()#TimeController
+# get_AudioSystem()#AudioSystem
+# get_InputInterface()#InputInterface
+# get_Input()#InputBindingManager
+# get_Debug()#DebugManager
+# get_Permissions()#PermissionController
+# get_LocalUser()#User
+# get_LocalUserRoot()#UserRoot
+# get_LocalUserSpace()#Slot
+# get_GizmoType()#Type
+# add_Disposing(Action`1)#Void
+# remove_Disposing(Action`1)#Void
+# get_Version()#Int32
+# get_WorkerType()#Type
+# get_WorkerTypeName()#String
+# get_Name()#String
+# get_WorkerCategoryPath()#String
+# get_ReferenceID()#RefID
+# get_IsLocalElement()#Boolean
+# get_IsDisposed()#Boolean
+# get_IsScheduledForValidation()#Boolean
+# get_SyncMemberCount()#Int32
+# get_SyncMethodCount()#Int32
+# get_DontDuplicate()#Boolean
+# get_SyncMembers()#IEnumerable`1
+# GetSyncMemberFieldInfo(Int32)#FieldInfo
+# GetSyncMemberName(Int32)#String
+# GetSyncMemberName(ISyncMember)#String
+# IndexOfMember(ISyncMember)#Int32
+# GetSyncMethodData(Int32, SyncMethodInfo&, Delegate&)#Void
+# GetSyncMethod(Int32)#Delegate
+# GetSyncMethod(String)#Delegate
+# GetSyncMethodType(Int32)#Type
+# GetSyncMember(String)#ISyncMember
+# GetSyncMemberFieldInfo(String)#FieldInfo
+# get_PreserveWithAssets()#Boolean
+# get_GloballyRegistered()#Boolean
+# Dispose()#Void
+# CopyValues(Worker, Action`2, Boolean)#Void
+# CopyValues(Worker)#Void
+# CopyProperties(Worker, Boolean, Predicate`1)#Void
+# StartTask(Func`1)#Task
+# StartTask(Func`1)#Task`1
+# StartTask(Func`2, T)#Task
+# StartGlobalTask(Func`1)#Task
+# StartGlobalTask(Func`1)#Task`1
+# DelaySeconds(Single)#Task
+# DelayTimeSpan(TimeSpan)#Task
+# StartCoroutine(IEnumerator`1)#Coroutine
+# StopAllCoroutines()#Void
+# CheckPermission(Predicate`1, User)#Boolean
+# get_Parent()#IWorldElement
+# Load(DataTreeNode, LoadControl)#Void
+# Load(DataTreeNode, LoadControl, Predicate`1)#Void
+# Save(SaveControl)#DataTreeNode
+# TryGetField(String)#IField
+# TryGetField(String)#IField`1
+# GetReferencedObjects(List`1, Boolean, Boolean, Boolean)#Void
+# ForeachSyncMember(Action`1)#Int32
+# GetSyncMembers(List`1, Boolean)#Int32
+# GetSyncMembers(List`1, Predicate`1)#Int32
+# GetSyncMembers()#List`1
+# GetSyncMembers(Int32, List`1)#Int32
+# PublicMembersEqual(Worker)#Boolean
+# ToString()#String
+# MembersToString()#String
+# GetType()#Type
+# Equals(Object)#Boolean
+# GetHashCode()#Int32
+VideoStreamingServicesSettings
+# ResetToDefault()#Void
+# GetSyncMember(Int32)#ISyncMember
+# __New()#VideoStreamingServicesSettings
+# BuildInspectorUI(UIBuilder)#Void
+# get_IsSettingActive()#Boolean
+# get_SettingOwnerId()#String
+# IsSubcategoryPublic(String)#Boolean
+# GetSubcategoryItems(String)#IAsyncEnumerable`1
+# get_CanResetToDefault()#Boolean
 # get_Slot()#Slot
 # get_IsUnderLocalUser()#Boolean
 # AssignKey(String, Int32, Boolean)#Boolean
@@ -85241,10 +84975,20 @@ UserRoot
 # get_RightHandRotation()#floatQ
 # get_LeftControllerPosition()#float3
 # get_RightControllerPosition()#float3
+# get_LeftHipPosition()#float3
+# get_RightHipPosition()#float3
+# get_LeftShoulderPosition()#float3
+# get_RightShoulderPosition()#float3
+# get_LeftUpperArmPosition()#float3
+# get_RightUpperArmPosition()#float3
 # get_LeftFootPosition()#float3
 # get_RightFootPosition()#float3
 # get_LeftFootRotation()#floatQ
 # get_RightFootRotation()#floatQ
+# get_LeftKneePosition()#float3
+# get_RightKneePosition()#float3
+# get_LeftElbowPosition()#float3
+# get_RightElbowPosition()#float3
 # get_LocalLeftHandPosition()#float3
 # get_LocalRightHandPosition()#float3
 # get_LocalLeftHandRotation()#floatQ
