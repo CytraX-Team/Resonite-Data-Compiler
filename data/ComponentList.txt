@@ -2,6 +2,7 @@
 # Export
 ## AudioExportable#FrooxEngine.AudioExportable
 ## BinaryExportable#FrooxEngine.BinaryExportable
+## GaussianSplatExportable#FrooxEngine.GaussianSplatExportable
 ## PackageExportable#FrooxEngine.PackageExportable
 ## TextExportable#FrooxEngine.TextExportable
 ## TextureExportable#FrooxEngine.TextureExportable
@@ -104,6 +105,8 @@
 ## CheckerboardCubemap#FrooxEngine.CheckerboardCubemap
 # Procedural Fonts
 ## DynamicSpriteFont#FrooxEngine.DynamicSpriteFont
+# Procedural Guassian Splats
+## DiagnosticGaussianSplat#FrooxEngine.DiagnosticGaussianSplat
 # Procedural Meshes
 ## Legacy UI
 ### BevelPlaneMesh#FrooxEngine.BevelPlaneMesh
@@ -206,6 +209,7 @@
 # StaticCubemap#FrooxEngine.StaticCubemap
 # StaticDocument#FrooxEngine.StaticDocument
 # StaticFont#FrooxEngine.StaticFont
+# StaticGaussianSplat#FrooxEngine.StaticGaussianSplat
 # StaticLocaleProvider#FrooxEngine.StaticLocaleProvider
 # StaticMesh#FrooxEngine.StaticMesh
 # StaticSavedObjectProvider#FrooxEngine.StaticSavedObjectProvider
@@ -758,6 +762,7 @@
 ### BillboardParticleRenderer#FrooxEngine.PhotonDust.BillboardParticleRenderer
 ### DebugQuadMeshRenderer#FrooxEngine.PhotonDust.DebugQuadMeshRenderer
 ### MeshParticleRenderer#FrooxEngine.PhotonDust.MeshParticleRenderer
+### NullParticleRenderer#FrooxEngine.PhotonDust.NullParticleRenderer
 ### PointCloudParticleRenderer#FrooxEngine.PhotonDust.PointCloudParticleRenderer
 ## ParticleStyle#FrooxEngine.PhotonDust.ParticleStyle
 ## ParticleSystem#FrooxEngine.PhotonDust.ParticleSystem
@@ -779,6 +784,7 @@
 # CameraPortal#FrooxEngine.CameraPortal
 # DirectVisemeDriver#FrooxEngine.DirectVisemeDriver
 # DynamicVisemeDriver#FrooxEngine.DynamicVisemeDriver
+# GaussianSplatRenderer#FrooxEngine.GaussianSplatRenderer
 # HiddenLayer#FrooxEngine.HiddenLayer
 # Light#FrooxEngine.Light
 # LODGroup#FrooxEngine.LODGroup
@@ -1155,6 +1161,7 @@
 # FullBodyCalibratorDialog#FrooxEngine.FullBodyCalibratorDialog
 # FullBodyTrackingSettings#FrooxEngine.FullBodyTrackingSettings
 # GamepadSettings#FrooxEngine.GamepadSettings
+# GaussianSplatQualitySettings#FrooxEngine.GaussianSplatQualitySettings
 # GeneralControlsSettings#FrooxEngine.GeneralControlsSettings
 # GeneralHapticsSettings#FrooxEngine.GeneralHapticsSettings
 # GeneralVRSettings#FrooxEngine.GeneralVRSettings
@@ -1221,11 +1228,11 @@
 # LegacyColorAsLinearAdapter#FrooxEngine.LegacyColorAsLinearAdapter
 # LegacyColorToLinearReinterpret_sRGB_Adapter#FrooxEngine.LegacyColorToLinearReinterpret_sRGB_Adapter
 # CylinderEmitter+LegacyDirectionAdapter#FrooxEngine.PhotonDust.CylinderEmitter+LegacyDirectionAdapter
-# BoxEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.BoxEmitter+LegacyDirectionConverter
-# PointEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.PointEmitter+LegacyDirectionConverter
-# CircleEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.CircleEmitter+LegacyDirectionConverter
-# SphereEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.SphereEmitter+LegacyDirectionConverter
 # ConeEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.ConeEmitter+LegacyDirectionConverter
+# SphereEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.SphereEmitter+LegacyDirectionConverter
+# PointEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.PointEmitter+LegacyDirectionConverter
+# BoxEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.BoxEmitter+LegacyDirectionConverter
+# CircleEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.CircleEmitter+LegacyDirectionConverter
 # LegacyDistributionAdapter#FrooxEngine.PhotonDust.LegacyDistributionAdapter
 # LegacyFeatureSettings#FrooxEngine.LegacyFeatureSettings
 # LegacyGravityAdapter#FrooxEngine.PhotonDust.LegacyGravityAdapter
@@ -1306,10 +1313,10 @@
 # ProtoFluxOutputProxy#FrooxEngine.ProtoFlux.ProtoFluxOutputProxy
 # ProtoFluxReferenceProxy#FrooxEngine.ProtoFlux.ProtoFluxReferenceProxy
 # ProtoFluxWireManager#FrooxEngine.ProtoFlux.ProtoFluxWireManager
+# ReferenceDrive<T>+Proxy#FrooxEngine.ProtoFlux.CoreNodes.ReferenceDrive`1+Proxy
+# PlaybackDrive+Proxy#FrooxEngine.ProtoFlux.CoreNodes.PlaybackDrive+Proxy
 # FieldDriveBase<T>+Proxy#FrooxEngine.ProtoFlux.CoreNodes.FieldDriveBase`1+Proxy
 # FieldHookBase<T>+Proxy#FrooxEngine.ProtoFlux.CoreNodes.FieldHookBase`1+Proxy
-# PlaybackDrive+Proxy#FrooxEngine.ProtoFlux.CoreNodes.PlaybackDrive+Proxy
-# ReferenceDrive<T>+Proxy#FrooxEngine.ProtoFlux.CoreNodes.ReferenceDrive`1+Proxy
 # WorldSaved+Proxy#ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Worlds.WorldSaved+Proxy
 # AsyncDynamicImpulseReceiverWithValue<T>+Proxy#ProtoFlux.Runtimes.Execution.Nodes.Actions.AsyncDynamicImpulseReceiverWithValue`1+Proxy
 # DynamicImpulseReceiverWithObject<T>+Proxy#ProtoFlux.Runtimes.Execution.Nodes.Actions.DynamicImpulseReceiverWithObject`1+Proxy
