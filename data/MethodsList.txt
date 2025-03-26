@@ -14505,6 +14505,7 @@ GaussianSplatRenderer
 # ComputeExactBounds(Slot)#Task`1
 # ForeachExactBoundedPoint(Slot, Action`1)#Task
 # GeneratePointCloudCollider()#Task`1
+# BuildInspectorUI(UIBuilder)#Void
 # GetSyncMember(Int32)#ISyncMember
 # __New()#GaussianSplatRenderer
 # get_Connector()#IConnector
@@ -15371,6 +15372,7 @@ OverlayLayer
 ReflectionProbe
 # add_OnChangesRenderFinished(Action`1)#Void
 # remove_OnChangesRenderFinished(Action`1)#Void
+# get_ShouldBeActive()#Boolean
 # get_IsBaking()#Boolean
 # OnFocusChanged(WorldFocus)#Void
 # BuildInspectorUI(UIBuilder)#Void
@@ -18055,6 +18057,7 @@ DuplicatorTool
 # Equals(Object)#Boolean
 # GetHashCode()#Int32
 GaussianSplatTool
+# get_UsesLaser()#Boolean
 # GenerateMenuItems(InteractionHandler, ContextMenu)#Void
 # OnPrimaryPress()#Void
 # OnPrimaryHold()#Void
@@ -18080,7 +18083,6 @@ GaussianSplatTool
 # GetGrabbedDelegate()#Delegate
 # get_InteractionOrigin()#float3
 # get_InteractionDirection()#float3
-# get_UsesLaser()#Boolean
 # get_UsesLaserGrip()#Boolean
 # get_HasTipReference()#Boolean
 # get_BlocksPrimaryWhenTouching()#Boolean
