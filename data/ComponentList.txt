@@ -1114,6 +1114,7 @@
 # CurvePoint#FrooxEngine.CurvePoint
 # CustomizationSettings#FrooxEngine.CustomizationSettings
 # CutenessSettings#FrooxEngine.CutenessSettings
+# GaussianSplatTool+CylinderInterface#FrooxEngine.GaussianSplatTool+CylinderInterface
 # DashSettings#FrooxEngine.DashSettings
 # DebugAvatarBuilder#FrooxEngine.DebugAvatarBuilder
 # DebugFeatureReplacement#FrooxEngine.DebugFeatureReplacement
@@ -1231,11 +1232,11 @@
 # LegacyColorAsLinearAdapter#FrooxEngine.LegacyColorAsLinearAdapter
 # LegacyColorToLinearReinterpret_sRGB_Adapter#FrooxEngine.LegacyColorToLinearReinterpret_sRGB_Adapter
 # CylinderEmitter+LegacyDirectionAdapter#FrooxEngine.PhotonDust.CylinderEmitter+LegacyDirectionAdapter
+# ConeEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.ConeEmitter+LegacyDirectionConverter
 # SphereEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.SphereEmitter+LegacyDirectionConverter
 # PointEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.PointEmitter+LegacyDirectionConverter
-# CircleEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.CircleEmitter+LegacyDirectionConverter
 # BoxEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.BoxEmitter+LegacyDirectionConverter
-# ConeEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.ConeEmitter+LegacyDirectionConverter
+# CircleEmitter+LegacyDirectionConverter#FrooxEngine.PhotonDust.CircleEmitter+LegacyDirectionConverter
 # LegacyDistributionAdapter#FrooxEngine.PhotonDust.LegacyDistributionAdapter
 # LegacyFeatureSettings#FrooxEngine.LegacyFeatureSettings
 # LegacyGlowingSphereToggle#FrooxEngine.LegacyGlowingSphereToggle
