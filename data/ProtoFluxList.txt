@@ -6037,6 +6037,12 @@
 ##### WriteDynamicValueVariable<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.WriteDynamicValueVariable`1
 ##### WriteOrCreateDynamicObjectVariable<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.WriteOrCreateDynamicObjectVariable`1
 ##### WriteOrCreateDynamicValueVariable<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.WriteOrCreateDynamicValueVariable`1
+#### Spatial
+##### SampleBooleanSpatialVariable#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.SampleBooleanSpatialVariable
+##### SampleMinMaxSpatialVariable<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.SampleMinMaxSpatialVariable`1
+##### SampleNumericSpatialVariable<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.SampleNumericSpatialVariable`1
+##### SampleObjectSpatialVariable<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.SampleObjectSpatialVariable`1
+##### SampleValueSpatialVariable<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.SampleValueSpatialVariable`1
 #### DataModelBooleanToggle#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelBooleanToggle
 #### DataModelObjectAssetRefStore<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelObjectAssetRefStore`1
 #### DataModelObjectFieldStore<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelObjectFieldStore`1
