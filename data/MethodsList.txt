@@ -26221,6 +26221,7 @@ AudioStreamSettings
 # GetHashCode()#Int32
 AudioVolumeSettings
 # GetDefaultSettingSwitches(World)#List`1
+# get_ActualMasterVolume()#Single
 # get_ActualSoundEffectVolume()#Single
 # get_ActualMultimediaVolume()#Single
 # get_ActualVoiceVolume()#Single

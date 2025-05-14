@@ -354,9 +354,11 @@
 ### SpatialVariableBlendDriver#FrooxEngine.SpatialVariableBlendDriver
 ### TypeSpatialVariableDriver#FrooxEngine.TypeSpatialVariableDriver
 ### ValueSpatialVariableDriver<T>#FrooxEngine.ValueSpatialVariableDriver`1
+### ValueSpatialVariablePartialDerivativeDriver<T>#FrooxEngine.ValueSpatialVariablePartialDerivativeDriver`1
 ## Sphere Variables
 ### SphereConstantReferenceSpatialVariable<T>#FrooxEngine.SphereConstantReferenceSpatialVariable`1
 ### SphereConstantValueSpatialVariable<T>#FrooxEngine.SphereConstantValueSpatialVariable`1
+### SphereGradientVectorVariable#FrooxEngine.SphereGradientVectorVariable
 ### SphereStartEndValueSpatialVariable<T>#FrooxEngine.SphereStartEndValueSpatialVariable`1
 # AudioMetadata#FrooxEngine.AudioMetadata
 # FileMetadata#FrooxEngine.FileMetadata

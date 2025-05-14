@@ -6042,6 +6042,7 @@
 ##### SampleMinMaxSpatialVariable<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.SampleMinMaxSpatialVariable`1
 ##### SampleNumericSpatialVariable<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.SampleNumericSpatialVariable`1
 ##### SampleObjectSpatialVariable<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.SampleObjectSpatialVariable`1
+##### SampleSpatialVariablePartialDerivative<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.SampleSpatialVariablePartialDerivative`1
 ##### SampleValueSpatialVariable<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.SampleValueSpatialVariable`1
 #### DataModelBooleanToggle#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelBooleanToggle
 #### DataModelObjectAssetRefStore<T>#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelObjectAssetRefStore`1
