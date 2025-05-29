@@ -12242,7 +12242,6 @@ CharacterController
 # get_CurrentGround()#ICollider
 # get_LinearVelocity()#float3
 # set_LinearVelocity(float3)#Void
-# BuildInspectorUI(UIBuilder)#Void
 # GetSyncMember(Int32)#ISyncMember
 # __New()#CharacterController
 # get_Slot()#Slot
@@ -61723,7 +61722,6 @@ PostProcessingSettings
 # Equals(Object)#Boolean
 # GetHashCode()#Int32
 PrimitiveMemberEditor
-# BuildInspectorUI(UIBuilder)#Void
 # GetSyncMember(Int32)#ISyncMember
 # __New()#PrimitiveMemberEditor
 # Setup(IField, String, UIBuilder)#Void
