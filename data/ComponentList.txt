@@ -388,6 +388,7 @@
 # DebugVector#FrooxEngine.DebugVector
 # FootstepEventDebugVisualizer#FrooxEngine.FootstepEventDebugVisualizer
 # RectTransformComputedProperties#FrooxEngine.UIX.RectTransformComputedProperties
+# SubmeshDebug#FrooxEngine.SubmeshDebug
 # TestFakeViveTracker#FrooxEngine.TestFakeViveTracker
 # TestSineWaveSource#FrooxEngine.TestSineWaveSource
  Generators
@@ -991,6 +992,7 @@
 ## DestroyRoot#FrooxEngine.DestroyRoot
 ## DuplicateBlock#FrooxEngine.DuplicateBlock
 ## GrabbableReparentBlock#FrooxEngine.GrabbableReparentBlock
+## GrabbableSaveBlock#FrooxEngine.GrabbableSaveBlock
 ## GrabBlock#FrooxEngine.GrabBlock
 ## NoDestroyUndo#FrooxEngine.Undo.NoDestroyUndo
 ## SearchBlock#FrooxEngine.SearchBlock
