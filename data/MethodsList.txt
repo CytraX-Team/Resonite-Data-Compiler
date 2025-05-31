@@ -16914,6 +16914,7 @@ SkinnedMeshRenderer
 # get_ComputedBounds()#BoundingBox
 # get_ComputedBoundsSpace()#Slot
 # get_ComputedRendererRoot()#Slot
+# get_ComputedBoneHierarchies()#List`1
 # TryGetBone(Int32)#Slot
 # BlendShapeIndex(String)#Int32
 # BlendShapeName(Int32)#String
@@ -16930,6 +16931,7 @@ SkinnedMeshRenderer
 # get_LocalBoundingBox()#BoundingBox
 # get_UnboundMeshLocalBoundingBox()#BoundingBox
 # get_UnboundMeshGlobalBoundingBox()#BoundingBox
+# ComputeBoneHierarchies()#List`1
 # ComputeRootBone()#Slot
 # SetupBones(Dictionary`2)#Void
 # SetupBones(Slot)#Void
@@ -16945,7 +16947,7 @@ SkinnedMeshRenderer
 # RemoveBlendshape(Int32)#Task`1
 # GetMemberName(SyncElement)#String
 # ComputeLocalBounds(SkinnedBounds)#ValueTuple`2
-# ComputeApproximateStaticBounds()#BoundingBox
+# ComputeApproximateStaticBounds(List`1)#Void
 # ComputeBoundsFastDisjointRootApproximate()#BoundingBox
 # ComputeBoundsMediumPerBoneApproximate()#BoundingBox
 # GetSyncMember(Int32)#ISyncMember
